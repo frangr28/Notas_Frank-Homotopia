@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1787330405.86144 -1
-  "main.bcf" 1787330404 107256 c8a347bbbffa23f6c5855e74f5368900 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1787331844.44811 -1
+  "main.bcf" 1787331843 107256 c8a347bbbffa23f6c5855e74f5368900 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 1787330232.62628 "main.idx" "main.ind" "main" 1787330405.86034 0
-  "main.idx" 1787330404 130 d2776ea7b993d7dee41ffbc47ec40049 "pdflatex"
+["makeindex main.idx"] 1787330796.8144 "main.idx" "main.ind" "main" 1787331844.44696 0
+  "main.idx" 1787331843 136 ac29b428785cacd0b58b18d1ff43b9d6 "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1787330395.8007 "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" "main.pdf" "main" 1787330405.86307 0
+["pdflatex"] 1787331815.40695 "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" "main.pdf" "main" 1787331844.44965 0
   "C:/Users/frank/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1777116498 103571 1e570ecc7672d352f39ae8a072fec062 ""
   "C:/Users/frank/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1759041561 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/frank/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary6.tfm" 1759041567 848 068dd119e13b75777e62821af7d4f2a6 ""
@@ -33,6 +33,7 @@
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy8.tfm" 1136765053 520 7bb3abb160b19e0ed6ac404bb59052b7 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx12.tfm" 1256929440 12088 d750ac78274fa7c9f73ba09914c04f8a ""
+  "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr10.tfm" 1256929440 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr12.tfm" 1256929440 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr17.tfm" 1256929440 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmri12.tfm" 1256929440 17144 271aaf9ebb339934b04110dc5211fba4 ""
@@ -52,6 +53,7 @@
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb" 1256929440 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb" 1256929440 30696 3da7e46ecf5615eedebd9f27dab4d9d7 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb" 1256929440 30635 833ec815d446ec453a4913fc26d24cbc ""
+  "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb" 1256929440 113634 9384aebdf26f9881e046a4b5574566db ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb" 1256929440 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb" 1256929440 122174 a2d5e73f396ddbeb3bdf5c79aea0993d ""
@@ -291,17 +293,19 @@
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/frank/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
+  "Docs/Index.tex" 1759066104 368 ef6e52d912514430af57daf665d8686b ""
   "Docs/Portada.tex" 1787328944 846 d193ba10eb5156a5f3dd3077a67cff2a ""
+  "Docs/biblio.tex" 1787331809 519 d613005a87d64a3ad399e5e09d14f25c ""
   "IMAGENES CIENCIAS/logociencias.png" 1759066104 234464 5683ef500805196536eed367745986f2 ""
   "IMAGENES CIENCIAS/logounam.png" 1759066104 331443 1e42aef750be8051afc6b7de0440c673 ""
-  "Notas.tex" 1787330392 1273 341b038ed90b3a7e8e46ad093ecbc501 ""
-  "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" 1787329553 7077 09be3748ff484845eab9d323d5d5efa7 ""
-  "main.aux" 1787330404 595 57e9bfc63647b8303129428a45920c84 "pdflatex"
+  "Notas.tex" 1787331173 1504 1ba5c183896239cf1868b281dd36f493 ""
+  "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" 1787331727 7505 cf1954b13c18574bdb1d4a98d88731b3 ""
+  "main.aux" 1787331843 805 708dc969e640a95042325d4b180d3419 "pdflatex"
   "main.bbl" 1770606521 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.ind" 1787330233 131 e7264d8f4c99ceeeefad947a2b966653 "makeindex main.idx"
-  "main.out" 1787330402 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.run.xml" 1787330404 2224 b58fdd43a2e991125a5439c21704f61b "pdflatex"
-  "main.tex" 1787329553 7077 09be3748ff484845eab9d323d5d5efa7 ""
+  "main.ind" 1787330797 177 01b489f85b552e375458c2a72c5f0a46 "makeindex main.idx"
+  "main.out" 1787331843 184 59aef677f8f1fb2b39be45d8331a8f81 "pdflatex"
+  "main.run.xml" 1787331843 2224 b58fdd43a2e991125a5439c21704f61b "pdflatex"
+  "main.tex" 1787331727 7505 cf1954b13c18574bdb1d4a98d88731b3 ""
   (generated)
   "main.aux"
   "main.bcf"

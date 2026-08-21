@@ -62,7 +62,7 @@
 %\setlength{\parindent}{0pt}                %no identacion%
 %%%{\setlength{\parindent}{12pt}.... párrafos afectados....} %%individual
 %%
-\pagestyle{plain}                           %número de página centrado en el pie de página
+%%%%PUESTO \pagestyle{plain}                           %número de página centrado en el pie de página
 %\markright{texto en el encabezado} 
 %\markboth{texto página izquierda}{texto página derecha} %par impar%
 
@@ -179,12 +179,23 @@
 \setcounter{page}{1}
 \markboth{}{} 
 
-\fancyhead[L]{\footnotesize Cóalgebras, coinducción y computación, una brevísima introducción}
-\fancyhead[R]{\footnotesize Enrique Ruiz Hernández}
+
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+
+% Limpiar encabezado y pie por defecto
+\fancyhf{}
+
+% Encabezado (arriba)
+% \fancyhead[C]{\footnotesize Lógica Matemática III}
+% \fancyhead[C]{\footnotesize Lógica Infinitaria}
+\fancyhead[L]{\footnotesize Seminario de Topología B}
+\fancyhead[R]{\footnotesize Introducción a la Teoría de Homotopía}
+
 
 % Pie de página (abajo)
-\fancyfoot[L]{\footnotesize Centro de Investigación en Teoría de Categorías y sus Aplicaciones, A.C.}
-\fancyfoot[R]{\footnotesize CINVCAT}
+\fancyfoot[L]{\footnotesize Profesores: Andrés Carnero Bravo, Jaime Alejandro García Villeda}
+\fancyfoot[R]{\footnotesize Alumno: Francisco García Reyes}
 
 \renewcommand{\headrulewidth}{0.4pt} % arriba
 \renewcommand{\footrulewidth}{0.4pt} % abajo
@@ -197,13 +208,7 @@
 \input{Notas.tex}
 % \input{NotasHomotopia.tex}
 
-% \input{Docs/biblio.tex}
-% \input{Docs/Index.tex}
-
+\input{Docs/biblio.tex}
+\input{Docs/Index.tex}
 
 \end{document}
-
-
-
-
-
