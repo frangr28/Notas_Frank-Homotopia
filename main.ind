@@ -1,0 +1,118 @@
+\begin{theindex}
+
+  \item alfabeto proposicional, \hyperpage{15}, \hyperpage{25}
+  \item aridad, \hyperpage{18}
+  \item Aritmética, \hyperpage{14}
+  \item asignación de verdad para las letras proposicionales, 
+		\hyperpage{26}
+  \item asignación extendida para las fórmulas proposicionales, 
+		\hyperpage{15}
+  \item asignación extendida para las letras proposicionales, 
+		\hyperpage{26}
+  \item asignación modificada, \hyperpage{24}
+  \item asignación para las letras proposicionales, \hyperpage{15}
+  \item asignación para las variables, \hyperpage{9}
+  \item axiomas del cálculo proposicional, \hyperpage{30}, 
+		\hyperpage{32}
+
+  \indexspace
+
+  \item Cantor, Georg, \hyperpage{13}
+  \item conjunto \(\mathcal{B}\)-\(\mathfrak{F}\)-inductivo, 
+		\hyperpage{18}
+  \item conjunto \BF-inductivo generado por \(\mathcal{B}\) y \(\mathfrak{F}\) en \(\mathcal{U}\), 
+		\hyperpage{19}
+  \item consecuencia lógica, \hyperpage{28}
+  \item constantes, \hyperpage{2}
+
+  \indexspace
+
+  \item deducción, \hyperpage{32}
+  \item deducción en el CProp, \hyperpage{32}
+
+  \indexspace
+
+  \item estrella de Kleene, \hyperpage{9}, \hyperpage{25}
+  \item estructura elemental, \hyperpage{4, 5}
+  \item estructuras de primer orden, \hyperpage{4}
+
+  \indexspace
+
+  \item función de interpretación, \hyperpage{4}
+  \item función proposicional, \hyperpage{1}
+  \item fórmula que se deduce en el CProp, \hyperpage{32}
+  \item fórmulas, \hyperpage{13}
+  \item fórmulas atómicas, \hyperpage{12}
+  \item fórmulas proposicionales, \hyperpage{15}, \hyperpage{26}
+
+  \indexspace
+
+  \item Gödel, Kurt, \hyperpage{14}
+
+  \indexspace
+
+  \item Hilbert, David, \hyperpage{13}
+
+  \indexspace
+
+  \item inducción para \BF-inductivos, \hyperpage{21}
+  \item insatisfacible, \hyperpage{29}
+  \item interpretación, \hyperpage{4}, \hyperpage{10}
+  \item interpretación para un término, \hyperpage{10}
+
+  \indexspace
+
+  \item lectura única para términos, \hyperpage{8}
+  \item lenguaje de primer orden, \hyperpage{7}
+  \item lenguaje proposicional, \hyperpage{15}, \hyperpage{25}
+  \item letras funcionales, \hyperpage{2}
+  \item letras que aparecen, \hyperpage{27}
+  \item letras relacionales, \hyperpage{2}
+
+  \indexspace
+
+  \item Modus Ponens, \hyperpage{32}
+  \item Modus Ponens semántico, \hyperpage{29}
+
+  \indexspace
+
+  \item ocurrencia, \hyperpage{16}, \hyperpage{22}
+  \item operación, \hyperpage{3}, \hyperpage{18}
+
+  \indexspace
+
+  \item palabra vacía, \hyperpage{9}
+  \item par ordenado, \hyperpage{3}
+  \item programa de Hilbert, \hyperpage{14}
+  \item proposición, \hyperpage{1}
+
+  \indexspace
+
+  \item relación, \hyperpage{3}
+
+  \indexspace
+
+  \item satisfacibilidad, \hyperpage{24}
+  \item satisfacible, \hyperpage{28}
+
+  \indexspace
+
+  \item tautología, \hyperpage{28}
+  \item teorema de concordancia, \hyperpage{16}, \hyperpage{23}, 
+		\hyperpage{27}
+  \item teorema de Correctud, \hyperpage{32}
+  \item teorema de Correctud para el \textsf{CProp}, \hyperpage{32}
+  \item teorema de corte, \hyperpage{29}
+  \item teorema de la deducción semántico, \hyperpage{30}
+  \item teorema de monotonía, \hyperpage{29}
+  \item tipo de semejanza, \hyperpage{2}
+  \item término, \hyperpage{8}
+  \item término algebraico, \hyperpage{11}
+
+  \indexspace
+
+  \item variable que ocurren en una fórmula, \hyperpage{17}
+  \item verdad, \hyperpage{25}
+  \item verdad de Tarski, \hyperpage{24}
+
+\end{theindex}

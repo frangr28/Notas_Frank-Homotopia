@@ -1,0 +1,206 @@
+\documentclass[12pt]{article} 
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc} 
+
+%%\usepackage{showframe}    %VER MARCOS%
+\usepackage{graphicx}       %insertar y manipular imágenes%
+\usepackage{float}          %%centrar bien img y fig 
+\usepackage{latexsym}       %Simbolos 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}           %%figuras tikz
+\usepackage{tikz-cd}        %CATS?
+\usepackage[scr=rsfs]{mathalpha}    %%calig\mathscr{}
+%\usepackage{changepage}
+%\usepackage{kite}
+%\usepackage{cite}
+%\usepackage{url} %%%
+%\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref} %ocultar cuadro link%
+%%\usepackage[breaklinks=true]{hyperref} %%hacer los links largos bien%
+%%\usepackage{color}
+%%%\usepackage[margin=2.5]{geometry} %headheight  
+\usepackage[a4paper]{geometry}
+\geometry{top=2cm, bottom=2.0cm, left=2cm, right=2.5cm}
+
+\usepackage{fvextra}        %%antes de csquotes%
+\usepackage{csquotes}       %%con \usepackage{fvextra}%%
+\usepackage{biblatex}       %\addbibresource{biblatex-examples.bib} %gestionar la bibliografía%%
+%\usepackage{physics}       %paquete de física%
+%%\qty                      %con fisica%
+%%\AtBeginDocument{\RenewCommandCopy\qty\SI} %con fisica%
+\usepackage{fancyhdr}       %crear pies de página y cabeceras% %con \pagestyle{fancy} modificar
+
+\pagestyle{fancy}
+
+\usepackage{longtable}      %tablas que ocupan más de una página%
+\usepackage{lmodern}        %fuente de
+\usepackage{caption}        %%captions%
+\usepackage{wasysym}        %circulo relleno%
+\usepackage{multicol}       %multicolumna% distribución de texto en columnas \twocolumn, +9%
+\usepackage{wrapfig}        %%crear una figura alrededor de la cual se envolverá el texto.%
+%%\usepackage{multicol}
+\usepackage{subcaption}     %distintas leyendas o pies de foto dnt otr wht sup lvl%
+\usepackage{siunitx}        %gestionar y expresar correctamente cualquier medida con el SI un%
+%%\usepackage{blindtext}    %texto relleno con \blindtext% quitar \usepackage[spanish]{babel}%
+%%\usepackage{chemfig}      %%quimica%
+%%\usepackage[version=4]{mhchem} %%quimica 2%
+\usepackage{verbatim}       %verbatim, dentro de este entorno los comandos no son ejecutados y aparecen en el mismo formato en el documento compilado%
+%%comment. Básicamente permite escribir comentarios multilínea sin necesidad de escribir el símbolo % al principio de cada línea.%%
+\usepackage{minted}         %%Resaltar sintaxis del código fuente%%
+
+%interlienado 1.5
+\usepackage{setspace}
+\onehalfspacing
+
+%\renewcommand{\familydefault}{\sfdefault}  %%sf%
+\renewcommand{\familydefault}{\rmdefault}   %%rm y sf% %%cambiar la fuente de modern a sin serifa%
+%%%%\pagestyle{headings} 
+%%%%\pagestyle{empty}                       %sin numero de pagina%
+%\setlength{\parindent}{0pt}                %no identacion%
+%%%{\setlength{\parindent}{12pt}.... párrafos afectados....} %%individual
+%%
+\pagestyle{plain}                           %número de página centrado en el pie de página
+%\markright{texto en el encabezado} 
+%\markboth{texto página izquierda}{texto página derecha} %par impar%
+
+%%%\usepackage{parskip}
+%%%{\includegraphics[width=0.2\textwidth]{logo}\par}
+%%%\vspace{1cm}
+
+%Las medidas que se muestran en el archivo en la parte del código que dice:
+%%%%
+%%\renewcommand{\theenumi}{\Roman{enumi}} %%S
+%%%%%%%%%%%%%%%%%%%%%
+%%\vspace*{44\baselineskip}
+
+\usepackage[most]{tcolorbox}
+\usepackage{rotating}
+\usepackage{tocbibind}
+\usepackage{etoolbox}
+
+\patchcmd{\tableofcontents}{\chapter*{\contentsname}}{\chapter*{\contentsname}\addcontentsline{toc}{chapter}{}}{}{}
+
+\usepackage{emptypage}
+
+%%%%%%%\usepackage[backend=biber]{biblatex}
+%%%%%%%\bibliography{bibliography}
+
+\newcommand{\R}{\mathbf{R}}
+\newcommand{\vn}{\varnothing}
+\newcommand{\es}{\emptyset}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\vs}{\vspace{0.2cm}}
+\newcommand{\noi}{\noindent}
+\newcommand{\tit}{\textit}
+\newcommand{\seq}{\subseteq}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\scr}{\mathscr}
+\newcommand{\bb}{\mathbb}
+\newcommand{\BF}{\(\mathcal{B}\)-\(\mathfrak{F}\)}
+%%\newcommand{\ind}{inductivos}
+%%\renewcommand{\restriction}{\mathord{\upharpoonright}}
+\newcommand{\res}{\restriction}
+%%\renewcommand{\res}{\upharpoonright}
+% 
+\usepackage{comment}
+% 
+\usepackage{makeidx} 
+% \usepackage{multind}
+
+
+\makeindex
+
+\usepackage{upgreek} %tau chida
+
+%\documentclass[12pt]{article}
+%\usepackage[margin=1in]{geometry} 
+%\usepackage{amsmath}
+\usepackage{tcolorbox}
+%\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{lastpage}
+%\usepackage{fancyhdr}
+\usepackage{accents}
+%\pagestyle{fancy}
+%%%%\setlength{\headheight}{40pt}
+
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{green(munsell)}{rgb}{0.0, 0.66, 0.47}
+\definecolor{harlequin}{rgb}{0.25, 1.0, 0.0}
+\definecolor{indiagreen}{rgb}{0.07, 0.53, 0.03}
+\definecolor{limegreen}{rgb}{0.2, 0.8, 0.2}
+
+%\newenvironment{teorema}
+%  {\renewcommand\qedsymbol{$\blacksquare$}
+%  \begin{proof}[Teorema]}
+%  {\end{proof}}
+%\renewcommand\qedsymbol{$\blacksquare$}
+
+%\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+\usepackage{stmaryrd} %%SolTorr
+\usepackage{enumitem} %ref
+%%\usepackage{tabularx} %colum ref
+%%\usepackage{array} %colum ref
+
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8} %DEFINICIÓN morado%
+\definecolor{cadmiumorange}{rgb}{0.93, 0.53, 0.18} %PROPOSICIÓN naranja%
+\definecolor{cadmiumred}{rgb}{0.89, 0.0, 0.13} %AXIOMA rojo%
+\definecolor{gray(x11gray)}{rgb}{0.75, 0.75, 0.75} %POSTULADO gris
+%\blue %TEOREMA
+%\lime %LEMA
+\definecolor{mediumturquoise}{rgb}{0.28, 0.82, 0.8} %COROLARIO azul tur
+\definecolor{mediumlavendermagenta}{rgb}{0.8, 0.6, 0.8} %Notación
+\definecolor{mediumseagreen}{rgb}{0.24, 0.7, 0.44} %DEMO azul
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51} %obs
+\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89}
+\definecolor{green(munsell)}{rgb}{0.0, 0.66, 0.47}
+\definecolor{harlequin}{rgb}{0.25, 1.0, 0.0}
+\definecolor{indiagreen}{rgb}{0.07, 0.53, 0.03}
+\definecolor{limegreen}{rgb}{0.2, 0.8, 0.2}
+\definecolor{ufogreen}{rgb}{0.24, 0.82, 0.44}
+\definecolor{upforestgreen}{rgb}{0.0, 0.27, 0.13}
+\definecolor{lime(web)(x11green)}{rgb}{0.0, 1.0, 0.0}
+
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\markboth{}{} 
+
+\begin{document}
+
+\input{Docs/Portada.tex}
+
+\input{NotasLogicaI.tex}
+
+% \input{Notas (Profesor)/11-10.tex}
+% \input{Notas (Profesor)/11-12.tex}
+
+% \input{Notas (Profesor)/11-13.tex}
+% \input{Notas (Profesor)/11-19.tex}
+% \input{Notas (Profesor)/11-20.tex}
+% \input{Notas (Profesor)/11-24.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{Docs/biblio.tex}
+\input{Docs/Index.tex}
+
+\end{document}
+
+
+
+
+

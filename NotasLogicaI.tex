@@ -1,0 +1,2461 @@
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\markboth{}{} 
+
+%\section*{\colorbox{lime}{Profesor}}
+% \section*{Clase 14 de agosto}
+% \addcontentsline{toc}{section}{Clase 14 de agosto}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+Una \textit{proposición\index{proposición}} es una sentencia o enunciado al que se le puede asignar un valor de verdad.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Ejemplo \begin{enumerate}\setlength\itemsep{0em}
+    \item AMLO es el mejor presidente que ha tenido México.
+    \item Este enunciado es falso.
+\end{enumerate}
+\tcblower
+\vs\noi En 2. supongamos que el enunciado es \boxed{verdadero}. Así, lo que dice es cierto. Así, el enunciado es \boxed{falso}. Supongamos, por otro lado que es \boxed{falso}, así, lo que dice es falso. Por lo que lo verdadero es lo contrario a lo que dice, es decir, el enunciado es \boxed{verdadero}.
+
+\vs
+1. sí es proposición.
+
+2. no es proposición.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+%\begin{center}
+
+Una \textit{función proposicional\index{función proposicional}} es un enunciado o afirmación que contempla algún tipo de variable y que cuando se consideran valores fijos para las variables, este se convierte en una proposición. 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Ejemplos \begin{enumerate}\setlength\itemsep{0em}
+    \item ``\(x\) es el mejor presidente que ha tenido México.'' 
+    \item ``\(x<y\)''
+    \item ``\(x\in y\)''
+    \item ``\(x = \sup A\)''
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+%\begin{center}
+
+Una \textit{tipo de semejanza}\index{tipo de semejanza}\phantomsection
+\label{tipo de semejanza} es un conjunto de la siguiente forma
+
+\[\uptau = \left(\bigcup_{n=1}^{\infty} \mathcal{R}_n\right) \cup \left(\bigcup_{m=1}^{\infty} \mathcal{O}_m\right) \cup \mathscr{C}\] donde 
+\begin{enumerate}\setlength\itemsep{0em}
+    \item Ningún símbolo de \(\uptau\) es la sucesión de otros símbolos en \(\uptau\).
+    \item Para cada \(n\in\mathbb{Z}^{>0}\), el conjunto \(\mathcal{R}_n\) se dirá que es un conjunto de \textit{letras relacionales} de aridad \(n\).\index{letras relacionales}
+    \item Para cada \(m\in\mathbb{Z}^{>0}\), el conjunto \(\mathcal{O}_m\) se dice que es de \textit{letras funcionales}\index{letras funcionales} de aridad \(m\).
+    \item Nada obliga a los uniendos a \textbf{no} ser vacíos.
+    \item Los elementos del conjunto \(\mathscr{C}\) se llaman \textit{constantes}\index{constantes}.
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \((\mathbb{R}, \leq, +, \cdot, 0, 1)\)
+    
+    \(\mathcal{R}_2=\{\leq\}\), \(\mathcal{R}_n=\varnothing\) si \(n \neq 2\)
+
+    \(\mathcal{O}_2 =\{+, \cdot\}\), \(\mathcal{O}_n = \varnothing\) si \(n\neq 2\)
+
+    \(\mathscr{C}=\{0, 1\}\).
+
+    Así, \(\displaystyle \uptau_{1}=\{\leq\} \cup\{+, \cdot\}\cup\{0, 1\} \)
+    
+    \item \((\mathbb{Z}, +, 0)\)
+
+    \(\mathcal{R}_n=\varnothing\) para toda \(n\)
+
+    \(\mathcal{O}_2 =\{+\}\), \(\mathcal{O}_n = \varnothing\) si \(n\neq 2\)
+
+    \(\mathscr{C}=\{0\}\).
+
+    \(\displaystyle \uptau_{2}=\{+\}\cup\{0\}\)
+
+    \item \((\mathbb{N}, +, 0)\)
+
+    \(\displaystyle \uptau_{3}=\{+\}\cup\{0\}\)
+    \item \((G, *, e)\)
+
+    \(\mathcal{R}_n=\varnothing\)
+
+
+    \(\mathcal{O}_2 =\{*\}\), \(\mathcal{O}_m = \varnothing\) si \(m\neq 2\)
+
+    \(\mathscr{C}=\{e\}\).
+
+    Así, \(\displaystyle \uptau_{4}=\{*\}\cup\{e\} \)
+    
+\end{enumerate}
+\end{tcolorbox}
+
+% \newpage
+% \section*{Clase 18 de agosto}
+% \addcontentsline{toc}{section}{Clase 18 de agosto}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+%\begin{center}
+Sea \(U\) un conjunto no vacío y \(f\) una función. Se dice que \(f\) es una \textit{operación\index{operación} sobre \(U\)} si y sólo si existe \(n \in \mathbb{Z}^{>0}\) tal que \(f: U^n \to U\). 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Espacios vectoriales}.]
+%\begin{center}
+
+Sea \(\mathbb{F}=(F, +, \cdot, 0^{\mathbb{F}}, 1^{\mathbb{F}})\) un campo y \(\mathbb{V}=(V, +^{\mathbb{V}}, 0)\).
+
++ es conmutativa, asociativa, tiene neutros y es 0 es inútil.
+
+Para cada \(\alpha\in F\) y \(x\in V,\,~~ \alpha x \in V\).
+
+Para toda \(\alpha, \beta \in F, x\in V, \,~~ (\alpha +^{\mathbb{F}}\beta)x = \alpha x +^{\mathbb{V}} \beta x\).
+
+Para toda \(\alpha \in F\), para toda \(x, y \in V\), \,~~\(\alpha(x +^{\mathbb{V}}y) = \alpha x +^{\mathbb{V}}\alpha y\).
+\tcblower
+\(\uptau_{\text{ev}} = \varnothing \cup \{+^{\mathbb{V}}\} \cup \{f_\alpha \mid \alpha \in F\} \cup \{0^{\mathbb{V}}\}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Espacios vectoriales normados}.]
+%\begin{center}
+
+\((\mathbb{V}, \|~~\|)\). \(\mathbb{V}\) es espacio vectorial y \(\|~~\|: V \to \mathbb{R}^{\geq 0}\) tal que \begin{align*}
+    \|\vec{v}\| &=0 \Leftrightarrow \vec{v}=\vec{0} \\
+    \|\alpha \vec{v}\|&=|\alpha|\|\vec{v}\| \\
+    \|\vec{v} + \vec{u}\| &\leq \|\vec{v}\| + \|\vec{u}\|
+\end{align*}
+\tcblower
+\(\uptau_{\text{evn}} = \uptau_{\text{ev}} \cup \{R_r \mid r \in \mathbb{R}^{\geq 0}\}\)
+
+Se entiende \(R_r \subseteq V\) con \(R_r=\{\vec{v} \in V \mid \|\vec{v}\|= r\}\)
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+Sea \(\{A_n : n \in \mathbb{N}\}\) una familia de conjuntos. Se define 
+\begin{enumerate}\setlength\itemsep{0em}
+    \item[(1)] \(A_1 \times A_2 = \{(a, b) \mid a\in A_1 \text{ y } b \in A_2\}\)
+    \item[] \((a, b) = \{\{a\}, \{a, b\}\}\) par ordenado\index{par ordenado} de Kuratowski.
+    \item[] \((a, b) = (x, y) \Longleftrightarrow a=x \text{ y } b=y\). 
+\end{enumerate}
+\tcblower
+\begin{enumerate}\setlength\itemsep{0em}
+    \item[(2)] \(A_1 \times A_2 \times \dots \times A_n \times A_{n+1} = (A_1 \times A_2 \times \dots \times A_n) \times A_{n+1}\)
+    \item[(3)] Dado un conjunto \(A\), se dice que el conjunto \(R\) es una \index{relación}\textit{relación \(n\)-aria sobre \(A\)} si y sólo si \(R \subseteq A^n\). 
+    \item[(4)] \(f\) una función se llama \index{operación}\textit{operación sobre \(A\)} si y sólo si existe \(m \in \mathbb{Z}^{>0}\) tal que \(f: A^m \to A\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Ejemplo en (3)}.]
+
+\(\{(n, m) \in \mathbb{N}^2 \mid n<m\}\)
+
+\(\{(n, m) \in \mathbb{Z}^2 : n \mid m\}\)
+
+\(\{(n, m, l) \in \mathbb{Z}^3 \mid n \equiv_l m\}\)
+\end{tcolorbox}
+
+
+\section*{\textbf{Estructuras de primer orden o estructuras elementales.}}\index{estructuras de primer orden}
+
+Nos interesa la conducta entre cada uno de sus elementos.
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (Interpretación para un tipo de semejanza)}.] \index{interpretación}\phantomsection\label{interpretación}
+
+Sea \(\uptau\) un tipo de semejanza y \(A\) un conjunto no vacío. Se define una \textit{interpretación para \(\uptau\) sobre el conjunto \(A\)} como una función \[I: \uptau \to \displaystyle \left(\bigcup_{n=1}^{\infty} \mathscr{P}(A^n)\right)\] donde \(\displaystyle {}^B\,\!C  =\{f \subseteq B \times C \mid f \text{ función}\}\) tal que 
+\begin{enumerate}\setlength\itemsep{0em}
+    \item Para todo \(R \in \mathcal{R}_n,\) \(~~R^{\mathfrak{A}}=I(R)\in \mathscr{P}(A^n),\)
+    \item Para todo \(f\in \mathcal{O}_m,\) \(~~f^{\mathfrak{A}}=I(f): A^m \to A\)
+    \item Para cada \(c \in \mathscr{C},\) \(~~~~I(c) \in A\)
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]\phantomsection\label{estructura elemental}
+
+Sea \(\uptau\) un tipo de semejanza, \(A\) un conjunto no vacío e \(I\) una función interpretación\index{función de interpretación} para \(\uptau\) sobre \(A\). Se define como una \textit{\(\uptau\)-estructura elemental}\index{estructura elemental} al par \(\mathfrak{A}=(A, I)\). 
+\tcblower
+De ahora en adelante se escribirá para estos casos lo siguiente:
+
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(s \in \uptau\) \(\,~~s^{\mathfrak{A}}= I(s)\)
+    
+    \item \(\mathfrak{A}=\left(A, \left\lbrace R^{\mathfrak{A}} \mid R \in \displaystyle \bigcup_{n=1}^{\infty} \mathcal{R}_n \right\rbrace, \left\lbrace f^{\mathfrak{A}} \mid f\in\displaystyle \bigcup_{m=1}^{\infty} \mathcal{O}_m\right\rbrace, \left\lbrace c^{\mathfrak{A}} \mid c \in \mathscr{C} \right\rbrace \right)\)
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+
+Una \textit{estructura elemental}\index{estructura elemental} es una cuarteta ordenada de la forma \[\mathfrak{A}=(A, \mathcal{R}, \mathcal{O}, \mathscr{C})\] donde
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(A\) es un conjunto no vacío.
+    \item \(\mathcal{R}\) es un conjunto de relaciones sobre \(A\) (con aridades ``distintas'').
+    \item \(\mathcal{O}\) es un conjunto de operaciones sobre \(A\).
+    \item \(\mathscr{C} \subseteq A\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Ejemplos.
+\begin{enumerate}
+    \item \(\mathfrak{R}=(\mathbb{R}, \varnothing, \{+^{\mathfrak{R}}, \cdot^{\mathfrak{R}}\}, \{0^{\mathfrak{R}}, 1^{\mathfrak{R}}\})\) 
+        
+    donde \(+^{\mathfrak{R}}\) es la suma real, \(\cdot^{\mathfrak{R}}\) es el producto real, \(0^{\mathfrak{R}}\) el cero real, \(1^{\mathfrak{R}}\) el uno real.
+
+    \item \(\mathfrak{A}=(\mathscr{P}(\mathbb{N}), \varnothing, \{+^{\mathfrak{A}}, \cdot^{\mathfrak{A}}\},\{0^{\mathfrak{A}}, 1^{\mathfrak{A}}\})\) \(\,\,\,x, y \subseteq \mathbb{N}\)
+    \begin{align*}
+    x+^{\mathfrak{A}} y &= x \cup y \\
+    x\cdot^{\mathfrak{A}} y &= x \cap y \\
+    0^{\mathfrak{A}}&=\varnothing \\
+    1^{\mathfrak{A}}&=\mathbb{N}
+\end{align*}
+\end{enumerate}
+\end{tcolorbox}
+
+
+% %
+% \newpage
+% \section*{Clase 20 de agosto}
+% \addcontentsline{toc}{section}{Clase 20 de agosto}
+
+\section*{\textbf{Ejemplos con el tipo \(\uptau = \{+, \cdot\} \cup \{0, 1\}\).}}
+
+\begin{tcolorbox}
+\(A=\mathbb{R}\) \,~~
+%\tcblower 
+\(+^{\mathfrak{A}}=\) suma real \,~~~ \(\cdot^{\mathfrak{A}}=\) producto real \,~~~ \(0^{\mathfrak{A}}=\) cero real \,~~~ \(1^{\mathfrak{A}}=\) uno real
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathbb{R}[x]\) \,~~
+%\tcblower 
+\(+^{\mathfrak{A}}=\) suma de polinomios \,~~~ \(\cdot^{\mathfrak{A}}=\) producto de polinomios %\,~~~ 
+\newline \(0^{\mathfrak{A}}=\) polinomio cero \,~~~ \(1^{\mathfrak{A}}=\) polinomio uno
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathfrak{M}_{n\times n}(\mathbb{R})\) \,~~
+%\tcblower 
+\(+^{\mathfrak{A}}=\) suma de matrices \,~~~ \(\cdot^{\mathfrak{A}}=\) producto de matrices %\,~~~ 
+\newline \(0^{\mathfrak{A}}=\) matriz cero \,~~ \(1^{\mathfrak{A}}=\) matriz identidad
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathscr{P}(\mathbb{N})\) \,~~
+%\tcblower 
+\(+^{\mathfrak{A}}= \cup \)  \,~~~ \(\cdot^{\mathfrak{A}}= \cap \)\,~~~ \(0^{\mathfrak{A}}= \varnothing \)\,~~~ \(1^{\mathfrak{A}}= \mathbb{N}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathbb{N}\) \,~~
+%\tcblower 
+\(+^{\mathfrak{A}}= \) suma natural  \,~~~ \(\cdot^{\mathfrak{A}}=\) producto natural \,~~~ \(0^{\mathfrak{A}}= 0\)\,~~~ \(1^{\mathfrak{A}}=1\)
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathbb{Z}\) \,~~
+%\tcblower 
+\(+^{\mathfrak{A}}= \) suma entera  \,~~~ \(\cdot^{\mathfrak{A}}=\) producto entero \,~~~ \(0^{\mathfrak{A}}= 0\)\,~~~ \(1^{\mathfrak{A}}=1\)
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=C[X, \mathbb{R}]\) \,~~
+%\tcblower 
+\(\forall g, h \in C[X, \mathbb{R}]\) \,~~ \((g+^{\mathfrak{A}}h)(x)= g(x) +^{\mathfrak{R}} h(x)\) \,~~~ \((g\cdot^{\mathfrak{A}}h)(x)= g(x) \cdot^{\mathfrak{R}} h(x)\) \,~~~ \(0^{\mathfrak{A}}(x)= 0\)\,~~~ \(1^{\mathfrak{A}}(x)=1\)
+\end{tcolorbox}
+  
+\section*{Ejemplos con el tipo \textbf{\(\uptau = \{f_{1}^{2}\} \cup \{c\}\).}}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Dado un grupo}]
+
+\[(G, *, e) \,~~~~ *: G\times G \to G \,~~~~ e\in G\]
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=S_n=\{g: \{1, \dots, n\} \to \{1\dots, n\} \mid g \text{ biyectiva}\}\) \newline %\,~~
+%\tcblower 
+\((f_{1}^{2})^{\mathfrak{A}}= \circ\) composición \,~~~ \(c^{\mathfrak{A}}= \text{id}(\{1, \dots, n\})\) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=S_\infty=\{g: \mathbb{N}\to\mathbb{N} \mid g \text{ biyectiva}\}\) \,~~
+%\tcblower 
+\((f_{1}^{2})^{\mathfrak{A}}= \circ\) composición \,~~~ \(c^{\mathfrak{A}}= \text{id}(\mathbb{N})\) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=(0, \infty)\) \,~~
+%\tcblower 
+\((f_{1}^{2})^{\mathfrak{A}}=\) producto real \,~~~ \(c^{\mathfrak{A}}=\) 1 real 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathbb{N}\) \,~~
+%\tcblower 
+\((f_{1}^{2})^{\mathfrak{A}}= +^{\mathfrak{A}}\) suma natural \,~~~ \(c^{\mathfrak{A}}=1\) 
+\tcblower 
+\(A=\mathbb{N}\) \,~~
+%\tcblower 
+\((f_{1}^{2})^{\mathfrak{A}}= +^{\mathfrak{A}}\) suma natural \,~~~ \(c^{\mathfrak{A}}=28\)
+\end{tcolorbox}
+
+\section*{Ejemplos con el tipo \textbf{\(\uptau = \{R\}\subseteq \mathcal{R}_{2}\).}}
+
+\begin{tcolorbox}
+\(A=\mathbb{N}\) \,~~
+%\tcblower 
+\(R^{\mathfrak{A}}=\{(n, m) \in \mathbb{N}\times \mathbb{N} \mid n<m\} \) 
+\tcblower
+\(A=\mathbb{N}\) \,~~ \(R^{\mathfrak{A}}=\{(n, m)\mid 2n=m\} \) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\{x \subseteq \mathbb{R}\times\mathbb{R}\} \mid x \text{ triángulo}\}\) \,~~
+%\tcblower 
+\(R^{\mathfrak{A}}= \{(x, y) \mid x \text{ semejante a } y\}\) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Cualquier relación de equivalencia}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathbb{Z}\) \,~~
+%\tcblower 
+\(R^{\mathfrak{A}}=\{(n, m) \mid \exists k(n\cdot k=m)\} \) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathscr{P}(\mathbb{N})\) \,~~ \(R^{\mathfrak{A}}=\{(x, y) \in \mathscr{P}(\mathbb{N})\times\mathscr{P}(\mathbb{N}) \mid x \subseteq y\} \) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\mathbb{Z}\) \,~~Fijo un natural \(k\),\,\, \(R^{\mathfrak{A}}=\{(x, y)\in\mathbb{Z}\times\mathbb{Z} \mid n \equiv_{k} m\}\) 
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\(A=\{x \subseteq \mathbb{R}\times\mathbb{R} \mid x \text{ es una recta}\}\) \,~~ \(R^{\mathfrak{A}}=\{(x, y)\mid x\|y\}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{¿Cuál es el tipo de semejanza para obtener a los reales como \(\mathbb{R}\)-espacio vectorial normado?}]
+\(\uptau_{\mathbb{R}-\text{ev}}=\{P_r \mid r \in \mathbb{R}\} \cup \{+\} \cup \{f_\alpha \mid \alpha \in \mathbb{R}\}\cup\{c\}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black]
+\(A=\mathbb{R}\)
+
+Si \(a, b \in \mathbb{R}\,~~ a+^{\mathfrak{A}}b = a+^{\mathfrak{R}}b\)
+
+Para toda \(\alpha \in \mathbb{R}, \,~~f_{\alpha}^{\mathfrak{A}}(r)=\alpha r\) 
+
+\(c^{\mathfrak{A}}=0\)
+
+\(P_{r}^{\mathfrak{A}}=\{x\in\mathbb{R} \mid \|x\|=r\}\)
+\tcblower
+\(A=\mathbb{R}^n\)
+
+\(+^{\mathfrak{A}}=\) suma de \(n\)-adas
+
+\(f_{\alpha}^{\mathfrak{A}}((a_1, \dots, a_n))=(\alpha a_1, \dots, \alpha a_n)\) 
+
+\(c^{\mathfrak{A}}=(0, \dots, 0)\)
+
+\(P_{r}^{\mathfrak{A}}=\{(a_1, \dots, a_n)\in\mathbb{R}^n \mid \|a_1, \dots, a_n\|=r\}\)
+
+\end{tcolorbox}
+
+% \newpage
+% \section*{Clase 22 de agosto}
+% \addcontentsline{toc}{section}{Clase 22 de agosto}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (Lenguaje de primer orden)\index{lenguaje de primer orden}}.]\phantomsection
+\label{lenguaje de primer orden}
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza. Se definen los \textit{símbolos del lenguaje de primer orden del tipo \(\uptau\)} y se le llamará \[\mathcal{L}_{\uptau} = \uptau \cup \{x_n \mid n \in \mathbb{N}\} \cup \{\neg, \vee, \wedge, \to, \leftrightarrow\} \cup \{\exists, \forall\} \cup \{\approx\} \cup \{~), (, ^{,} \}\]
+\tcblower donde 
+\begin{center}
+\begin{tabular}{l l}
+     \(\uptau\) & es el tipo de semejanza,\\
+     \(\{x_n \mid n \in \mathbb{N}\}\) & las variables,\\
+     \(\{\neg, \vee, \wedge, \to, \leftrightarrow\}\) & conectivos lógicos, \\
+     \(\{\exists, \forall\}\) & cuantificadores, \\
+     \(\{\approx\}\) & la igualdad, \\
+     \(\{~), (, ^{,} \}\) & símbolos auxiliares.\\
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (Término)\index{término}}.]\phantomsection
+\label{término}
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza. Se define el conjunto de \textit{\(\uptau\)-términos}, (si no hay peligro de confusión solo se llamarán \textit{términos}) como el conjunto de sucesiones finitas de elementos de \(\mathcal{{L}_{\uptau}}\) tales que \(\mathbf{TRM}_{\uptau}\) denota el conjunto de \(\uptau\)-términos y se tiene que \[\displaystyle \mathbf{TRM}_{\uptau} \subseteq \bigcup_{n\in\mathbb{Z}^{^{>0}}} (\mathcal{L}_{\uptau})^n\] que cumple las siguientes cláusulas.
+
+\begin{itemize}\setlength\itemsep{0em}
+    \item[(A)] \(\mathscr{C} \cup \{x_n \mid n \in \mathbb{N}\}\) las constantes y las variables son términos.
+    \item[(B)] Si \(f\in \mathcal{O}_m \subseteq \uptau\) y \(t_1, \dots, t_n \in \mathbf{TRM}_{\uptau}\), entonces \(f(t_1, \dots, t_n) \in \mathbf{TRM}_{\uptau}\).
+    \item[(C)] Solo son términos los construidos con (A) y (B).
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Ejemplos de términos para el tipo de semejanza \(\uptau_{\textbf{ev}-\mathbb{R}}=\{+\} \cup \{f_\alpha \mid \alpha \in \mathbb{R}\cup\{c_{0}\}\)
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(c_0 \in \mathbf{TRM}_{\uptau}\)
+    \item \(f_{2}(c_{0})\in\mathbf{TRM}_{\uptau}\)
+    \item \(x_{26} + x_{35} \in\mathbf{TRM}_{\uptau}\)
+    \item \(f_{31}(x_{28}+x_{35})  \in\mathbf{TRM}_{\uptau}\)
+    \item \(f_{28}(x_{28}+x_{35})  \in\mathbf{TRM}_{\uptau}\)
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{¿El siguiente es un término?}]
+\centering{\((((f_7((x_0 \cdot x_0)\cdot x_0))+f_2(x_0 \cdot x_0))+x_0)\)}
+\tcblower
+\centering{\(7x^3 + 2x^2 +x\)}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Observación (Metateorema de lectura única para términos)\index{lectura única para términos}}.]
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza y \(t\in\mathbf{TRM}_{\uptau}\). Así, se cumple una y sólo una de las siguientes.
+
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(t\) es una constante de \(\uptau\) ó \(t\) es una variable.
+    \item Existen \(n\in\mathbb{Z}^{>0}\), \(f\in \mathcal{O}_n\) y \(t_1, \dots, t_n \in \mathbf{TRM}_{\uptau}\) tales que \(t=f(t_1, \dots, t_n)\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{¿El siguiente es un término?}]
+\centering{\((((f_7((x_0 \cdot x_0)\cdot x_0))+f_2(x_0 \cdot x_0))+ f_1(x_0))\)}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Ejemplo de término}]
+\centering{\(f_2(f_3(x_0 +f_7(x_1)))\)}
+\tcblower
+Usando lectura única para términos:
+
+\begin{center}
+\begin{tabular}{cl}
+     \(f_2(f_3(x_0 +f_7(x_1)))\) & es término, si  \\
+     \(f_3(x_0 +f_7(x_1))\) & es término, si \\
+     \(x_0 +f_7(x_1)\) & es término, si \\
+     \(x_0\) es término y si \(f_7(x_1)\) & es término, si \\
+     \(\,\,~~~~~~~~~~~~~~~~~~~~~~~~~~x_1\) & es término\\
+\end{tabular}
+\end{center}
+\(x_0\) sí es término por (A) y \(x_1\) también es término por (A).
+
+\(\therefore (f_2(f_3(x_0 +f_7(x_1)))\) sí es término.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Ejemplo de NO término}]
+\centering{\(f_2+ x_0\)}
+\tcblower
+Usando lectura única para términos:
+
+\begin{center}
+\begin{tabular}{cl}
+     \(f_2+ x_0\) & es término, si  \\
+     \(f_2 \) es término y \(x_0\) es término. \\
+\end{tabular}
+\end{center}
+Pero \(f_2 \) NO es término, \(x_0\) sí es término por (A).
+
+\(\therefore f_2+ x_0\) NO es término.
+\end{tcolorbox}
+
+
+% \newpage
+% \section*{Clase 25 de agosto}
+% \addcontentsline{toc}{section}{Clase 25 de agosto}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+%\begin{center}
+
+Sea \(\mathscr{A}\) un conjunto de símbolos, donde ningún símbolo de \(\mathscr{A}\) es la sucesión de otros símbolos en él. Se define \textit{la estrella de Kleene de} \(\mathscr{A}\)\index{estrella de Kleene}\phantomsection
+\label{estrella de Kleene}, como \[\mathscr{A}^*=\displaystyle \bigcup_{n\in\mathbb{N}} \mathscr{A}^n\]
+\tcblower
+\(\mathscr{A}^{0}=\{\varnothing\}\) la palabra vacía.\index{palabra vacía}
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=]
+% Ver definición de \hyperref[término]{\textbf{\(\uptau\)-términos}}. 
+% %\(\displaystyle \mathbf{TRM}_{\uptau} \subseteq \mathcal{L}_{\uptau}^{*}\) %= \bigcup_{n\in\mathbb{Z}^{^{>0}}} (\mathcal{L}_{\uptau})^n
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (Asignación para las variables)}.\index{asignación para las variables}]\phantomsection
+\label{asignación para las variables}
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza y \(\mathfrak{A}\) una \(\uptau\)-estructura elemental, es decir \[\displaystyle \mathfrak{A}=\langle A, \{R^{\mathfrak{A}}\mid R \in \bigcup_{n=1} \mathscr{R}_n\}, \{f^{\mathfrak{A}}\mid f \in \bigcup_{m=1} \mathscr{O}_m\}, \{c^{\mathfrak{A}}\mid c\in\mathscr{C}\}\rangle.\] 
+
+\textit{Una asignación para las variables en la \(\uptau\)-estructura} \(\mathfrak{A}\) será una función \[s: \mathbb{N}\to A.\]
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Informalmente, el hada \(s\) ``convierte'' a las variables en términos de \(A\).
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (Interpretación de un \(\uptau\)-término)}.]\index{interpretación} \index{interpretación para un término}\phantomsection
+\label{interpretación para un término}
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza y \(\mathfrak{A}\) una \(\uptau\)-estructura elemental y \(s:\mathbb{N}\to A\) una asignación para las variables. Para cada \(t\in\textbf{TRM}_{\uptau}\) se define por recursión sobre \(\textbf{TRM}_{\uptau}\) \textit{la interpretación de \(t\) en \(\mathfrak{A}\) bajo \(s\)} y se denota con \(t^{\mathfrak{A}}[s]\), 
+\tcblower
+
+\begin{enumerate}\setlength\itemsep{0em}
+    \item (Paso base). \begin{enumerate}\setlength\itemsep{0em}
+        \item  Si \(c\in\mathscr{C}\), entonces \(c^{\mathfrak{A}}[s]=c^{\mathfrak{A}}\).
+        \item Si \(t=x_n\), entonces \(x_n^{\mathfrak{A}}[s]=s(n)\).
+    \end{enumerate}
+    \item (Paso recursivo). 
+    
+    Sea \(m\in\mathbb{Z}^{>0}\), \(f\in\mathcal{O}_m\) y \(t_1, \dots, t_m \in \textbf{TRM}_{\uptau}\) tales que para cada \(i\in\mathbb{N}\) existe \(t_i^{\mathfrak{A}}[s]\), \[(f(t_1, \dots, t_m))^{\mathfrak{A}}[s]=f^{\mathfrak{A}}(t_1^{\mathfrak{A}}[s], \dots, t_m^{\mathfrak{A}}[s])\]
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox} \textbf{Ejemplo.}
+
+Sea el tipo de semejanza \(\uptau_{\text{AP}}=\{\text{s}\}\cup\{+, \cdot\}\cup\{c_0\}\) y sea la estructura 
+
+\(\mathfrak{N}=\langle \mathbb{N}, \text{s}^{\mathfrak{N}}, +^{\mathfrak{N}}, \cdot^{\mathfrak{N}}, {c_0}^{\mathfrak{N}} \rangle\), donde \(\text{s}^{\mathfrak{N}}\) es la sucesor, \(+^{\mathfrak{N}}\) la suma, \(\cdot^{\mathfrak{N}}\) el producto, \({c_0}^{\mathfrak{N}}=0\).
+
+Tomemos las asignaciones \(\mathsf{a_1}(n)=1\) y \(\mathsf{a_2}(m)=m\).
+\tcblower
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \({c_0}^{\mathfrak{N}}[\mathsf{a_1}]={c_0}^{\mathfrak{N}}=0\)
+
+    \({c_0}^{\mathfrak{N}}[\mathsf{a_2}]={c_0}^{\mathfrak{N}}=0\)
+    
+    \item \((\text{s}(c_0))^{\mathfrak{N}}[\mathsf{a_1}]=\text{s}^{\mathfrak{N}}({c_0}^{\mathfrak{N}}[\mathsf{a_1}])=\text{s}^{\mathfrak{N}}(0)=1\)
+
+    \((s(c_0))^{\mathfrak{N}}[\mathsf{a_2}]=\text{s}^{\mathfrak{N}}({c_0}^{\mathfrak{N}}[\mathsf{a_2}])=\text{s}^{\mathfrak{N}}(0)=1\)
+    
+    \item \((\text{s}(x_2)+\text{s}(\text{s}(x_3))))^{\mathfrak{N}}[\mathsf{a_1}] = (\text{s}(x_2))^{\mathfrak{N}}[\mathsf{a_1}]+^{\mathfrak{N}}(\text{s}(\text{s}(x_3)))^{\mathfrak{N}}[\mathsf{a_1}] \) 
+    
+    \(=(\text{s}^{\mathfrak{N}}({x_2}^{\mathfrak{N}}[\mathsf{a_1}]))+^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\text{s}(x_3))^{\mathfrak{N}}[\mathsf{a_1}]) =\text{s}^{\mathfrak{N}}(\mathsf{a_1}(2))+^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(x_3^{\mathfrak{N}}[\mathsf{a_1}])))\)
+
+    \(=\text{s}^{\mathfrak{N}}(1)+^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\mathsf{a_1}(3)))) =2+^{\mathfrak{N}}\text{s}^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(1))=5\)
+
+    %%HOLa
+    \item[]
+    \((\text{s}(x_2)+\text{s}(\text{s}(x_3))))^{\mathfrak{N}}[\mathsf{a_2}] = (\text{s}(x_2))^{\mathfrak{N}}[\mathsf{a_2}]+^{\mathfrak{N}}(\text{s}(\text{s}(x_3)))^{\mathfrak{N}}[\mathsf{a_2}] \) 
+    
+    \(=(\text{s}^{\mathfrak{N}}({x_2}^{\mathfrak{N}}[\mathsf{a_2}]))+^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\text{s}(x_3))^{\mathfrak{N}}[\mathsf{a_2}]) =\text{s}^{\mathfrak{N}}(\mathsf{a_2}(2))+^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(x_3^{\mathfrak{N}}[\mathsf{a_2}])))\)
+
+    \(=\text{s}^{\mathfrak{N}}(2)+^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(\mathsf{a_2}(3)))) =3+^{\mathfrak{N}}\text{s}^{\mathfrak{N}}(\text{s}^{\mathfrak{N}}(3))=3+5=8\)
+\end{enumerate}
+\end{tcolorbox}
+
+
+%
+% \newpage
+% \section*{Clase 29 de agosto}
+% \addcontentsline{toc}{section}{Clase 29 de agosto}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Definición}]
+
+\textit{Un término algebraico}\index{término algebraico} es un arreglo de la forma \(\alpha x^n\) donde \(\alpha\in\mathbb{R}\), \(x\) una incógnita y \(n\in\mathbb{N}\). Se llama \textit{polinomio} a la suma de términos algebraicos de la forma \[\alpha_0 + \alpha_1 x + \alpha_2 x^2 + \dots, \alpha_n x^n \left(= \displaystyle \sum_{i=0}^{n} \alpha_i x^i\right)\]
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=]
+% Ver definición de \hyperref[término]{\textbf{\(\uptau\)-términos}}. \(\displaystyle \mathbf{TRM}_{\uptau} \subseteq \mathcal{L}_{\uptau}^{*}\) %= \bigcup_{n\in\mathbb{Z}^{^{>0}}} (\mathcal{L}_{\uptau})^n
+% \end{tcolorbox}
+
+\begin{tcolorbox}
+Sea el tipo de semejanza \(\uptau_{\mathbb{R}}=\{\leq \}\cup\{+, \cdot\}\cup\{c_0, c_1\}\). Considere \(x\) una variable de \(\mathcal{L}_{\uptau_{\mathbb{R}}}\). Se define por recursión sobre \(n\in\mathbb{N}\) el término \(x^n\) como sigue
+
+\begin{center}
+\(x_0^0=c_1\)
+
+\(x_0^{n+1}=x_0^n \cdot x_0\)
+\end{center}
+Así \(x_0^n \in \textbf{TRM}_{\uptau_{\mathbb{R}}}\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Paso base. 
+
+P.D. \(x_0^0 \in \textbf{TRM}_{\uptau_{\mathbb{R}}}\)
+
+\begin{center}
+\(x_0^0 = c_1 \in \textbf{TRM}_{\uptau_{\mathbb{R}}}\) por (A)
+\end{center}
+
+(HI) Supongamos que \(x_0^n \in \textbf{TRM}_{\uptau_{\mathbb{R}}}\).
+
+P.D. \(x_0^{n+1}\in\textbf{TRM}_{\uptau_{\mathbb{R}}}\)
+
+\begin{center}
+    \(x_0^{n+1}=x_0^n \cdot x_0\)   
+\end{center}    
+    ~~Pero \(\cdot \in \mathcal{O}_2\), \(x_0\in\textbf{TRM}_{\uptau_{\mathbb{R}}}\) por (A) y por HI \(x_0^n \in\textbf{TRM}_{\uptau_{\mathbb{R}}}\). 
+
+    ~~Usando (B), \(x_0^n \cdot x_0 \in\textbf{TRM}_{\uptau_{\mathbb{R}}}\) \(\hfill{\square}\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    Considere el polinomio \[\alpha_0 + \alpha_1 x + \alpha_2 x^2 + \dots, \alpha_n x^n\]
+
+    Así el \(\uptau_{\mathbb{R}}\)-término \(x_1 + (x_2 \cdot x_0) + (x_3 \cdot x_0^2 )+ \dots +(x_{n+1} \cdot x_0^n)\)
+\tcblower
+    \textit{Teorema fundamental del Álgebra}: 
+    
+    ~~Todo polinomio de grado \(n\) tiene por lo menos una raíz.
+
+    \(\varphi \leftrightharpoons \forall x_1 \forall x_2 \dots \forall x_{n+1} (\neg(c_0 \approx x_{n+1}) \to \exists x_0 (x_0+ x_2 x_0 + \dots + x_{n+1} x_0^n \approx c_0))\)
+
+    \begin{center}
+        \(\{\varphi_n \mid n\in\mathbb{N}\}\) ~~~~~~~~ (TFA)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+Se puede construir una representación de \(\mathbb{N}\) en \(\textbf{TRM}_{\uptau_{\mathbb{R}}}\).
+\begin{center}
+\begin{tabular}{ccc}
+    \(\overline{0}\) & =& \(c_0\)  \\
+    \(\overline{n+1}\) & =& \(\overline{n}+c_1\) \\
+\end{tabular}
+\end{center}
+\tcblower
+\begin{center}
+\begin{itemize}\setlength\itemsep{0em}
+    \item[] \(\overline{1}\) = \(\overline{0+1}\) = \(\overline{0}+c_1\) = \(c_0 +c_1\) 
+    \item[] \(\overline{2}\) = \(\overline{1+1}\) = \(\overline{1}+c_1\) = \(c_0 +c_1+c_1\)
+    \item[] \(\overline{3}\) = \(\overline{2+1}\) = \(\overline{2}+c_1\) = \(c_0 +c_1+c_1+c_1\) 
+\end{itemize}
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=]
+% Ver definición de \hyperref[interpretación para un término]{interpretación de \textbf{\(\uptau\)-términos}}.
+% \tcblower 
+\textit{Para el siguiente ejemplo tomar \(\mathsf{a}\) como \(s\) la asignación}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    \((x_0^n)^{\mathfrak{R}}[\mathsf{a}]\)
+
+    \vs 
+    \((x_0^0)^{\mathfrak{R}}[\mathsf{a}] = {c_1}^{\mathfrak{R}}[\mathsf{a}] = {c_1}^{\mathfrak{R}} = 1\)
+
+    \vs
+    \((x_0^{n+1})^{\mathfrak{R}}[\mathsf{a}]=(x_0^n \cdot x_0)^{\mathfrak{R}}[\mathsf{a}] = (x_0^n)^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} {x_0}^{\mathfrak{R}}[\mathsf{a}] = (x_0^n)^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} \mathsf{a}[0]\)
+    %%AQUI FALTA ALGO
+\end{tcolorbox} 
+
+\begin{tcolorbox} \textbf{Ejemplo.}
+
+Sea \(\displaystyle\mathsf{a}(x_n)=\frac{1}{n+1}\). 
+\tcblower
+\[(\textcolor{brown}{x_1} + \textcolor{red}{(x_2 \cdot x_0)}+ \textcolor{blue}{((x_3 \cdot x_0^2 )} +(x_4 \cdot x_0^3)))^{\mathfrak{R}}[\mathsf{a}]\] 
+
+\(= \textcolor{brown}{x_1^{\mathfrak{R}}[\mathsf{a}]} +^{\mathfrak{R}} \textcolor{red}{(x_2^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} x_0^{\mathfrak{R}}[\mathsf{a}])} +^{\mathfrak{R}} \textcolor{blue}{(x_3^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} (x_0^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} x_0^{\mathfrak{R}}[\mathsf{a}]))}\) 
+
+\(~~~+^{\mathfrak{R}} (x_4^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} (x_0^{\mathfrak{R}}[\mathsf{a}] \cdot^{\mathfrak{R}} (x_0^{\mathfrak{R}}[\mathsf{a}] \cdot x_0^{\mathfrak{R}}[\mathsf{a}])))\)
+\end{tcolorbox}
+
+%
+% \newpage
+% \section*{Clase 01 de septiembre}
+% \addcontentsline{toc}{section}{Clase 01 de septiembre}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=]
+% Ver definición de \hyperref[término]{\textbf{\(\uptau\)-términos}}. \(\displaystyle \mathbf{TRM}_{\uptau} \subseteq \mathcal{L}_{\uptau}^{*}\) %= \bigcup_{n\in\mathbb{Z}^{^{>0}}} (\mathcal{L}_{\uptau})^n
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Teorema fundamental de las bases}]
+Toda función lineal definida en una base se puede extender a todo el espacio.
+\tcblower
+Sean \(V\) y \(W\) espacios vectoriales, \(\beta\subseteq V\) una base para \(V\) y \(\varphi:\beta\to W\) lineal, es decir, \(\varphi(\lambda\vec{x})=\lambda\varphi(\vec{x})\) con \(\lambda\in\mathbb{F}, \vec{x}\in\beta\)
+
+\(\forall \vec{x},\vec{y}(\varphi(\vec{x}+\vec{y}=\varphi(\vec{x})+\varphi(\vec{y}))\)
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=] 
+%     Ver definición de \hyperref[interpretación para un término]{interpretación de \textbf{\(\uptau\)-términos}}.
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (\(\uptau\)-fórmulas atómicas)}.]\index{fórmulas atómicas}\phantomsection
+\label{fórmulas atómicas}
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza. Se define la clase de las \(\uptau\)-fórmulas atómicas \(\textbf{ATM}_{\uptau}\subseteq \mathcal{L}_{\uptau}^{*}\) como: 
+\begin{align*}
+    \textbf{ATM}_{\uptau} &=\{(t_1 \approx t_2) \mid t_1, t_2 \in \textbf{TRM}_{\uptau}\} \\
+    & \cup\{R(t_1, \dots, t_m)\mid m\in\mathbb{Z}^{>0}, R\in\mathcal{R} \text{ y } t_i\in\textbf{TRM}_{\uptau}\}
+\end{align*}
+% \[\textbf{ATM}_{\uptau} =\{(t_1 \approx t_2) \mid t_1, t_2 \in \textbf{TRM}_{\uptau}\}\cup\{R(t_1, \dots, t_m)\mid m\in\mathbb{Z}^{>0}, R\in\mathcal{R} \text{ y } t_i\in\textbf{TRM}_{\uptau}\}\]
+\end{tcolorbox}
+
+
+\begin{tcolorbox} \textbf{Ejemplo.}
+
+Sea \(\uptau_{\mathbb{R}}=\{\leq\}\cup\{+, \cdot\}\cup\{c_0, c_1\}\)
+\tcblower
+\begin{center}
+\((c_0\approx c_1) \in \textbf{ATM}_{\uptau}\)
+
+\((x_{28} + x_{35} \leq c_0)\in\textbf{ATM}_{\uptau}\)
+
+\((c_0 \leq c_1)\in\textbf{ATM}_{\uptau}\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (\(\uptau\)-fórmulas)}.]\index{fórmulas}\phantomsection
+\label{fórmulas}
+%\begin{center}
+
+Sea \(\uptau\) un tipo de semejanza. Se define la clase de las \(\uptau\)-fórmulas \(\textbf{FRM}_{\uptau}\subseteq \mathcal{L}_{\uptau}^{*}\) %que cumple
+
+\begin{enumerate}\setlength\itemsep{0em}
+    \item[\((A)\)] \(\textbf{ATM}_{\uptau} \subseteq \textbf{FRM}_{\uptau}\)
+    \item[\((B)\)] Suponga que \(\varphi, \psi \in \textbf{FRM}_{\uptau}\) y \(x\) una variable, así: 
+    
+    \((\neg\varphi) \in \textbf{FRM}_{\uptau}, ~(\varphi \to \psi) \in \textbf{FRM}_{\uptau}\, ~(\varphi \leftrightarrow\psi) \in \textbf{FRM}_{\uptau}\, ~(\varphi \wedge \psi) \in \textbf{FRM}_{\uptau}\) 
+    
+    \((\varphi \vee \psi) \in \textbf{FRM}_{\uptau}\, ~(\exists x\varphi) \in \textbf{FRM}_{\uptau}\, ~(\forall x \varphi) \in \textbf{FRM}_{\uptau}\)
+    \item[\((C)\)] Los únicos elementos de \(\textbf{FRM}_{\uptau}\) son los construidos con \((A)\) y \((B)\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Sea \(\uptau_{\mathbb{P}}=\{\leq\}\cup\{\,\mid\,\}\cup\{\equiv_k \mid k >0\}\cup\{s\}\cup\{+, \cdot\}\cup\{c_0, c_1\}\)
+\tcblower
+\[(c_0 \equiv_{28} c_1)\]
+
+\[(x_{28} \leq c_0)\]
+
+\[((x_1 + (x_2 \cdot x_3) \equiv_3 (x_2 \cdot ((s(x_3)) + x_{28})))\]
+
+\[((c_= \mid (x_2 + x_3))\]
+
+\[(x_2 \mid (x_3 \cdot (x_{28}
+ + x_{35})))\]
+\end{tcolorbox}
+
+
+%
+%\newpage
+% \section*{Clase 03 de septiembre}
+% \addcontentsline{toc}{section}{Clase 03 de septiembre}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black]
+
+Hilbert:\index{Hilbert, David} 
+
+\noi ``Nadie podrá expulsarnos jamás del paraíso que Cantor\index{Cantor, Georg} construyó para nosotros''.
+\tcblower
+
+\noi ``Tendremos que saber, sabremos''.
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Programa de Hilbert\index{programa de Hilbert}}]
+Fundamentaremos la matemática desde la consistencia.
+\tcblower 
+Área de la matemática \(\leadsto\) axiomas.
+
+Se dirá que el área está validada syss desde la teoría no se demuestran contradicciones.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Aritmética\index{Aritmética}}]
+Teoremas de Gödel\index{Gödel, Kurt}
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black]
+% Para todo \(A\subseteq\mathbb{N}\).
+
+% \(0\in A\) y \(A\) es cerrado bajo sucesor, entonces \(A=\mathbb{N}\)
+% \end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black]
+Aritmética: \(\mathbb{N}, s, +, \cdot, 0\)
+\tcblower
+Conjuntos: Pertenencia \(\in\)
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=] 
+%     Ver definición de \hyperref[fórmulas]{\textbf{\(\uptau\)-fórmulas}}.
+% \end{tcolorbox}
+
+\begin{tcolorbox} 
+El tipo de semejanza para la teoría de conjuntos es \(\uptau = \{\in\}\).
+\tcblower
+\[(\exists x(\forall z(\neg(z\in x)))) \text{ es } \textbf{FRM}_{\{\in\}}\]
+
+\[(\forall x (\forall y (\forall w ((w\in x \leftrightarrow w\in y) \to x\approx y)))) \text{ es } \textbf{FRM}_{\{\in\}}\] pues \(w\in x\) es \(\textbf{ATM}_{\uptau}\), \(w\in y\) es \(\textbf{ATM}_{\uptau}\), \(x\approx y\) es \(\textbf{ATM}_{\uptau}\)
+
+así \((w\in x \leftrightarrow w\in y)\) es \(\textbf{FRM}_{\uptau}\), entonces \(((w\in x \leftrightarrow w\in y) \to x\approx y)\) es \( \textbf{FRM}_{\uptau}\),
+
+\((\forall w ((w\in x \leftrightarrow w\in y) \to x\approx y))\) es \( \textbf{FRM}_{\uptau}\)
+
+\((\forall y (\forall w ((w\in x \leftrightarrow w\in y) \to x\approx y)))\) es \( \textbf{FRM}_{\uptau}\)
+
+Por lo tanto, \((\forall x (\forall y (\forall w ((w\in x \leftrightarrow w\in y) \to x\approx y))))\) es \( \textbf{FRM}_{\uptau}\)
+
+\[(\forall x(\forall y(\exists z(\forall w((w\in z) \leftrightarrow ((w\approx x) \vee (w \approx x) \vee (w \approx y)))))))\]
+
+\[(\forall x(\exists y(\forall z((z\in y) \to (\exists w((z\in w) \wedge (w\in x)))))))\]
+
+\[\bigcup x =\{z \mid (\exists w((z\in w) \wedge (w \in x)))\}\]
+
+\[\forall x \exists y \forall z((z \in y) \leftrightarrow z \subseteq x) \text{ pero } z\subseteq x \text{ abrevia } \forall w((w\in z)\to (w\in x))\]
+
+\[(\forall x (\exists y (\forall z((z \in y) \leftrightarrow (\forall w((w\in z)\to (w\in x)))))))\]
+
+\[(\exists x(\varnothing \in x \wedge \forall z(z\in x \to z\cup\{z\}\in x)))\]
+
+\end{tcolorbox}
+
+%
+% \newpage
+% \section*{Clase 05 de septiembre}
+% \addcontentsline{toc}{section}{Clase 05 de septiembre}
+
+%%\section*{\textbf{¿Cómo se ve la Lógica de Proposiciones?}}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=red!75!black,title=\textbf{¿Cómo se ve la Lógica de Proposiciones?}]
+\begin{center}
+    \(L = \{P_n \mid n\in\mathbb{N}\}\cup\{\to, \neg, \wedge, \vee, \leftrightarrow\} \cup\{), (\}\)\index{lenguaje proposicional}\index{fórmulas proposicionales}\index{alfabeto proposicional}
+
+\(\overline{L}\subseteq L^* = \displaystyle \bigcup_{n\in\mathbb{N}}L^n\)
+\end{center}
+\tcblower
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(P_n \in \overline{L}\)
+    \item  \(A, B \in \overline{L}\), entonces \((\neg A), (A\star B) \in \overline{L}\) con \(\star\in\{\to,\wedge, \vee, \leftrightarrow\}\)
+    \item Todo elemento de \(\overline{L}\) viene de 1 o 2.
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}\textbf{Ejemplos:}
+\begin{itemize}\setlength\itemsep{0em}
+    \item \(P_n\)
+    \item \((P_m \star P_n)\)
+    \item \((\neg P_m)\)
+    \item \((P_n \star (P_m \star P_k))\)
+    \item \(((P_m \star P_k) \star P_n)\)
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=red!75!black,title=\textbf{Asignaciones}]
+\begin{center}
+    \(v: L \to \{0,1\}\)\index{asignación para las letras proposicionales}\index{asignación extendida para las fórmulas proposicionales}
+
+\(v(P_m) = \Biggl \{\begin{array}{ll} 0 & P_m \text{ falso } \\  1 & P_m \text{ verdadero }\end{array}\)
+\end{center}
+\tcblower
+\begin{center}
+\(\overline{v}: \overline{L} \to \{0, 1\}\) tal que 
+\begin{itemize}\setlength\itemsep{0em}
+    \item[] \(\overline{v}(\alpha \wedge \beta)= \overline{v}(\alpha) \overline{v}(\beta)\) 
+    \item[] \(\overline{v}(\alpha \vee \beta)= \text{máx}\{\overline{v}(\alpha),\overline{v}(\beta)\}\) 
+    \item[] \(\overline{v}(\neg\alpha) =  1 - \overline{v}(\alpha)\) 
+\end{itemize}
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black,title=\textbf{\textit{Teorema}}]
+Sea \(\{A_n \mid n \in \mathbb{N}\}\) una familia de conjuntos tal que, \(\forall n, m\) si \(n\leq m\) entonces \(A_n \subseteq A_m\). Si \(k>0\) y \(a_1, \dots, a_k \in \displaystyle \bigcup_{n<\omega} A_n\), entonces existe \(M\in\mathbb{N}\) tal que \(a_1, \dots, a_k \in A_M\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black,title=\textbf{\textit{Teorema}}]
+Si \(\forall n\in\mathbb{N} \, \exists a_n \in \displaystyle \left(\bigcup_{m\in\mathbb{N}} A_m\right)\setminus A_n \), entonces \(|\{a_n : n\in\mathbb{N}\}|= \aleph_0\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{Naturales}]
+    \begin{align*}
+        0 = & \varnothing \\
+        1 = & \{0\} \\
+        2 = & \{0, 1\} \\
+        3 = & \{0, 1, 2\} \\
+        \vdots
+    \end{align*}
+\tcblower
+\(m+1 = \{0, \dots, m\}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black,title=\textbf{Infinito potencia vs infinito actual}]
+Definición (Cantor-finito). Un conjunto \(a\) se dice \textit{finito} si \(\exists n \in \mathbb{N}\) y \(\exists : n \to a\) biyectiva.
+\tcblower
+Un conjunto es Cantor-infinito si y sólo si no es Cantor-finito.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black]
+Definición (Dedekind-infinito).
+
+Un conjunto \(X\) es \textit{Dedekind-infinito} si \(\exists E \subsetneq X\) tal que \(E \sim X\)
+\tcblower
+(AE) \textit{Dedekind-infinito} si y sólo si \textit{Cantor-infinito
+}
+\end{tcolorbox}
+
+%
+% \newpage
+% \section*{Clase 08 de septiembre}
+% \addcontentsline{toc}{section}{Clase 08 de septiembre}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Estructuras elementales]
+% Asumimos fijo un \hyperref[tipo de semejanza]{\textbf{tipo de semejanza \(\uptau\)}}. 
+
+% Ver definiciones de 
+% \begin{itemize}
+%     \item \hyperref[lenguaje de primer orden]{\textbf{Lenguaje de primer orden del tipo \(\uptau\)}}
+%     \item \hyperref[estrella de Kleene]{\textbf{Estrella de Kleene \(\displaystyle \mathcal{L}_{\uptau}^{*}\)}}
+%     \item \hyperref[asignación para las variables]{\textbf{Asignación para las variables}}
+%     \item \hyperref[interpretación para un término]{\textbf{Interpretación para un término}}.
+% \end{itemize}
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Estructuras elementales]
+% Asumimos fijo un \hyperref[tipo de semejanza]{\textbf{tipo de semejanza \(\uptau\)}}. 
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=] Ver definición de \hyperref[lenguaje de primer orden]{\textbf{lenguaje de primer orden del tipo \(\uptau\)}}.
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=] Ver definición de \hyperref[estrella de Kleene]{\textbf{estrella de Kleene \(\displaystyle \mathcal{L}_{\uptau}^{*}\)}}. 
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=] Ver definición de \hyperref[asignación para las variables]{\textbf{asignación para las variables}}.
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=] Ver definición de \hyperref[interpretación para un término]{\textbf{interpretación para un término}}.
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (Ocurrencia)}.]\index{ocurrencia}\phantomsection
+\label{ocurrencia}
+Para \(x\) una variable y \(t \in\textbf{TRM}_{\uptau}\), se define la relación ``\(x\) \textit{ocurre en} \(t\)''.
+
+%Paso base.
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(x\) ocurren en \(y\) si y sólo si \(x=y\).
+    \item \(x\) ocurren en \(c\) no pasa.
+    \item \(x\) ocurren en \(f(t_1, \dots, t_n)\) si y sólo si \(x\) ocurren en algún \(t_i\) con \(i\leq k\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Teorema}]\index{teorema de concordancia}
+
+Sea \(\mathfrak{A}\) una \(\uptau\)-estructura y \(\mathsf{a_1}, \mathsf{a_2}: \mathbb{N} \to A\) y \(t\in\textbf{TRM}_{\uptau}\).
+
+Si para toda variable \(x\) que ocurre en \(t\) se tiene que \(x^{\mathfrak{A}}[\mathsf{a_1}]=x^{\mathfrak{A}}[\mathsf{a_2}]\), 
+
+entonces \(t^{\mathfrak{A}}[\mathsf{a_1}]=t^{\mathfrak{A}}[\mathsf{a_2}]\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (variable que ocurren en una \(\uptau\)-fórmula)}.]\index{variable que ocurren en una fórmula}\phantomsection
+\label{variable que ocurren en una fórmula}
+
+Sea \(t\) un término  y \(x\) una variable. Se define por recursión sobre la construcción de fórmulas, que \textit{la variable \(x\) ocurre en la fórmula \(\varphi\)}.
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(x\) ocurre en la fórmula \((t_1 \approx t_2 )\) si y sólo si \(x\) aparece en el término \(t_1\) o en \(t_2\).
+    \item \(x\) ocurre en la fórmula \(R(t_1, \dots, t_m)\) si y sólo si \(x\) aparece en alguno de los \(t_i\).
+    \item Supongamos como paso recursivo que sabe lo que es que \(x\) ocurra en \(\varphi\) y que \(x\) ocurra en \(\psi\).
+        \begin{enumerate}\setlength\itemsep{0em}
+            \item \(x\) ocurre en \((\neg\varphi)\) si y sólo si \(x\) ocurre en \(\varphi\).
+            \item \(x\) ocurre en \((\varphi\star\psi)\) si y sólo si \(x\) ocurre en \(\varphi\) o \(x\) ocurre en \(\psi\), 
+            
+            con \(\star\in\{\to, \rightarrow, \leftrightarrow, \wedge, \vee\}\).
+            \item \(x\) ocurre en \(Q y \varphi\) si y sólo si \(x\) ocurre en \(\varphi\) o \(x=y\), con \(Q\in\{\forall, \exists\}\).
+        \end{enumerate}
+\end{enumerate}
+\end{tcolorbox}
+
+
+%
+% \newpage
+% \section*{Clase 10 de septiembre}
+% \addcontentsline{toc}{section}{Clase 10 de septiembre}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black]
+\((A\subseteq \mathbb{N} \wedge \varnothing \in A \wedge \forall n(n\in A \to s(n)\in A))\)
+\tcblower
+\(\textbf{PBO}\equiv \forall A \subseteq \mathbb{N}(\varnothing \neq A \to \exists x \in A \forall y \in A(x\leq y))\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black, title=\textbf{AP}]
+Sea \(\mathbf{P}(x)\) una propiedad sobre \(x\). \(\mathbf{P}(0) \wedge \forall y(\mathbf{P}(y) \to \mathbf{P}(s(y))) \to  \forall x \mathbf{P}(x).\)
+\tcblower
+\(\textbf{ZFC} \vdash \textbf{AP}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black]
+\begin{center}
+\(\exists x(\varnothing\in X \wedge \forall y(y\in x \to y\cup\{y\} \in x))\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black]
+\begin{align*}
+    0 =& \varnothing \\
+    n+1 = \{0, \dots, n\} =& \{0, \dots, n-1\}\cup\{n\} = n \cup\{n\} \\
+    n =&\{0, \dots, n-1\}
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{center}
+    \(\omega = \displaystyle \bigcap\{x \mid x \text{ es inductivo}\}\)
+
+    \(\omega \subset X\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{center}
+    \(0! = 1 \)
+    
+    \(s(n)! = n!\)
+\end{center}
+\tcblower
+\begin{center}
+    \(n+0 = n \)
+    
+    \(n+s(m) = s(n+m)\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=\textbf{Teorema de recursión}]
+Sea \(a\) conjunto, \(F: V \times V \to V\), \(\exists! f: \omega \to V\) tal que 
+\begin{itemize}\setlength\itemsep{0em}
+    \item[] \(f(o)=a\)
+    \item[] \(f(s(n)) = F(s(n), f(n))\)
+\end{itemize}
+\end{tcolorbox}
+
+% \newpage%%%
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+%\begin{center}
+Sea \(f\) una función y \(\mathcal{U}\) un conjunto. 
+
+Se dice que \(f\) es una \textit{operación\index{operación} sobre \(\mathcal{U}\)} si y sólo si existe \(n \in \mathbb{Z}^{>0}\) tal que \(f: \mathcal{U}^n \to \mathcal{U}\). 
+\tcblower
+A \(n\) se le llama la \textit{aridad}\index{aridad} de \(f\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición} (\BF-inductivo)\phantomsection
+\label{BF-inductivo}~~\textit{(Enderton)}.]
+
+Sea \(\mathcal{U}\) un conjunto no vacío, \(\mathfrak{F}\) una familia de operaciones sobre \(\mathcal{U}\) y \(\mathcal{B}\subseteq \mathcal{U}\). 
+
+Un conjunto \(C\) se llama \textit{conjunto \(\mathcal{B}\)-\(\mathfrak{F}\)-inductivo}\index{conjunto \(\mathcal{B}\)-\(\mathfrak{F}\)-inductivo} si y sólo si
+
+\begin{itemize}\setlength\itemsep{0em}
+    \item[\((A)\)] \(\mathcal{B}\subseteq C\)
+    \item[\((B)\)] \(C\) es cerrado bajo las operaciones de \(\mathfrak{F}\), es decir, 
+    
+    si \(f\in\mathfrak{F}\) y tiene aridad \(n\in\mathbb{Z}^{>0}\), \(\forall c_1, \dots, c_n\in C\) entonces \(f(c_1, \dots, c_n)\in C.\)
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.\phantomsection
+\label{intersección de BF-inductivos es BF-inductivo}]
+%Sean \(\mathcal{U}, \mathcal{B}\) y \(\mathfrak{F}\) como antes. 
+Sea \(\mathcal{U}\) un conjunto no vacío, \(\mathfrak{F}\) una familia de operaciones sobre \(\mathcal{U}\) y \(\mathcal{B}\subseteq \mathcal{U}\). 
+
+La intersección arbitraria de \(\mathcal{B}\)-\(\mathfrak{F}\)-inductivos es \(\mathcal{B}\)-\(\mathfrak{F}\)-inductivo.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower Sea \(\{C_i \mid i\in I\}\) una familia de \BF-inductivos. 
+ 
+\begin{itemize}\setlength\itemsep{0em}
+    \item[\textbf{P.D.}] \(\mathcal{B}\subseteq \displaystyle\bigcap_{i\in I} C_i\). 
+    \,\, Cada \(C_i\) es un \BF-inductivo y por lo tanto \(\mathcal{B}\subseteq C_i\).
+   \item[\textbf{P.D.}]  \(\displaystyle\bigcap_{i\in I} C_i\) es cerrada bajo las operaciones de \(\mathfrak{F}\).
+   \item[] Sea \(f\in\mathfrak{F}\) una operación de aridad \(m\in\mathbb{Z}^{>0}\) y \(a_1, \dots a_m \in \displaystyle\bigcap_{i\in I} C_i\).
+   \begin{itemize}\setlength\itemsep{0em}
+   \item[\textbf{P.D.}] \(f(a_1, \dots, a_m) \in \displaystyle\bigcap_{i\in I} C_i\).
+   \end{itemize}
+   \item[] Como \(a_1, \dots, a_m \in \displaystyle\bigcap_{i\in I} C_i\), se tiene que para toda \(i\in I\) \(a_1, \dots, a_m \in C_i\). 
+   
+   Como cada \(C_i\) es un \BF-inductivo, entonces \(f(a_1, \dots, a_m \in C_i\). 
+   
+   Así, \(f(a_1, \dots, a_m) \in \displaystyle\bigcap_{i\in I} C_i\).
+   \hfill{\(\square\)}
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\phantomsection
+\label{generado}]
+
+Sea \(\mathcal{U}\) un conjunto no vacío, \(\mathfrak{F}\) una familia de operaciones sobre \(\mathcal{U}\) y \(\mathcal{B}\subseteq \mathcal{U}\). 
+
+Se define el \textit{\BF-inductivo generado por \(\mathcal{B}\) y \(\mathfrak{F}\) en \(\mathcal{U}\)},\index{conjunto \BF-inductivo generado por \(\mathcal{B}\) y \(\mathfrak{F}\) en \(\mathcal{U}\)} \[\langle \mathcal{B}\rangle_{\mathfrak{F}}=\displaystyle\bigcap\{C\subseteq \mathcal{U} \mid C  \text{ es }\mathcal{B}\text{-}\mathfrak{F}\text{-inductivo}\} = \mathcal{B}^{*}\]
+
+\end{tcolorbox}
+
+
+%
+% \newpage
+% \section*{Clase 19 de septiembre}
+% \addcontentsline{toc}{section}{Clase 19 de septiembre}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black, title=\textbf{Observación}]
+De ahora en adelante, serán \(\mathcal{U}\) un conjunto no vacío, \(\mathfrak{F}\) una familia de operaciones sobre \(\mathcal{U}\) y \(\mathcal{B}\subseteq \mathcal{U}\). 
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black] 
+%     Ver definición de \hyperref[BF-inductivo]{\textbf{\BF-inductivo}}. 
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!4!black,title=Observación]
+\begin{center}
+Si \(a\neq\varnothing\), sea \(c\in a\)
+
+\(\bigcap a=\{x\in c \mid \forall b \in a(x\in a)\}\)
+
+\(\bigcup a=\{x \mid \exists y \in c(x\in y)\}\)
+\end{center}
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black] 
+%     Ver proposición: \hyperref[intersección de BF-inductivos es BF-inductivo]{\textbf{intersección de \BF-inductivos es \BF-inductivo}}. 
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]\phantomsection\label{B^{*}}
+\[\mathcal{B}^{*} =\displaystyle\bigcap\{C\subseteq \mathcal{U} \mid C  \text{ es }\mathcal{B}\text{-}\mathfrak{F}\text{-inductivo}\}\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(\mathcal{B}^{*}\) es \BF-inductivo.
+    \item Si \(X \subseteq \mathcal{U}\) es \BF-inductivo, entonces \(\mathcal{B}^{*} \subseteq X\).
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+Como \(X\) es \BF-inductivo, entonces \(X\in\{C\subseteq U \mid C\text{ es }\mathcal{B}\text{-}\mathfrak{F}\text{-inductivo}\}\)
+
+\(\mathcal{B}^{*} = \{x\in X \mid \forall C \subseteq \mathcal{U}~~ \mathcal{B}\text{-}\mathfrak{F}\text{-inductivo} (X\in C)\} \subseteq X\).
+
+\(\mathcal{B}^{*}\) es el \(\subseteq\)-menor \BF-inductivo.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición} (\(\mathcal{B}_{*}\)).]
+
+Se define por recursión sobre \(\mathbb{N}\) la familia de \((B_n)_{n\in\mathbb{N}}\).
+\begin{align*}
+    \mathcal{B}_0 &= \mathcal{B} \\
+    \mathcal{B}_{n+1} &= \mathcal{B}_n \cup \{f(u_1, \dots, u_m) \mid m\in\mathbb{Z}^{>0}, f \in \mathcal{F}, m=\text{arid}(f), u_1, \dots, u_m \in \mathcal{B}_n\} \\
+    \mathcal{B}_{*} &= \displaystyle\bigcup_{n\in\mathbb{N}} \mathcal{B}_{n}
+\end{align*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+\begin{enumerate}\setlength\itemsep{0em}
+    \item[] \(\forall n\in\mathbb{N} ~~~\mathcal{B}_n \subseteq \mathcal{B}_{n+1}\)
+    \item[] \(\forall n, m\in\mathbb{N} ~~~n<m \Rightarrow \mathcal{B}_n \subseteq \mathcal{B}_m\)
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.\phantomsection \label{igualdad}]
+\begin{center}
+    \(\mathcal{B}_{*} = \mathcal{B}^{*}\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower
+\begin{itemize}\setlength\itemsep{0em}
+\item[\(\boxed{\supseteq}\)] Por la observación 2 basta probar que \(\mathcal{B}_{*}\) es \BF-inductivo. 
+    
+    Como \(\mathcal{B}\subseteq \mathcal{B}_0 \subseteq \displaystyle\bigcup_{n\in\mathbb{N}}\mathcal{B}_n\), entonces \(\mathcal{B}\subseteq\mathcal{B}_{*}\). 
+    
+    Para ver que ``\(\mathcal{B}_{*}\) es cerrado bajo \(\mathfrak{F}\)''.
+
+    Sean \(m \in \mathbb{Z}^{>0}, f \in \mathcal{F}\) de aridad \(m\) y \(u_1, \dots, u_m \in \mathcal{B}_{*}\). Tenemos que \((\mathcal{B}_n)_{n\in\mathbb{N}}\) es \(\subseteq\)-creciente y \(u_1, \dots, u_m \in \mathcal{B}_{*}\), entonces existe \(k \in \mathbb{N}\) tal que \(u_1, \dots, u_m \in \mathcal{B}_{k}\).\\
+    En efecto, \(\forall j \leq m \,\exists k_{j} \in \mathbb{N}\) tal que \(u_j \in \mathcal{B}_{k_j}\). Sea \(k=\max\{k_j \mid j=1, \dots, m\}\).\\
+    Por la observación 3, \(\forall j \leq m, \mathcal{B}_{k} \supseteq \mathcal{B}_{k_j}\). Así \(u_1, \dots, u_m \in \mathcal{B}_{k}\).\\
+    Así, \(f(u_1, \dots, u_m)\in \mathcal{B}_{k+1} \subseteq \mathcal{B}_{*}\). Por lo tanto \(\mathcal{B}_{*}\) es \BF-inductivo. \\
+    Por la observación 2, se tiene que \(\mathcal{B}^{*} \subseteq \mathcal{B_{*}}\).
+% \end{itemize}
+% \end{tcolorbox}
+
+% \begin{tcolorbox}
+%     \begin{itemize}\setlength\itemsep{0em}
+\item[\(\boxed{\subseteq}\)] \textbf{P.D.} \(\displaystyle \bigcup_{n\in\mathbb{N}} \mathcal{B}_n\subseteq \mathcal{B}^{*}\). %~~
+
+\textbf{P.D.} \(\forall n \in\mathbb{N}(\mathcal{B}_n \subseteq \mathcal{B}^{*})\). 
+
+Esta prueba se hará por inducción.
+
+\textit{Base:} \(\mathcal{B}_0 = \mathcal{B}\subseteq \mathcal{B}^{*}\) porque \(\mathcal{B}^{*}\) es \BF-inductivo.
+
+\textbf{H.I.} Supongamos que \(\mathcal{B}_n\subseteq \mathcal{B}^{*}\). %~
+
+\textbf{P.D.} \(\mathcal{B}_{n+1}\subseteq \mathcal{B}^{*}\). %~
+
+Sea \(X \in \mathcal{B}_{n+1}\). Si \(X\in\mathcal{B}_n  \overset{H.I.}{\subseteq}\mathcal{B}^{*} ~~\checkmark\).
+
+Si \(X\in \mathcal{B}_{n+1}\setminus\mathcal{B}_n\), entonces existe \(m\in\mathbb{Z}^{>0}\), existe \(f\in\mathcal{F}\) de aridad \(m\), existen \(u_1, \dots, u_m \in \mathcal{B}_n\) tal que \(X=f(u_1, \dots, u_m)\). Como \(u_1, \dots, u_m \in\mathcal{B}_n\) y \(\mathcal{B}_{n} \subseteq \mathcal{B}^{*}\) por H.I. Por lo tanto \(u_1, \dots, u_m \in \mathcal{B}^{*}\) y como \(\mathcal{B}^{*}\) es \BF-inductivo, en particular es ``cerrado bajo \(\mathfrak{F}\)'' por lo que \(X=f(u_1, \dots, u_m)\in\mathcal{B}^{*}\).
+
+\(\therefore\mathcal{B}_{n+1}\subseteq\mathcal{B}^{*}\)
+
+\(\therefore\forall n\in\mathbb{N} ~~\mathcal{B}_{n} \subseteq\mathcal{B}^{*}\)
+
+\(\therefore\mathcal{B}_{*}\subseteq\mathcal{B}^{*}\)
+\end{itemize}
+\(\therefore\mathcal{B}^{*} = \mathcal{B}_{*}\) 
+\hfill{\(\square\)}
+\end{tcolorbox}
+
+
+%
+% \newpage
+% \section*{Clase 22 de septiembre}
+% \addcontentsline{toc}{section}{Clase 22 de septiembre}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black, title=Recordatorio]
+Sean \(\mathcal{U}\) un conjunto no vacío, \(\mathfrak{F}\) una familia de operaciones sobre \(\mathcal{U}\) y \(\mathcal{B}\subseteq \mathcal{U}\). 
+
+\(\mathcal{B}^{*} =\displaystyle\bigcap\{C\subseteq \mathcal{U} \mid C  \text{ es }\mathcal{B}\text{-}\mathfrak{F}\text{-inductivo}\}\)
+
+\(\mathcal{B}_{*} = \displaystyle\bigcup_{n\in\mathbb{N}} \mathcal{B}_{n}\) donde  \(\mathcal{B}_0 = \mathcal{B} \subseteq \mathcal{U}\) 
+
+\(\mathcal{B}_{n+1} = \mathcal{B}_n \cup \{f(u_1, \dots, u_m) \mid \exists m\in\mathbb{Z}^{>0}, \exists f \in \mathcal{F}, m=\text{arid}(f), u_1, \dots, u_m \in \mathcal{B}_n\}\)
+
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black] 
+%     Ver teorema: \hyperref[igualdad]{\(\mathcal{B}_{*}=\mathcal{B}^{*}\)}. 
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black] 
+%     Ver definición: \hyperref[generado]{\(\langle \mathcal{B}\rangle_{\mathfrak{F}}={\mathcal{B}_{*}}\)}. 
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema de inducción para \BF-inductivos}.\phantomsection \label{BFinducción}]\index{inducción para \BF-inductivos}
+Sea \(\mathbf{P}(x)\) una propiedad sobre los elementos de \(\mathcal{U}\).
+Si \begin{enumerate}\setlength\itemsep{0em}
+    \item para todo \(b\in\mathcal{B}\), se tiene que \(\mathbf{P}(b)\)
+    \item \(\mathbf{P}(x)\) es cerrado bajo \(\mathfrak{F}\)
+\end{enumerate}
+entonces \(\forall z\in \langle \mathcal{B}\rangle_{\mathfrak{F}} ~\mathbf{P}(z)\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower Sea \(C=\{u\in\mathcal{U} \mid \mathbf{P}(u)\}\). Por 1, \(\mathcal{B}\subseteq C\). Por 2, \(C\) es cerrado bajo \(\mathfrak{F}\). 
+
+\(\therefore C\) es \BF-inductivo. Así, \(\langle \mathcal{B}\rangle_{\mathfrak{F}} \subseteq C\). ~\(\therefore \forall z\in \langle \mathcal{B}\rangle_{\mathfrak{F}} ~\mathbf{P}(z)\).
+\hfill{\(\square\)}
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Ver definición de}]
+% \begin{itemize}
+%     \item \hyperref[lenguaje de primer orden]{\textbf{Lenguaje de primer orden del tipo \(\uptau,~ \mathcal{L}_{\uptau}\)}}. 
+%     \item \hyperref[estrella de Kleene]{\textbf{Estrella de Kleene \(\displaystyle \mathcal{L}_{\uptau}^{*}\)}}.
+%     \item \hyperref[término]{\textbf{\(\uptau\)-términos, \(\mathbf{TRM}_{\uptau}\)}}.
+% \end{itemize}
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.\phantomsection \label{terminoscomobfinductivos}]
+\begin{center}
+    \(\mathbf{TRM}_{\uptau}\) es un \BF-inductivo.
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower
+Considere \(\mathcal{U}=\displaystyle \mathcal{L}_{\uptau}^{*}\). ~~\(\mathcal{B}=\text{var}\cup\mathscr
+{C}\). 
+
+Para cada \(m\in\mathbb{Z}^{>0}\) y cada \(f\in\mathcal{O}_m\) se define \(\Phi_{f}: \mathcal{U}^{m}\to\mathcal{U}\) tal que para todos \(u_1, \dots, u_m\in\mathcal{U}\), ~\(\Phi_{f}(u_1, \dots, u_m) = f(u_1, \dots, u_m)\). Sea \(\mathfrak{F}=\displaystyle\bigcup_{m\in\mathbb{Z}^{>0}}\{\Phi_{f} \mid f\in\mathcal{O}_m\}\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black, title=\textbf{Afirmación}]
+\begin{center}
+    \(\langle\mathcal{B}\rangle_{\mathfrak{F}} = \mathbf{TRM}_{\uptau}\) 
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower 
+\begin{itemize}
+\item[\(\boxed{\subseteq}\)] Basta probar que \(\mathbf{TRM}_{\uptau}\) es \BF-inductivo. 
+
+Por \hyperref[término]{\((A)\) en la definición de \(\mathbf{TRM}_{\uptau}\)}, \(\mathcal{B}\subseteq \mathbf{TRM}_{\uptau}\).
+
+Afirmamos que \hyperref[término]{\((B)\) en la definición de \(\mathbf{TRM}_{\uptau}\)} implica que \(\mathbf{TRM}_{\uptau}\) es cerrado bajo \(\mathfrak{F}\). Sea \(\Phi_{f}\in\mathfrak{F}\), así \(\exists m\in\mathbb{Z}^{>0}\) tal que \(m=\text{arid}(\Phi_{f})\) y sean \(t_1, \dots, t_m \in \mathbf{TRM}_{\uptau}\). \[\Phi_{f}(t_1, \dots, t_m)=f(t_1, \dots, t_m)\overset{(B)}{\in}\mathbf{TRM}_{\uptau}.\] 
+Así, \(\mathbf{TRM}_{\uptau}\) es \BF-inductivo y por lo tanto \(\langle\mathcal{B}\rangle_{\mathfrak{F}} \subseteq \mathbf{TRM}_{\uptau}\)
+% \end{itemize}
+% \end{tcolorbox}
+
+% \begin{tcolorbox}
+%     \begin{itemize}\setlength\itemsep{0em}
+\item[\(\boxed{\supseteq}\)] Sea \(t\in\mathbf{TRM}_{\uptau}\). Por  \hyperref[término]{\((C)\)}, \(t\) nació de \((A)\) o de \((B)\). 
+
+Caso \((A)\). ~\(t\in\text{Var}\cup\mathscr{C}\). \(\therefore t \in \mathcal{B}\).
+
+Caso \((B)\). ~\(t=f(t_1, \dots, t_m)\), con \(f\in\mathcal{O}_{m}\) y \(t_1, \dots, t_m \in\mathbf{TRM}_{\uptau}\).
+
+\(t=\Phi_{f}(t_1, \dots, t_m)\), al \textit{destripar} los términos y como son finitos se puede llegar a que \(t_1, \dots, t_m \in \langle\mathcal{B}\rangle_{\mathfrak{F}}\).
+\hfill{\(\square\)}
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición} \textit{alternativa}.]\phantomsection
+\label{términoalt}
+
+\(\mathbf{TRM}_{\uptau}\) es el \(\subseteq\)-menor subconjunto de \(\mathcal{L}_{\uptau}^{*}\) tal que 
+
+\begin{itemize}\setlength\itemsep{0em}
+    \item[\((A)\)] \(\mathscr{C} \cup \{x_n \mid n \in \mathbb{N}\}\) las constantes y las variables son términos.
+    \item[\((B)\)] Si \(f\in \mathcal{O}_m \subseteq \uptau\) y \(t_1, \dots, t_m \in \mathbf{TRM}_{\uptau}\), entonces \(f(t_1, \dots, t_m) \in \mathbf{TRM}_{\uptau}\).
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!45!black, title=Observación]
+De esta definición, \(\langle\mathcal{B}\rangle_{\mathfrak{F}} \subseteq \mathbf{TRM}_{\uptau} \subseteq \langle\mathcal{B}\rangle_{\mathfrak{F}}\)
+\end{tcolorbox}
+
+%
+% \newpage
+% \section*{Clase 13 de octubre}
+% \addcontentsline{toc}{section}{Clase 13 de octubre}
+
+% \subsection*{Repaso}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black]
+% Ver definiciones de 
+% \begin{itemize}
+%     \item \hyperref[tipo de semejanza]{\textbf{Tipo de semejanza}}
+%     \item \hyperref[interpretación]{\textbf{Interpretación para un tipo de semejanza}}
+%     \item \hyperref[estructura elemental]{\textbf{Estructura elemental}}
+%     \item \hyperref[lenguaje de primer orden]{\textbf{Lenguaje de primer orden del tipo \(\uptau\)}}
+%     \item \hyperref[estrella de Kleene]{\textbf{Estrella de Kleene \(\displaystyle \mathcal{L}_{\uptau}^{*}\)}}
+%     \item \hyperref[términoalt]{\(\mathbf{TRM}_{\uptau}\)}
+%     \item \hyperref[asignación para las variables]{\textbf{Asignación para las variables}}
+%     \item \hyperref[interpretación para un término]{\textbf{Interpretación para un término}}.
+%     \item \hyperref[ocurrencia]{\textbf{Ocurrencia}}.
+%     \item \hyperref[variable que ocurren en una fórmula]{\textbf{Variable que ocurren en una fórmula}}.
+% \end{itemize}
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (variables que aparecen/ocurren)}.]\index{ocurrencia}\phantomsection
+\label{ocurrenciaalt}
+Se define el \textit{conjunto de variables que aparecen} (ocurren) como sigue:
+
+\[\textbf{VA}:\mathbf{TRM}_{\uptau}\to\mathscr{P}(\{x_n \mid n\in\mathbb{N}\})\]
+\begin{align*}
+    \textbf{VA}(c) &=\varnothing \\
+    \textbf{VA}(x_n) &=\{x_n\} \\
+    \textbf{VA}(f(t_1, \dots, t_n)) &=\displaystyle \bigcup_{m\in\mathbb{N}}\textbf{VA}(t_m) 
+\end{align*}
+\tcblower
+Y usaremos \textbf{VA} o \textbf{VO} para denotar este conjunto.
+\end{tcolorbox}
+
+
+% \newpage
+% \section*{Clase 20 de octubre}
+% \addcontentsline{toc}{section}{Clase 20 de octubre}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black]
+% Ver definiciones de 
+% \begin{itemize}\setlength\itemsep{0em}
+%     \item \hyperref[ocurrenciaalt]{\textbf{Variables que ocurren}}.
+%     \item \hyperref[asignación para las variables]{\textbf{Asignación para las variables}}
+%     \item \hyperref[interpretación para un término]{\textbf{Interpretación para un término}}.
+%     \item \hyperref[BF-inductivo]{\textbf{\BF-inductivo}}. 
+%     \item \hyperref[B^{*}]{\textbf{\(\mathcal{B}^{*}\)}}. 
+% \end{itemize}
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Observación]    
+\(|\textbf{VO(t)}|<\aleph_0\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.\phantomsection
+\label{restriccióndeasignacionesparatérminos}]\index{teorema de concordancia}
+
+Sea \(\mathfrak{A}\in V_{\uptau}\). Para todo \(t\in\mathbf{TRM}_{\uptau}\), para cualesquiera \(\mathsf{a_1}, \mathsf{a_2}:\mathbb{N}\to A\). 
+
+\fcolorbox{blue-violet}{blue!5!white}{Si \(\mathsf{a_1}\upharpoonright\text{vo}(t)=\mathsf{a_2}\upharpoonright\text{vo}(t)\), entonces \(t^{\mathfrak{A}}[\mathsf{a_1}]=t^{\mathfrak{A}}[\mathsf{a_2}]\)} \,\(\dots\) \textcolor{blue-violet}{\(\mathbf{M}(t)\)}
+
+% \framebox[1.1\width]{Si \(\mathsf{a_1}\upharpoonright\text{vo}(t)=\mathsf{a_2}\upharpoonright\text{vo}(t)\), entonces \(t^{\mathfrak{A}}[\mathsf{a_1}]=t^{\mathfrak{A}}[\mathsf{a_2}]\)} \,\(\dots\) \textcolor{blue-violet}{\(\mathbf{M}(t)\)}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower Sabemos que \(\mathbf{TRM}_{\uptau}\) es un \BF-inductivo, es el \(\subseteq\)-menor \BF-inductivo que tiene a las variables, a las constantes y es cerrado bajo la aplicación de letras funcionales. Sea \(T=\{t\in\mathbf{TRM}_{\uptau}\mid \mathbf{M}(t)\} \subseteq \mathbf{TRM}_{\uptau}\).
+
+\textsf{P.D.} \(T\) tiene a las variables, a las constantes y es cerrado bajo la aplicación de letras funcionales.
+
+\textsf{P.D.} \(x_n\in T\). \,\,\,\textsf{P.D.} \(\mathbf{M}(x_n)\).
+
+Sean \(\mathsf{a_1}, \mathsf{a_2}:\mathbb{N}\to A\) tales que \(\mathsf{a_1}\upharpoonright \text{vo}(x_n)=\mathsf{a_2}\upharpoonright \text{vo}(x_n)\).
+
+\textsf{P.D.} \({x_n}^{\mathfrak{A}}[\mathsf{a_1}]={x_n}^{\mathfrak{A}}[\mathsf{a_2}]\)
+
+Como \(\mathsf{a_1}\upharpoonright \text{vo}(x_n)=\mathsf{a_2}\upharpoonright \text{vo}(x_n) \,\cdots\star\), entonces \(\mathsf{a_1}\upharpoonright\{x_n\}=\mathsf{a_2}\upharpoonright\{x_n\}\). 
+
+Así, \({x_n}^{\mathfrak{A}}[\mathsf{a_1}]=\mathsf{a_1}(n)\overset{\star}{=}\mathsf{a_2}(n)={x_n}^{\mathfrak{A}}[\mathsf{a_2}]\)
+
+\vs 
+\textsf{P.D.} Si \(c\in\mathscr{C}\), entonces \(\mathbf{M}(c)\).
+
+Sean \(\mathsf{a_1}, \mathsf{a_2}:\mathbb{N}\to A\) tales que \(\mathsf{a_1}\upharpoonright \text{vo}(c)=\mathsf{a_2}\upharpoonright \text{vo}(c)\). Así \(c^{\mathfrak{A}}[\mathsf{a_1}]=c^{\mathfrak{A}}=c^{\mathfrak{A}}[\mathsf{a_2}]\).
+
+\vs  
+Veamos que \(T\) es cerrado bajo la aplicación de letras funcionales.
+
+Consideremos \(t=f(t_1, \dots, t_m)\) y sean \(\mathsf{a_1}, \mathsf{a_2}:\mathbb{N}\to A\) tales que
+
+\(\mathsf{a_1}\upharpoonright \text{vo}(f(t_1, \dots, t_m))=\mathsf{a_2}\upharpoonright \text{vo}(f(t_1, \dots, t_m))\).
+
+\textsf{H.I.} \(\mathbf{M}(t_j)\).
+
+Como \(\text{vo}(f(t_1, \dots, t_m))=\displaystyle\bigcup_{j=1}^{m}\text{vo}(t_j)\), entonces \(\mathsf{a_1}\upharpoonright \displaystyle \bigcup_{j=1}^{m} \text{vo}(t_j)= \mathsf{a_2}\upharpoonright \displaystyle \bigcup_{j=1}^{m} \text{vo}(t_j)\), entonces para toda \(j\leq m\) se tiene que \(\mathsf{a_1}\upharpoonright\text{vo}(t_j)=\mathsf{a_2}\upharpoonright\text{vo}(t_j)\).
+
+Por \textsf{H.I.} se tiene que \({t_j}^{\mathfrak{A}}[\mathsf{a_1}]={t_j}^{\mathfrak{A}}[\mathsf{a_2}]\).
+
+\(f(t_1, \dots, t_m)^{\mathfrak{A}}[\mathsf{a_1}] = f^{\mathfrak{A}}({t_1}^{\mathfrak{A}}[\mathsf{a_1}], \dots, {t_m}^{\mathfrak{A}}[\mathsf{a_1}]) \overset{\textsf{H.I.}}{=}  f^{\mathfrak{A}}({t_1}^{\mathfrak{A}}[\mathsf{a_2}], \dots, {t_m}^{\mathfrak{A}}[\mathsf{a_2}]) \) 
+
+\(\overset{\textsf{Int. trm}}{=} f(t_1, \dots, t_m)^{\mathfrak{A}}[\mathsf{a_2}] \) 
+\end{tcolorbox}
+
+
+% \newpage
+% \section*{Clase 22 de octubre}
+% \addcontentsline{toc}{section}{Clase 22 de octubre}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black]
+% Ver definiciones de \hyperref[fórmulas atómicas]{\(\mathbf{ATM}_{\uptau}\)}, \hyperref[fórmulas]{\(\mathbf{FRM}_{\uptau}\)}.
+% % \tcblower
+% %     \(\Phi_n:\mathcal{L}_{\uptau}^{*}\to\mathcal{L}_{\uptau}^{*}\)
+
+% %     \(\varphi\mapsto(\exists x_n \varphi)\)
+
+% %     \(\Phi_n:\mathcal{L}_{\uptau}^{*}\to\mathcal{L}_{\uptau}^{*}\)
+
+% %     \(\varphi\mapsto(\exists x_n \varphi)\)
+% \end{tcolorbox}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Observación]    
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (asignación modificada)}.]\index{asignación modificada}\phantomsection
+\label{asignaciónmodificada}
+Sea \(\mathsf{a}:\mathbb{N}\to A\), \(x_n\) una variable y \(a\in A\). 
+Se define una nueva asignación para las variables como sigue
+
+\begin{center}
+    \(\displaystyle \mathsf{a}\left(x_n/a\right)(x_m) =
+\begin{cases}
+\mathsf{a}(m) & m \neq n\\[4pt]
+\,\,a & m = n
+\end{cases}\)
+\end{center}
+
+\tcblower
+\(\displaystyle \mathsf{a}\left(x_n/a\right)(x_m) =(\mathsf{a}-\{(n, \mathsf{a}(n))\})\cup\{(n, a)\}\)
+
+\(\dots \mathsf{a}({x_{n_1}}/a_1, \dots, {x_{n_m}}/a_m)\)
+
+% \(\displaystyle \mathsf{a}\left(x_n/a\right)(x_m) = \Biggl\{ \begin{array}{ll} \mathsf{a}(m) m\neq n \\ a, n=m \end{array}\)
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (verdad de Tarski)}.]\index{verdad de Tarski}\phantomsection
+\label{verdaddeTarski}\index{satisfacibilidad}
+Sea \(\mathfrak{A}\in V_{\uptau}\) y \(\mathsf{a}:\mathbb{N}\to A\) una asignación para las variables. Se escribe \[\mathfrak{A}\models\varphi[\mathsf{a}]\] para indicar que \textit{la estructura \(\mathfrak{A}\) satisface la fórmula \(\varphi\) bajo la asignación \(\mathsf{a}\)}, lo que se define por recursión sobre la construcción de fórmulas como sigue:
+% [noitemsep, topsep=0pt]
+\begin{enumerate}
+    \item Sean \(t_1, t_2\in\mathbf{TRM}_{\uptau}\). 
+    
+    \(\mathfrak{A}\models(t_1\approx t_2)[\mathsf{a}]\) si y sólo si \({t_1}^{\mathfrak{A}}[\mathsf{a}]={t_2}^{\mathfrak{A}}[\mathsf{a}]\)
+    \item Sean \(t_1, \dots, t_m \in\mathbf{TRM}_{\uptau}\) y \(R\in\mathcal{R}_{m}\). 
+    
+    \(\mathfrak{A}\models R(t_1, \dots, t_m)[\mathsf{a}]\) si y sólo si \(\langle{t_1}^{\mathfrak{A}}[\mathsf{a}], \dots, {t_m}^{\mathfrak{A}}[\mathsf{a}]\rangle\in R^{\mathfrak{A}}\)
+    \item Sean \(\varphi, \psi \in \mathbf{FRM}_{\uptau}\).
+        \begin{enumerate}
+            \item \(\mathfrak{A}\models(\neg\varphi)[\mathsf{a}]\) si y sólo si no es el caso que \(\mathfrak{A}\models\varphi[\mathsf{a}]\).
+            \item \(\mathfrak{A}\models(\varphi\wedge\psi)[\mathsf{a}]\) si y sólo si \(\mathfrak{A}\models\varphi[\mathsf{a}]\) y \(\mathfrak{A}\models\psi[\mathsf{a}]\).
+            \item \(\mathfrak{A}\models(\varphi\vee\psi)[\mathsf{a}]\) si y sólo si \(\mathfrak{A}\models\varphi[\mathsf{a}]\) o \(\mathfrak{A}\models\psi[\mathsf{a}]\).
+            \item \(\mathfrak{A}\models(\varphi\rightarrow\psi)[\mathsf{a}]\) si y sólo si \(\mathfrak{A}\models(\neg\varphi)[\mathsf{a}]\) o \(\mathfrak{A}\models\psi[\mathsf{a}]\).
+            \item \(\mathfrak{A}\models(\varphi\leftrightarrow\psi)[\mathsf{a}]\) si y sólo si \(\mathfrak{A}\models(\varphi\rightarrow\psi)[\mathsf{a}]\) y \(\mathfrak{A}\models(\psi\rightarrow\varphi)[\mathsf{a}]\).
+            \item \(\mathfrak{A}\models(\exists x_n \varphi)[\mathsf{a}]\) si y sólo si existe \(a\in A\) tal que \(\mathfrak{A}\models\varphi[\mathsf{a}({n}/a)]\).
+            \item \(\mathfrak{A}\models(\forall x_n \varphi)[\mathsf{a}]\) si y sólo si para cada \(a\in A\) pasa \(\mathfrak{A}\models\varphi[\mathsf{a}({n}/a)]\).
+        \end{enumerate}
+\end{enumerate}
+\tcblower
+En esta definición los \textit{pasos base} son las fórmulas atómicas, mientras que los \textit{pasos recursivos} son sobre la aplicación de conectivos a fórmulas y sobre cuantificadores a fórmulas.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    En el tipo \(\uptau=\{\leq\}\dots\).
+
+    \(\mathfrak{R}\models\forall x_2(0\leq x_1)[\mathsf{a}]\)
+
+    si y sólo si para cada \(r\in\mathbb{R}\), \(\mathfrak{R}\models(0\leq x_2)[\mathsf{a}(2/r)]\)
+
+    si y sólo si para cada \(r\in\mathbb{R}\), \(0^{\mathfrak{R}}\leq^{\mathfrak{R}} \mathsf{a}(2/r)(2)\)
+
+    si y sólo si \(0^{\mathfrak{R}}\leq^{\mathfrak{R}} r\), pero esto es ''para toda \(r\in\mathbb{R}\)''.
+
+    Por lo que \(\mathfrak{R}\not\models\forall x_2(0\leq x_1)[\mathsf{a}]\)
+\end{tcolorbox}
+
+% \newpage
+% \section*{Clase 27 de octubre}
+% \addcontentsline{toc}{section}{Clase 27 de octubre}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black]
+%     Ver definición de \hyperref[verdaddeTarski]{\textbf{satisfacibilidad}}.
+% \end{tcolorbox}
+
+\begin{tcolorbox}
+
+    \[\exists x_1(x_0 \leq x_1)\]
+
+    Sea la estructura \(\mathfrak{N}=(\mathbb{N, <^{\mathfrak{N}}})\).
+    
+    \(\mathfrak{N}\not\models\exists x_1(x_0 \leq x_1)\)
+
+    \(\mathfrak{N}\models\forall x_1 \forall x_2((x_1<x_2)\vee(x_2 < x_1) \vee (x_1 \approx x_2))\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (verdad)}.]\index{verdad}\phantomsection
+\label{verdad}\index{verdad}
+Sea \(\mathfrak{A}\in V_{\uptau}\) y \(\varphi\in\mathbf{FRM}_{\uptau}\).
+Se dice que \(\varphi\) es \textit{verdadera en} \(\mathfrak{A}\) si y sólo si para toda asignación para las variables \(\mathsf{a}:\mathbb{N}\to A\) se tiene que \(\mathfrak{A}\models\varphi[\mathsf{a}]\).
+\tcblower
+En este caso se escribe \(\mathfrak{A}\models\varphi\).
+\end{tcolorbox}
+
+
+% \newpage
+% \section*{Clase 29 de octubre}
+% \addcontentsline{toc}{section}{Clase 29 de octubre}
+
+% \subsection*{Lenguaje proposicional}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (alfabeto proposicional, lenguaje proposicional)}.]\index{lenguaje proposicional}\index{alfabeto proposicional}\phantomsection
+\label{lenguajeproposicional}
+
+Definimos el \textit{alfabeto proposicional} (lenguaje proposicional), \[\mathcal{L}_{\textsf{Prop}}= L \cup \{\neg, \vee, \wedge, \rightarrow, \leftrightarrow\} \cup \{), (\}\]
+\tcblower donde 
+\begin{center}
+\begin{tabular}{l l}
+    \(L=\{P_n \mid n\in\mathbb{N}\}\) & las letras proposicionales,\\
+     \(\{\neg, \vee, \wedge, \to, \leftrightarrow\}\) & conectivos lógicos, \\
+     \(\{~), (, ^{,} \}\) & símbolos auxiliares.\\
+\end{tabular}
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]\phantomsection
+\label{estrellaKleene}\index{estrella de Kleene}
+\begin{center}
+\(\displaystyle\mathcal{L}_{\textsf{Prop}}^{*} =\bigcup_{n\in\mathbb{N}}\mathcal{L}_{\textsf{Prop}}^{n}\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (fórmulas proposicionales)}.]\index{fórmulas proposicionales}\phantomsection
+\label{fórmulas proposicionales}
+Se define el conjunto de \textit{fórmulas proposicionales} \(\overline{L}\subseteq \mathcal{L}_{\textsf{Prop}}^{*}\) como sigue:
+\begin{enumerate}
+    \item Las letras proposicionales son fórmulas, \(L\subseteq \overline{L}\). 
+    \item Si \(\alpha, \beta \in \overline{L}\), entonces \((\neg \alpha), (\alpha\star \beta) \in \overline{L}\) con \(\star\in\{\to,\wedge, \vee, \leftrightarrow\}\).
+    \item \(\overline{L}\) es el \(\subseteq\)-menor conjunto que cumple 1 y 2.
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Observación]    
+\(\overline{L}\) tiene inducción y recursión, es decir, se puede ver como \BF-inductivo.
+\end{tcolorbox}
+
+\begin{tcolorbox}\textbf{Ejemplos:}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \(P_n\)
+    \item \((P_m \star P_n)\)
+    \item \((\neg P_m)\)
+    \item \((P_n \star (P_m \star P_k))\)
+    \item \(((P_m \star P_k) \star P_n)\)
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (asignación de verdad)}.]\index{asignación de verdad para las letras proposicionales}\phantomsection
+\label{asignación de verdad para las letras proposicionales}
+Se le llama \textit{asignación de verdad para las letras proposicionales} a una función 
+
+\(v: L\to\{0, 1\}\), decimos que \(P_n\) es verdad bajo \(v\) si y sólo si \(v(P_n)=1\). 
+\tcblower
+\begin{center}
+    \(v(P_n) = \Biggl \{\begin{array}{ll} 0 & P_n \text{ falso } \\  1 & P_n \text{ verdadero }\end{array}\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (asignación extendida)}.]\index{asignación extendida para las letras proposicionales}\phantomsection
+\label{asignación extendida para las letras proposicionales}
+
+Sea \(v\) una asignación de verdad para las letras proposicionales. Se define la \textit{asignación extendida} como \(\overline{v}:\overline{L}\to\{0, 1\}\) por recursión sobre la construcción de fórmulas.
+
+\begin{enumerate}[noitemsep, topsep=0pt]
+    \item Paso base: \(\overline{v}(P_n)=v(P_n)\)
+    \item Paso recursivo: Sean \(\alpha, \beta \in \overline{L}\).
+        \begin{itemize}[noitemsep, topsep=0pt]
+            \item[] \(\overline{v}(\textcolor{red}{(\neg\alpha)})=1-\overline{v}(\alpha)\).
+            \item[] \(\overline{v}(\textcolor{red}{(\alpha\wedge\beta)}) = \overline{v}(\alpha)\cdot \overline{v}(\beta)\).
+            \item[] \(\overline{v}(\textcolor{red}{(\alpha \vee \beta)})= \text{máx}\{\overline{v}(\alpha),\overline{v}(\beta)\}\). 
+            \item[] \(\overline{v}(\textcolor{red}{(\alpha \rightarrow \beta)})=0\) si sólo si \(\overline{v}(\alpha)=1\) y \(\overline{v}(\beta)=0\).            
+            \item[] \(\overline{v}(\textcolor{red}{(\alpha \leftrightarrow \beta)})= \overline{v}(\textcolor{red}{(\alpha \rightarrow \beta)}) \cdot \overline{v}(\textcolor{red}{(\beta \rightarrow \alpha)})\). 
+        \end{itemize}
+\end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.\phantomsection
+\label{evaluaciónextendidaúnica}]
+\begin{center}
+    \(\overline{v}\) es única.
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema (de concordancia)}.\phantomsection
+\label{teoremadeconcordanciaparaletrasproposicionales}]\index{teorema de concordancia}
+Sean \(u, v\) asignaciones de verdad para las letras proposicionales.
+
+Para cada \(\alpha\) si \(u\) y \(v\) dan el mismo valor de verdad a todas las letras proposicionales que aparecen en \(\alpha\), entonces \(\overline{u}(\alpha)=\overline{v}(\alpha)\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Observación]    
+¿Cuántas asignaciones de verdad para letras hay? 
+\tcblower
+\begin{center}
+    \(|\,^{L}{2}|=2^{|L|}=2^{\aleph_0}=|\mathbb{R}|\)
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (letras que aparecen)}.]\index{letras que aparecen}\phantomsection
+\label{letras que aparecen}
+Se define el conjunto de \textit{letras que aparecen} \(\mathsf{LA}: \overline{L}\to \mathscr{P}(\{P_n\mid n\in\mathbb{N}\})\) como sigue:
+    \begin{enumerate}[noitemsep, topsep=0pt]
+        \item[] Paso base: \(\mathsf{LA}(P_n)=\{P_n\}\).
+        \item[] Paso recursivo: 
+            \begin{itemize}[noitemsep, topsep=0pt]
+                \item[] \(\mathsf{LA}(\textcolor{red}{(\neg\alpha)})=\mathsf{LA}(\alpha)\).
+                \item[] \(\mathsf{LA}(\textcolor{red}{(\alpha\star\beta)})=\mathsf{LA}(\alpha)\cup\mathsf{LA}(\beta)\), \,\(\star\in\{\vee, \wedge, \rightarrow, \leftrightarrow\}\).
+            \end{itemize}
+    \end{enumerate}
+\end{tcolorbox}
+
+% \newpage
+% \section*{Clase 05 de noviembre}
+% \addcontentsline{toc}{section}{Clase 05 de noviembre}
+
+% \begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black]
+% Ver definiciones de 
+% \begin{itemize}\setlength\itemsep{0em}
+%     \item \hyperref[asignación de verdad para las letras proposicionales]{\textbf{Asignación de verdad para las letras proposicionales}}.
+%     \item \hyperref[asignación extendida para las letras proposicionales]{\textbf{Asignación extendida para las letras proposicionales}}
+%     \item \hyperref[letras que aparecen]{\textbf{Letras que aparecen}}. 
+% \end{itemize}
+% \end{tcolorbox}
+
+\begin{tcolorbox}
+    \begin{itemize}\setlength\itemsep{0em}
+        \item[] \(\mathsf{LA}(\textcolor{red}{((P_0 \vee P_1)\to(\neg P_{28}))}) = \mathsf{LA}(\textcolor{red}{(P_0 \vee P_1)})\cup\mathsf{LA}(\textcolor{red}{(\neg P_{28})}))\)
+        \item[=] \(\mathsf{LA}(P_0)\cup\mathsf{LA}(P_1)\cup\mathsf{LA}(P_{28}) = \{P_0\}\cup\{P_1\}\cup\{P_{28}\} = \{P_0, P_1, P_{28}\}\)
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema (de concordancia)}.\phantomsection
+\label{teoremadeconcordanciaparaletrasproposicionales1}]\index{teorema de concordancia}
+Sea \(\varphi\in\overline{L}\). Para cualesquiera \(v_1, v_2: L \to\{0, 1\}\).
+
+Si \(v_1\upharpoonright\mathsf{LA}(\varphi)=v_2\upharpoonright\mathsf{LA}(\varphi)\), entonces \(\overline{v_1}(\varphi)=\overline{v_2}(\varphi)\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower Defínase \(\Phi=\{\varphi\in\overline{L}\mid \text{ si } v_1\upharpoonright\mathsf{LA}(\varphi)=v_2\upharpoonright\mathsf{LA}(\varphi), \text{ entonces } \overline{v_1}(\varphi)=\overline{v_2}(\varphi)\}\)
+
+\(\Phi\subseteq\overline{L}\). Probaremos que 1. \(L\subseteq\Phi\) y 2. \(\Phi\) es cerrado bajo la aplicación de conectivos. Si probamos esto, \(\overline{L}\subseteq\Phi\). 
+
+En efecto, considere \(P_n\in L\) y \(v_1, v_2: L \to\{0, 1\}\) tales que 
+
+\(v_1\upharpoonright\mathsf{LA}(P_n)=v_2\upharpoonright\mathsf{LA}(P_n) \ldots\star\).
+
+\(\overline{v_1}(P_n)=v_1(P_n)\overset{\star}{=} v_2(P_n)=\overline{v_2}(P_n)\).
+
+\(\therefore P_n\in\Phi\).
+\end{tcolorbox}
+\begin{tcolorbox}
+% \vs
+Para el paso recursivo, considere \(\alpha,\beta\in\Phi\).
+
+\textsf{P.D.} \((\neg\alpha), (\alpha \triangle \beta)\in\Phi\), con \(\triangle\in\{\vee, \wedge, \to, \leftrightarrow\}\).
+
+\vs
+Sean \(v_1, v_2: L \to\{0, 1\}\) tales que \(v_1\upharpoonright\mathsf{LA}((\neg\alpha))=v_2\upharpoonright\mathsf{LA}((\neg\alpha)) \ldots\textsf{H.I.}\).
+
+\textsf{P.D.} \(\overline{v_1}((\neg\alpha))=\overline{v_2}((\neg\alpha))\).
+
+\(\overline{v_1}((\neg\alpha))\overset{\text{Def. de } \overline{v}}{=} 1 - \overline{v_1}(\alpha)\). Por otro lado, como \(\textsf{LA}((\neg\alpha))=\textsf{LA}(\alpha)\) y \(\textsf{H.I.}\) se tiene que 
+
+\(v_1\upharpoonright\mathsf{LA}(\alpha)=v_2\upharpoonright\mathsf{LA}(\alpha)\) y como \(\alpha\in\Phi\), entonces \(\overline{v_1}(\alpha)=\overline{v_2}(\alpha)\ldots*\).
+
+Así, \(\overline{v_1}((\neg\alpha))\overset{\text{Def.} \overline{v_1}}{=} 1-\overline{v_1}(\alpha)\overset{*}{=}1-\overline{v_2}(\alpha)=\overset{\text{Def.} \overline{v_2}}{=}\overline{v_2}((\neg\alpha))\).
+
+\(\therefore (\neg\alpha)\in\Phi\).
+
+\vs
+\textsf{P.D.} \((\alpha\wedge\beta)\in\Phi\).
+
+Sean \(v_1, v_2: L \to\{0, 1\}\) tales que \(v_1\upharpoonright\mathsf{LA}((\alpha\wedge\beta))=v_2\upharpoonright\mathsf{LA}((\alpha\wedge\beta)) \ldots\star\)
+
+De \(\star\) se tiene que \(v_1\upharpoonright\mathsf{LA}(\alpha)\cup\mathsf{LA}(\beta)=v_2\upharpoonright\mathsf{LA}(\alpha)\cup\mathsf{LA}(\beta)\), en particular se tiene que \(v_1\upharpoonright\mathsf{LA}(\alpha)=v_2\upharpoonright\mathsf{LA}(\alpha)\) y \(v_1\upharpoonright\mathsf{LA}(\beta)=v_2\upharpoonright\mathsf{LA}(\beta)\).
+
+Como \(\alpha, \beta\in\Phi\), entonces \(\overline{v_1}(\alpha)=\overline{v_2}(\alpha)\) y \(\overline{v_1}(\beta)=\overline{v_2}(\beta)\).
+
+\(\overline{v_1}((\alpha\wedge\beta))=\overline{v_1}(\alpha)\cdot\overline{v_1}(\beta)=\overline{v_2}(\alpha)\cdot\overline{v_2}(\beta)= \overline{v_2}((\alpha\wedge\beta))\).
+
+\(\therefore (\alpha\wedge\beta)\in\Phi\).
+
+\end{tcolorbox}
+
+% \newpage
+% \section*{Clase 06 de noviembre}
+% \addcontentsline{toc}{section}{Clase 06 de noviembre}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (consecuencia lógica)}.]\index{consecuencia lógica}\phantomsection
+\label{consecuencialógica}
+Sean \(\Sigma \subseteq\overline{L}\) y \(\alpha\in\overline{L}\).
+
+Se dice que \(\alpha\) es \textit{consecuencia lógica} de \(\Sigma\) si y sólo si para toda asignación de verdad \(v\) para \(L\), si \(\overline{v}(\sigma)=1\) para cada \(\sigma\in\Sigma\), entonces \(\overline{v}(\alpha)=1\).
+\tcblower
+En este caso se escribe \(\Sigma\models\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    \(\{P_0, P_1\}\models(P_0 \wedge P_1)\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (tautología)}.]\index{tautología}\phantomsection
+\label{tautología}
+Una fórmula \(\alpha\in\overline{L}\) se llama \textit{tautología} si y sólo si \(\varnothing\models\alpha\).
+\tcblower
+Se escribe \(\models\alpha\) para denotar que \(\varnothing\models\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición (satisfacible)}.]
+\index{satisfacible}\phantomsection\label{satisfacible}
+Sea \(\Sigma\subseteq\overline{L}\), \(\Sigma\) se llama \textit{satisfacible} si y sólo si existe una asignación de verdad para las letras, \(v\) tal que \(\overline{v}[\Sigma]\subseteq\{1\}\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    \(\{P_0, (\neg P_0)\}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema 1 (teorema de monotonía)}.]
+\phantomsection\label{teorema de monotonía}\index{teorema de monotonía}
+Sean \(\Gamma, \Sigma\subseteq\overline{L}\) y \(\alpha\in\overline{L}\). 
+\(\Gamma\models\alpha\) y \(\Gamma\subseteq\Sigma\), entonces \(\Sigma\models\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower
+Sea \(v\) una asignación para las letras tales que \(\overline{v}[\Sigma]\subseteq\{1\}\).
+
+\textsf{P.D.} \(\overline{v}(\alpha)=1\).
+
+Como \(\Gamma \subseteq\Sigma\), entonces \(\overline{v}[\Gamma]\subseteq\{1\}\). Como \(\Gamma\models\alpha\) y \(\overline{v}[\Gamma]\subseteq\{1\}\), por definición de consecuencia lógica, \(\overline{v}(\alpha)=1\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema 2 (Modus Ponens semántico)}.]
+\phantomsection\label{Modus Ponens semántico}\index{Modus Ponens semántico}
+Sea \(\Sigma\subseteq\overline{L}\) y \(\alpha, \beta \in\overline{L}\).
+\(\Sigma\models\alpha\) y \(\Sigma\models(\alpha\rightarrow\beta)\), entonces \(\Sigma\models\beta\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower Sea \(v\) una asignación para las letras tales que \(\overline{v}[\Sigma]\subseteq\{1\}\ldots\star\).
+
+Como \(\Sigma\models\alpha\) y \(\Sigma\models(\alpha\rightarrow\beta)\), de la definición de consecuencia lógica y de \(\star\) se tiene que \(\overline{v}(\alpha)=\overline{v}((\alpha\rightarrow\beta))=1\). Así \(\overline{v}(\beta)=1\), de lo contrario \(\overline{v}(\beta)=0\), entonces \(\overline{v}((\alpha\rightarrow\beta))=0\) y así 1=0, 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema 3}.]
+Sea \(\Sigma\subseteq\overline{L}\) y \(\alpha\in\overline{L}\).
+\(\Sigma\models\alpha\) si y sólo si \(\Sigma\cup\{(\neg\alpha)\}\) es insatisfacible. \index{insatisfacible}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower
+\framebox[0.6cm][l]{\(\Rightarrow\)} Supongamos que \(\Sigma\cup\{(\neg\alpha)\}\) es satisfacible. Así, existe \(v:L\to\{0, 1\}\) tal que \(\overline{v}[\Sigma\cup\{(\neg\alpha)\}]\subseteq\{1\}\). De lo anterior, \(\overline{v}[\Sigma]\subseteq\{1\}\) y \(\overline{v}((\neg\alpha))=1\). Luego \(\overline{v}[\Sigma]\subseteq\{1\}\) y \(\overline{v}(\alpha)=0\). \(\therefore \Sigma\not\models\alpha.\)
+
+\framebox[0.6cm][l]{\(\Leftarrow\)} Supongamos que \(\Sigma\not\models\alpha\). Así, existe \(v:L\to\{0, 1\}\) tal que \(\overline{v}[\Sigma]\subseteq\{1\}\) y \(\overline{v}(\alpha)=0\). En particular, \(\overline{v}((\neg\alpha))=1-\overline{v}(\alpha)=1-0\). Entonces \(\overline{v}[\Sigma\cup\{(\neg\alpha)\}]\subseteq\{1\}\). 
+
+\(\therefore\) \(\Sigma\cup\{(\neg\alpha)\}\) es satisfacible.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema 4 (teorema de corte)}.]
+\phantomsection\label{teorema de corte}\index{teorema de corte}
+Sean \(\Gamma, \Sigma\subseteq\overline{L}\) y \(\alpha\in\overline{L}\).
+\(\Sigma\models\gamma\) para cada \(\gamma\in\Gamma\) y \(\Gamma\models\alpha\), entonces \(\Sigma\models\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower Sea \(u: L \to\{0, 1\}\) tal que \(\overline{u}[\Sigma]\subseteq\{1\}\ldots\star\). 
+
+Como \(\Sigma\models\gamma\), para cada \(\gamma\in\Gamma\) y \(\star\), se tiene que \(\overline{u}[\Gamma]\subseteq\{1\}\). 
+
+Como \(\Gamma\models\alpha\), entonces \(\overline{u}(\alpha)=1\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema 5 (teorema de la deducción semántico)}.]
+\phantomsection\label{teorema de la deducción semántico}\index{teorema de la deducción semántico}
+Sea \(\Gamma\subseteq\overline{L}\) y \(\alpha, \beta\in\overline{L}\).
+\(\Gamma\cup\{\alpha\}\models\beta \text{ si y sólo si } \Gamma\models(\alpha\rightarrow\beta)\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba:}
+\tcblower
+\framebox[0.6cm][l]{\(\Rightarrow\)} Sea \(v: L\to\{0, 1\}\) tal que \(\overline{v}[\Gamma]\subseteq\{1\}\). Supongamos que \(\overline{v}((\alpha\rightarrow\beta))=0\). Así, \(\overline{v}(\alpha)=1\) y \(\overline{v}(\beta)=0\). Entonces \(\overline{v}[\Gamma\cup\{\alpha\}]\subseteq\{1\}\) y \(\overline{v}(\beta)=0\). Por lo tanto \(\Gamma\cup\{\alpha\}\not\models\beta\).
+
+\framebox[0.6cm][l]{\(\Leftarrow\)} Sea \(u: L\to\{0, 1\}\) tal que \(\overline{u}[\Gamma\cup\{\alpha\}]\subseteq\{1\}\). Como \(\overline{u}[\Gamma\cup\{\alpha\}]\subseteq\{1\}\), en particular \(\overline{u}[\Gamma]\subseteq\{1\}\) y como \(\Gamma\models(\alpha\rightarrow\beta)\), entonces \(\overline{u}((\alpha\rightarrow\beta))=1\) y como \(\overline{u}(\alpha)=1\) se tiene que \(\overline{u}(\beta)=1\).
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Axiomas del cálculo proposicional}]
+\index{axiomas del cálculo proposicional}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[\textsf{A1}] \((\alpha\to(\beta\to\alpha))\)  
+    \item[\textsf{A2}] \(((\alpha\to(\beta\to\gamma))\to((\alpha\to\beta)\to(\alpha\to\gamma)))\)
+    \item[\textsf{A3}] \(((\neg\alpha)\to(\neg\beta))\to(((\neg\alpha)\to\beta)\to\alpha)\)
+\end{itemize}
+\tcblower
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[\(\models\)] \((\alpha\to(\beta\to\alpha))\)  
+    \item[\(\models\)] \(((\alpha\to(\beta\to\gamma))\to((\alpha\to\beta)\to(\alpha\to\gamma)))\)
+    \item[\(\models\)] \(((\neg\alpha)\to(\neg\beta))\to(((\neg\alpha)\to\beta)\to\alpha)\)
+\end{itemize}
+\end{tcolorbox}
+
+% \newpage
+% \section*{Clase 10 de noviembre}
+% \addcontentsline{toc}{section}{Clase 10 de noviembre}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Metateorema}.]
+Sean \(\alpha, \beta, \gamma\in \overline{L}\).
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[(A)] \(\models (\alpha\to(\beta\to\alpha))\)  
+    \item[(B)] \(\models ((\alpha\to(\beta\to\gamma))\to((\alpha\to\beta)\to(\alpha\to\gamma)))\)
+    \item[(C)] \(\models ((\neg\alpha)\to(\neg\beta))\to(((\neg\alpha)\to\beta)\to\alpha)\)
+    \item[(D)] \(\models ((\neg\alpha)\to(\neg\beta))\to(\beta\to\alpha)\)
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{center}
+\((\alpha\to(\beta\to\alpha))\)
+
+\(\begin{tikzcd}[column sep=0.1pt, every node/.style={font=\scriptsize}]
+    {(\alpha~~} & \to & {(\beta~} & \to & {~~\alpha))} \\
+    & 0 \\
+    1 &&& 0 \\
+    && 1 && 0
+    \arrow[from=1-1, to=3-1]
+    \arrow[from=1-2, to=2-2]
+    \arrow[from=1-3, to=4-3]
+    \arrow[from=1-4, to=3-4]
+    \arrow[from=1-5, to=4-5]
+\end{tikzcd}\)
+\end{center}
+Para que una \(v: L \to\{0, 1\}\) sea tal que 
+\(\overline{v}((\alpha\to(\beta\to\alpha)))=0\)
+es necesario que \(\overline{v}(\alpha)=1\) y \(\overline{v}(\alpha)=0\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{center}
+\(((\alpha\to(\beta\to\gamma))\to((\alpha\to\beta)\to(\alpha\to\gamma)))\)
+
+\begin{tikzcd}[column sep=0.1pt, every node/.style={font=\scriptsize}]
+    {(\alpha~~} & \to & {(\beta~} & \to & {~~~\gamma))} & \to & {((\alpha~~~} & \to & {~~\beta)} & \to & {(\alpha~} & \to & {~~~~\gamma)))} \\
+    &&&&& 0 \\
+    & 1 &&&&&&&& 0 \\
+    &&&&&&& 1 &&&& 0 \\
+    &&& 0 &&& 1 && 1 && 1 && 0 \\
+    1
+    \arrow[from=1-1, to=6-1]
+    \arrow[from=1-2, to=3-2]
+    \arrow[from=1-4, to=5-4]
+    \arrow[from=1-6, to=2-6]
+    \arrow[from=1-7, to=5-7]
+    \arrow[from=1-8, to=4-8]
+    \arrow[from=1-9, to=5-9]
+    \arrow[from=1-10, to=3-10]
+    \arrow[from=1-11, to=5-11]
+    \arrow[from=1-12, to=4-12]
+    \arrow[from=1-13, to=5-13]
+\end{tikzcd}
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{center}
+\(((\neg\alpha)\to(\neg\beta))\to(((\neg\alpha)\to\beta)\to\alpha)\)
+
+\begin{tikzcd}[column sep=0.1pt, every node/.style={font=\scriptsize}]
+	{(((\neg~~~~~} & {~\alpha)} & \to & {~~~(\neg\beta))} & \to & {(((\neg\alpha~~~} & \to & {\beta)} & \to & {~~~\alpha))} \\
+	&&&& 0 \\
+	&& 1 &&&&&& 0 \\
+	0 &&& 0 &&& 1 &&& 0 \\
+	& 1 &&&& 1 && 1
+	\arrow[from=1-1, to=4-1]
+	\arrow[from=1-2, to=5-2]
+	\arrow[from=1-3, to=3-3]
+	\arrow[from=1-4, to=4-4]
+	\arrow[from=1-5, to=2-5]
+	\arrow[from=1-6, to=5-6]
+	\arrow[from=1-7, to=4-7]
+	\arrow[from=1-8, to=5-8]
+	\arrow[from=1-9, to=3-9]
+	\arrow[from=1-10, to=4-10]
+\end{tikzcd}
+\end{center}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}
+\begin{center}
+\(((\neg\alpha)\to(\neg\beta))\to(\beta\to\alpha)\)
+\begin{tikzcd}[column sep=0.1pt, every node/.style={font=\scriptsize}]
+	{(((\neg\alpha)~~} & \to & {(\neg} & {~~~\beta))} & \to & {(\beta} & \to & {~~~\alpha))} \\
+	&&&& 0 \\
+	& 1 &&&&& 0 \\
+	&&&&& {\textcolor{red}{1}} && 0 \\
+	1 && 1 & {\textcolor{red}{0}}
+	\arrow[from=1-1, to=5-1]
+	\arrow[from=1-2, to=3-2]
+	\arrow[from=1-3, to=5-3]
+	\arrow[from=1-4, to=5-4]
+	\arrow[from=1-5, to=2-5]
+	\arrow[from=1-6, to=4-6]
+	\arrow[from=1-7, to=3-7]
+	\arrow[from=1-8, to=4-8]
+\end{tikzcd}
+\end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+Sean \(\alpha, \beta, \gamma\in\overline{L}\). Las siguientes fórmulas son consideradas \textit{axiomas} del \textsf{CProp}.
+\index{axiomas del cálculo proposicional}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[(A)] \(\models (\alpha\to(\beta\to\alpha))\)  
+    \item[(B)] \(\models ((\alpha\to(\beta\to\gamma))\to((\alpha\to\beta)\to(\alpha\to\gamma)))\)
+    \item[(C)] \(\models ((\neg\alpha)\to(\neg\beta))\to(((\neg\alpha)\to\beta)\to\alpha)\)
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+\index{Modus Ponens}\phantomsection\label{mp}
+Llamamos \(\mathsf{MP}\) a la relación ternaria entre fórmulas.
+
+\noi \((\varphi_1, \varphi_2, \varphi_3)\in\mathsf{MP}\)
+si y sólo si \(\varphi_1=(\varphi_2\to\varphi_3)\) o \(\varphi_2=(\varphi_1\to\varphi_3)\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+Sea \(\Sigma\subseteq\overline{L}\) y \(\varphi_1, \dots, \varphi_2\in\overline{L}\).
+\index{deducción}\phantomsection\label{deducción}
+\index{deducción en el CProp}
+Llamamos a la sucesión \(\varphi_1, \dots, \varphi_n\) \textit{una deducción} en el \textsf{CProp} desde \(\Sigma\)
+si y sólo si para toda \(j \leq n\) ocurre alguna de las siguientes:
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[(A)] \(\varphi_i\in\Sigma\);
+    \item[(B)] \(\varphi_i\) sea alguna instancia de algún axioma;
+    \item[(C)] Existen \(j, k<i\), tales que \((\varphi_j, \varphi_k, \varphi_i)\in\mathsf{MP}\).
+    ``Se infirió por \textsf{MP} de anteriores''.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+\index{fórmula que se deduce en el CProp}
+Sea \(\Sigma\subseteq\overline{L}\) y \(\varphi\in\overline{L}\).
+Se dice que \(\varphi\) \textit{se deduce desde} \(\Sigma\) en el \textsf{CProp}
+si y sólo si existe \(\varphi_1, \dots, \varphi_n\in\overline{L}\) tales que
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[(A)] \(\varphi_1, \dots, \varphi_n\) es una deducción en el \textsf{CProp} desde \(\Sigma\), y
+    \item[(B)] \(\varphi_n = \varphi\).
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema (Correctud)}.]
+\index{teorema de Correctud}\phantomsection\label{correctud}
+\index{teorema de Correctud para el \textsf{CProp}}
+\textsf{CProp} es correcto.
+\tcblower
+Sean \(\alpha\in\overline{L}\) y \(\Sigma\subseteq\overline{L}\).
+Si \(\Sigma\vdash\alpha\), entonces \(\Sigma\models\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+% \vs
+\textit{Prueba:}
+\tcblower
+La demostración se hace por inducción sobre la longitud de la deducción. 
+Como \(\Sigma\vdash\alpha\), entonces existen \(\varphi_1, \dots, \varphi_n\in\overline{L}\)
+tales que \(\varphi_1, \dots, \varphi_n\) es la deducción en el \textsf{CProp} desde \(\Sigma\) y \(\varphi_n=\alpha\).
+
+Sea \(i\leq n\) y supongamos que para toda \(j<i\), \(\Sigma \models \varphi_j\).
+Como \(\varphi_1, \dots, \varphi_n\) es una deducción en el \textsf{CProp} 
+desde \(\Sigma\) y \(i\leq n\) se cumple alguna de las siguientes
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[(A)] \(\varphi_i\in\Sigma\), o
+    \item[(B)] \(\varphi_i\) es axioma lógico, o
+    \item[(C)] \(\varphi_i\) se infiere de anteriores por \textsf{MP}.
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item[\textit{C.1.}] \(\varphi_i\in\Sigma\).
+
+    Aquí es obvio que \(\Sigma\models\varphi_i\).
+    \item[\textit{C.2.}] \(\varphi_i\) es axioma lógico.
+
+    Así, \(\models\varphi_i\). En particular, \(\Sigma\models\varphi_i\).
+
+    \item[\textit{C.3.}] Existen \(j, k < i\) tales que \((\varphi_j, \varphi_k, \varphi_i)\in\textsf{MP}\).
+
+    Hipótesis de inducción: \(\Sigma\models\varphi_j\) y \(\Sigma\models\varphi_k\).
+
+    Supongamos que \(\varphi_k=(\varphi_j\to\varphi_i)\). 
+    Así \(\Sigma\models(\varphi_j\to\varphi_i)\) y \(\Sigma\models\varphi_j\).
+    
+    Por un resultado anterior (\textit{modus ponens semántico}), \(\Sigma\models\varphi_i\). \hfill{\(\square\)}
+\end{itemize}
+\end{tcolorbox}
+
+%%% 
+
+
+\begin{tcolorbox}
+    \[\vdash(\alpha\to\alpha)\]
+    \tcblower
+    \begin{enumerate}
+        \item \((\alpha\to((\alpha\to\alpha)\to\alpha))=\varphi_1\in\Delta\)
+        \item \(((\alpha\to((\alpha\to\alpha)\to\alpha))\to((\alpha\to(\alpha\to\alpha))\to(\alpha\to\alpha)))\in\Delta\)
+        \item \(((\alpha\to(\alpha\to\alpha))\to(\alpha\to\alpha))\) \textsf{MP}(1,2)
+        \item \((\alpha\to(\alpha\to\alpha)) \in\Delta\)
+        \item \((\alpha\to\alpha)\) \textsf{MP}(3, 4)
+    \end{enumerate}
+Así, \(\vdash(\alpha\to\alpha)\)
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    \[\{(\alpha\to\beta), (\beta\to\gamma)\}\vdash(\alpha\to\gamma)\]
+    \tcblower
+    \begin{enumerate}
+        \item \((\alpha\to\beta)\in\Sigma\)
+        \item \((\beta\to\gamma)\in\Sigma\)
+        \item \((\alpha\to(\beta\to\delta))\to((\alpha\to\beta)\to(\alpha\to\gamma))\in\Delta\)
+        \item \((\beta\to\gamma)\to(\alpha\to(\beta\to\gamma))\in\Delta\)
+        \item \((\alpha\to(\beta\to\gamma))\) \textsf{MP}(2, 4)
+        \item \((\alpha\to\beta)\to(\alpha\to\gamma)\) \textsf{MP}(5, 3)
+        \item \((\alpha\to\gamma)\) \textsf{MP}(7, 6)
+    \end{enumerate}
+\end{tcolorbox}
+
+% \begin{tcolorbox}
+%     \[\{(\neg\beta\to\neg\alpha), \alpha\}\vdash\beta\]
+%     \tcblower
+%     \begin{enumerate}
+%         \item[\(\psi_2\)] \((\neg\beta\to\neg\alpha)\in\Sigma\)
+%         \item[\(\psi_1\)] \(\alpha \in\Sigma\)
+%         \item[\(\psi_\)] \(\alpha\to((\neg\beta)\to(\neg\alpha))\in\Delta\)
+%         \item[\(\psi_\)] \(((\neg\beta)\to\alpha)\) \textsf{MP}(3, 2) 
+%         \item[\(\psi_\)] \(((\neg\beta)\to(\neg\alpha))\to(((\neg\beta)\to\alpha)\to\beta)\in\Delta\)
+%         \item[\(\psi_\)] \((((\neg\beta)\to\alpha)\to\beta)\) \textsf{MP}(5, 1)
+%         \item[\(\psi_\)] \(\beta\) \textsf{MP}(4, 6)
+%     \end{enumerate}
+% \end{tcolorbox}
+
+\begin{tcolorbox}
+    \[\{(\neg\beta\to\neg\alpha), \alpha\}\vdash\beta\]
+    \tcblower
+    \begin{enumerate}
+        \item[\(\psi_1\)] \(\alpha\) hipótesis
+        \item[\(\psi_2\)] \((\neg\beta\to\neg\alpha)\) hipótesis
+        \item[\(\psi_3\)] \(((\neg\beta)\to(\neg\alpha))\to(((\neg\beta)\to\alpha)\to\beta)\) axioma 2
+        \item[\(\psi_4\)] \((((\neg\beta)\to\alpha)\to\beta)\) \textsf{MP}(3, 2)
+        \item[\(\psi_5\)] \(\alpha\to((\neg\beta)\to(\alpha))\) axioma 1
+        \item[\(\psi_6\)] \(((\neg\beta)\to\alpha)\) \textsf{MP}(3, 1) 
+        \item[\(\psi_7\)] \(\beta\) \textsf{MP}(6, 4)
+    \end{enumerate}
+\end{tcolorbox}
+
+
+%%%%
+
+
+\begin{tcolorbox}
+    \(\vdash(\neg\alpha\to\neg\beta)\to(\beta\to\alpha)\)
+    \tcblower
+    \(\{(\neg\alpha\to\neg\beta), \beta\}\vdash\alpha\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Sea \(\Sigma\subseteq\overline{L}\) y \(\varphi_1, \dots, \varphi_n\) y \(\psi_1, \dots, \psi_m\) deducciones en el \textsf{CProp} desde \(\Sigma\). 
+Así la lista \(\alpha_1, \dots, \alpha_m, \alpha_{m+1}, \dots, \alpha_{m+n}\) donde \(\alpha_i= \Biggl \{\begin{array}{ll} \psi_i & i\leq m \\ \varphi_{i-m} & m<i \end{array}\), es una deducción desde \(\Sigma\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+    Como \(\Sigma\vdash\alpha\) entonces existe \(\varphi_1, \dots, \varphi_m\in\overline{L}\) una deducción desde \(\Sigma\) en el \textsf{CProp} tal que \(\varphi_m=\alpha\).
+    Análogamente, como \(\Sigma\vdash(\alpha\to\beta)\), existe \(\psi_1, \dots, \psi_n\) una sucesión finita de fórmulas que es una deducción desde \(\Sigma\) en el \textsf{CProp} y \(\psi_n=(\alpha\to\beta)\).
+    Sea \(\alpha_1, \dots, \alpha_n. \alpha_{n+1}, \alpha_{n+m}\) la lista dada por \(\alpha_i= \Biggl \{\begin{array}{ll} \psi_i & i\leq m \\ \varphi_{i-m} & m<i \end{array}\).
+    Se define \(\alpha_{m+n+1}=\beta\). Afirmamos que \(\alpha_1, \dots, \alpha_{n+m}, \alpha_{n+m+1}\) es una deducción desde \(\Gamma\) en el \textsf{CProp}. En efecto, sea \(j\leq n+m+1\).
+    Así, \(\alpha_j\) cumple alguno de las tres opciones de la definición de deducción si \(j\leq m+n\), solo falta verificar el caso cuando \(j=n+m+1\), pero ahí \(\alpha_{n+m+1}\) se obtuvo de \textsf{MP} de \(\alpha_n\) y \(\alpha_{n+m}\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Sean \(\Sigma, \Gamma\subseteq\overline{L}\) y \(\varphi_1, \dots, \varphi_m\in\overline{L}\).
+Si \(\varphi_1, \dots, \varphi_m\) es una deducción en el \textsf{CProp} desde \(\Sigma\) y \(\Sigma\subseteq\Gamma\), 
+entonces \(\varphi_1, \dots, \varphi_m\) es una deducción desde \(\Sigma\) en el \textsf{CProp}.
+\end{tcolorbox}
+
+% \newpage
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Sea \(\Sigma\subseteq\overline{L}\) y \(\alpha, \beta\in\overline{L}\).
+Si \(\Sigma\vdash(\alpha\to\beta)\) y \(\Sigma\vdash\alpha\), entonces \(\Sigma\vdash\beta\).
+\end{tcolorbox}
+
+% \newpage
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema (de la deducción)}.]
+Sean \(\Sigma\subseteq\overline{L}\) y \(\alpha, \beta\in\overline{L}\).
+\(\Sigma\vdash(\alpha\to\beta)\) si y sólo si \(\Sigma\cup\{\alpha\}\vdash\beta\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+    \(\boxed{\Rightarrow}\) Como \(\Sigma\vdash(\alpha\to\beta)\), por monotonía \(\Sigma\cup\{\alpha\}\vdash(\alpha\to\beta)\).
+    Pero \(\Sigma\cup\{\alpha\}\vdash\alpha\), usando el lema se tiene \(\Sigma\cup\{\alpha\}\vdash\beta\).
+
+    \(\boxed{\Leftarrow}\) Se probará por inducción sobre la longitud de la deducción.
+    Como \(\Sigma\cup\{\alpha\}\vdash\beta\), entonces existe una lista finita \(\psi_1, \dots, \psi_m\in\overline{L}\) 
+    tales que \begin{enumerate}\setlength\itemsep{0em}
+        \item \(\psi_m=\beta\) y 
+        \item Para cada \(i\leq m\) se tiene alguno de los siguientes:
+    \end{enumerate}    
+    \begin{enumerate}\setlength\itemsep{0em}
+        \item[(A)] \(\psi_i\in\Sigma\cup\{\alpha\}\), 
+        \item[(B)] \(\psi_i\) es la instancia de algún axioma del \textsf{CProp}, o
+        \item[(C)] \(\psi_i\) se infirió de anteriores por \textsf{MP}.   
+    \end{enumerate}
+    Ahora probaremos que para cada \(i\leq m\), se tiene que \(\Sigma\vdash(\alpha\to\psi_i)\).
+
+    La hipótesis de inducción es que para toda \(j<i\) se tiene que \(\Sigma\vdash(\alpha\to\psi_j)\).
+    
+    \textsf{Caso A.} Si \(\psi_i=\alpha\).
+
+    Sabemos que \(\vdash(\alpha\to\alpha)\), por monotonía \(\Sigma\vdash(\alpha\to\alpha)\).
+    Pero usando que \(\alpha=\psi_i\) se tiene \(\Sigma\vdash(\alpha\to\psi_i)\).
+
+    \vs Ahora, si \(\psi_i\in\Sigma\).
+
+    Así, \(\Sigma\vdash\psi_i\). Por otro lado, \(\vdash(\psi_i\to(\alpha\to\psi_i))\) por ser la instancia de un axioma.
+    Por monotonía se tiene que \(\Sigma\vdash(\psi_i\to(\alpha\to\psi_i))\). 
+    Usando Meta-Modus Ponens se tiene que \(\Sigma\vdash(\alpha\to\psi_j)\).
+
+    \vs
+    \textsf{Caso B.} \(\psi_i\) es la instancia de un axioma. 
+    
+    Entonces \(\vdash\psi:i\), pero por otro lado \(\vdash(\psi_i\to(\alpha\to\psi_i))\).
+    Así, por Meta-Modus Ponens \(\vdash(\alpha\to\psi_i)\) y por monotonía \(\Sigma\vdash(\alpha\to\psi_i)\).
+
+    \vs
+    \textsf{Caso C.} \(\psi_i\) se infirió de anteriores por \textsf{MP}.
+
+    Existen \(k, l<i\), sin pérdida de la generalidad asumamos que \(\psi_l=(\psi_k\to\psi_i)\).
+
+    Usando la hipótesis inductiva, se tiene que \(\Sigma\vdash(\alpha\to(\psi_k\to\psi_i))\) y \(\Sigma\vdash(\alpha\to\psi_k)\). 
+
+    Por otro lado, \(\Sigma\vdash(\alpha\to(\psi_k\to\psi_i))\to((\alpha\to\psi_k)\to(\alpha\to\psi_i))\).
+    
+    Usando \textsf{MP} se tiene \(\Sigma\vdash(\alpha\to(\psi_k\to\psi_i))\).
+    
+    De nuevo, usando \textsf{MP} se tiene \(\Sigma\vdash(\alpha\to\psi_i)\).
+\end{tcolorbox}
+
+
+%%%
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]\phantomsection\label{consistente}
+Sea \(\Gamma\subseteq\overline{L}\).
+\(\Gamma\) se llama \textit{consistente} si y sólo si 
+no existe \(\varphi\in\overline{L}\) tal que \(\Gamma\vdash\varphi\) y \(\Gamma\vdash(\neg\varphi)\).
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Metateorema (reducción al absurdo)}.]
+Sea \(\Sigma\subseteq\overline{L}\) y \(\alpha\in\overline{L}\).
+Si \(\Sigma\cup\{(\neg\alpha)\}\) es inconsistente, entonces \(\Sigma\vdash\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+Como \(\Sigma\cup\{(\neg\alpha)\}\) es inconsistente, entonces existe \(\beta\in\overline{L}\) tal que \(\Sigma\cup\{(\neg\alpha)\}\vdash\beta\) 
+y \(\Sigma\cup\{(\neg\alpha)\}\vdash(\neg\beta)\), Aplicando el teorema de la deducción a ambas, entonces \(\Sigma\vdash(\neg\alpha)\to\beta\), \(\Sigma\vdash(\neg\alpha)\to(\neg\beta)\).
+Por monotonía y de la definición de deducción se tiene que \(\Sigma\vdash((\neg\alpha)\to(\neg\beta))\to(((\neg\alpha)\to\beta)\to\alpha)\), aplicando Meta-Modus Ponens dos veces, se tiene que \(\Sigma\vdash\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Sea \(\Gamma\subseteq\overline{L}\).
+\(\Gamma\) es consistente si y sólo si existe \(\varphi\in\overline{L}\) tal que \(\Gamma\not\vdash\varphi\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+\(\boxed{\Rightarrow}\) Supongamos que para toda \(\varphi\in\overline{L}\) se tiene que \(\Gamma\vdash\varphi\). 
+
+En particular \(\Gamma\vdash P_0\) y \(\Gamma\vdash(\neg P_0)\), entonces \(\Gamma\) es inconsistente.
+
+\(\boxed{\Leftarrow}\) Supongamos que \(\Gamma\) es inconsistente, es decir, existe \(\alpha\in\overline{L}\) tal que 
+\(\Gamma\vdash\alpha \,\,\ldots(1)\) y \(\Gamma\vdash\neg\alpha \,\,\ldots(2)\).
+
+Sea \(\varphi\in\overline{L}\). \textsf{P.D.} \(\Gamma\vdash\varphi\).
+Usando la definición de deducción y monotonía se tiene que 
+    \(\Gamma\vdash((\neg\varphi)\to(\neg\alpha))\to(((\neg\varphi)\to\alpha)\to\varphi) \,\,\ldots(3)\).
+Por otro lado, igual por monotonía y definición de deducción, 
+\(\Gamma\vdash(\neg\alpha)\to((\neg\varphi)\to(\neg\alpha)) \,\,\ldots(4)\).
+
+Análogamente, \(\Gamma\vdash\alpha\to((\neg\varphi)\to\alpha) \,\,\ldots(5)\).
+Por \textsf{MMP}(\(5, 1\)), \(\Gamma\vdash(\neg\varphi)\to\alpha\) \(\ldots(6)\).
+
+Análogamente, por \textsf{MMP}(\(4, 2\)), se obtiene \(\Gamma\vdash(\neg\varphi)\to(\neg\alpha) \,\,\dots(7)\).
+
+De \textsf{MMP}(\(3, 7\)), \,\,\(\Gamma\vdash((\neg\varphi)\to\alpha)\to\varphi \,\,\ldots(8)\).
+Usando \textsf{MMP}(\(8, 6\)), \(\Gamma\vdash\varphi\).
+\end{tcolorbox}
+
+% \newpage
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+\(\Gamma\not\vdash\varphi\) si y sólo si \(\Gamma\cup\{\neg\varphi\}\) es consistente.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+\(\boxed{\Rightarrow}\) Supongamos que \(\Gamma\cup\{\neg\varphi\}\) es inconsistente, entonces \(\Gamma\vdash\varphi\).
+
+
+\(\boxed{\Leftarrow}\) Supongamos \(\Gamma\vdash\varphi\). \(\Gamma\cup\{\neg\varphi\}\vdash\varphi\) pero \(\Gamma\cup\{\neg\varphi\}\vdash\neg\varphi\), entonces \(\Gamma\cup\{\neg\varphi\}\) es inconsistente.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.]
+\(\Sigma\not\models\alpha\) si y sólo si \(\Sigma\cup\{\neg\varphi\}\) es satisfacible
+\tcblower
+\(\Sigma\not\vdash\alpha\) entonces \(\Sigma\cup\{\neg\alpha\}\) es consistente.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Si \(\Sigma\) es consistente, entonces \(\Sigma\) es satisfacible.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema (Lindenbaum)}.] 
+Sea \(\Sigma\subseteq\overline{L}\) y \(\varphi\in\overline{L}\).
+Si \(\Sigma\) es consistente, entonces para cada \(\varphi\in\overline{L}\), \(\Sigma\cup\{\varphi\}\) es consistente o \(\Sigma\cup\{\neg\varphi\}\) es consistente.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+Supongamos que existe \(\varphi\in\overline{L}\) tal que \(\Sigma\cup\{\varphi\}\) y \(\Sigma\cup\{\neg\varphi\}\) son inconsistentes,
+entonces tenemos que
+\begin{itemize}\setlength\itemsep{0em}
+    \item[(1)] \(\Sigma\cup\{\varphi\}\vdash\alpha\) 
+    \item[(2)] \(\Sigma\cup\{\varphi\}\vdash\neg\alpha\) 
+    \item[(3)] \(\Sigma\cup\{\neg\varphi\}\vdash\alpha\) 
+    \item[(4)] \(\Sigma\cup\{\neg\varphi\}\vdash\neg\alpha\)
+\end{itemize}
+Usando el teorema de la deducción se obtiene
+\begin{itemize}\setlength\itemsep{0em}
+    \item[(5)] \(\Sigma\vdash(\varphi\to\alpha)\) 
+    \item[(6)] \(\Sigma\vdash(\varphi\to\neg\alpha)\)
+    \item[(7)] \(\Sigma\vdash(\neg\varphi\to\neg\alpha)\)
+    \item[(8)] \(\Sigma\vdash(\neg\varphi\to\alpha)\)
+\end{itemize}
+Luego, de (5) y (8), usando la ley de tercio excluido \(\Sigma\vdash\alpha\)
+Análogamente de (6) y (7), usando la ley de tercio excluido \(\Sigma\vdash\neg\alpha\).
+Por lo tanto \(\Sigma\) es inconsistente.
+\end{tcolorbox}
+
+%%%
+% \newpage
+% \section*{Clase 27 de noviembre}
+% \addcontentsline{toc}{section}{Clase 27 de noviembre}
+
+% \newpage
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+    \[\aleph_0=|L|\leq|\overline{L}|\leq|\mathcal{L}_{L}^{*}|=|\displaystyle\bigcup_{n\in\mathbb{N}}\mathcal{L}_{L}^{n}|=\aleph_0\]
+\end{tcolorbox}
+
+% \newpage
+%Lindenbaum
+% \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+% Sea \(\Sigma\subseteq\overline{L}\) y \(\alpha\in\overline{L}\).
+
+% Si \(\Sigma\) es consistente, entonces \(\Sigma\cup\{\alpha\}\) o \(\Sigma\cup\{\neg\alpha\}\) son consistentes.
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Sea \(\Sigma\subseteq\overline{L}\) y \(\alpha\in\overline{L}\).
+\(\Sigma\vdash\alpha\) si y sólo si existe \(\Sigma_0\subseteq\Sigma\) finito tal que \(\Sigma_0\vdash\alpha\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+\(\boxed{\Leftarrow}\) Mononotía.
+
+\(\boxed{\Rightarrow}\) Como \(\Sigma\vdash\alpha\), entonces existe una lista finita de fórmulas. \(\sigma_1, \dots, \sigma_n\in\overline{L}\) tales que:
+\begin{enumerate}\setlength\itemsep{0em}
+    \item \(\sigma_n=\alpha\)
+    \item para cada \(i\leq n\) se tiene alguna de las siguientes
+        \begin{enumerate}\setlength\itemsep{0em}
+            \item \(\sigma_i\in\Sigma\), o
+            \item \(\sigma_i\) es la instancia de algún axioma del \textsf{CProp},
+            \item \(\sigma_i\) se obtuvo por \textsf{MP} de anteriores.
+        \end{enumerate}
+\end{enumerate}
+
+Definimos \(\Sigma_0=\Sigma\cap\{\sigma_1, \dots, \sigma_n\}\).
+Así, \(\Sigma_0\subseteq\Sigma\), \(|\Sigma_0|\leq n\). 
+Trivialmente \(\Sigma_0\vdash\alpha\).
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+Sea \(\Sigma\subseteq\overline{L}\). Si \(\Gamma\) es consistente, entonces existe \(\Delta\subseteq\overline{L}\) tal que 
+\begin{itemize}\setlength\itemsep{0em}
+    \item[(A)] \(\Gamma\subseteq\Delta\),
+    \item[(B)] \(\Delta\) es consistente, y
+    \item[(C)] Para cada \(\alpha\in\overline{L}\), \(\alpha\in\Delta\) o \((\neg\alpha)\in\Delta\).   
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+Se construirá una sucesión de conjuntos \(\{\Gamma_n\}_{n=0}^{\infty}\) por recursión sobre \(\mathbb{N}\).
+Como \(|\overline{L}|=\aleph_{0}\), entonces existe una enumeración sin repeticiones y exhaustiva, a saber \(\{\varphi_{n}\}_{n=0}^{\infty}\).
+
+\(\Gamma_{0}=\Gamma\).
+
+Para cada \(n\in\mathbb{N}\), se hace \(\Gamma_{n+1} = \Biggl \{\begin{array}{ll} \Gamma_{n}\cup\{\varphi_n\} & \text{ si } \Gamma_{n}\cup\{\varphi_n\} \text{ es consistente} \\ \Gamma_{n}\cup\{\neg\varphi_n\} & \text{ en otro caso }\end{array}\)
+
+Sea \(\Delta=\displaystyle\bigcup_{n\in\mathbb{N}}\Gamma_{n}\).
+
+Afirmamos que para cada \(n\in\mathbb{N}\), \(\Gamma_n\) es consistente.
+
+En efecto, por inducción para \(\mathbb{N}\).
+
+\textsf{Paso base:} \(\Gamma_0=\Gamma\) es consistente por hipótesis.
+
+\textsf{Paso inductivo}: Supongamos \(\Gamma_n\) consistente. Así, por el lema se tiene que \(\Gamma_{n}\cup\{\varphi_n\}\) es consistente o \(\Gamma_{n}\cup\{\neg\varphi_n\}\) lo es.
+Así \(\Gamma_{n+1}\) es consistente.
+
+\tcblower
+Probaremos que \(\Delta\) cumple \textsf{A}, \textsf{B} y \textsf{C}.
+
+\textsf{(A)} es trivial, \(\Gamma=\Gamma_0\subseteq\displaystyle\bigcup_{n\in\mathbb{N}}\Gamma_n=\Delta\).
+
+\textsf{(B)} P.D. \(\Delta\) es consistente.
+
+Supongamos que \(\Delta\) es inconsistente. Así, existe \(\beta\in\overline{L}\) tal que \(\Delta\vdash\beta\) y \(\Delta\vdash(\neg\beta)\).
+Así, existen \(\Delta_1, \Delta_2\subseteq\Delta\) finitos tales que \(\Delta_1\vdash\beta\) y \(\Delta_2\vdash(\neg\beta)\).
+Notemos que la sucesión \(\{\Gamma_n\}_{n}\) es \(\subseteq\)-creciente, ya que \(\Gamma_{n+1} = \Biggl \{\begin{array}{ll} \Gamma_{n}\cup\{\varphi_n\} & \text{ si } \Gamma_{n}\cup\{\varphi_n\} \text{ es consistente} \\ \Gamma_{n}\cup\{\neg\varphi_n\} & \text{ en otro caso }\end{array}\)
+
+\(\Gamma_{n}\subseteq_{n+1}\). Como \(\Delta_1\) y \(\Delta_2\) son finitos, entonces \(\Delta_1\cup\Delta_2\) también lo es.
+Como \(\Delta_1\cup\Delta_2\) es finito y \(\Delta_1\cup\Delta_2\subseteq\displaystyle\bigcup_{n}\Gamma_n\), 
+entonces existe \(N_0\in\mathbb{N}\) tal que \(\Delta_1\cup\Delta_2\subseteq\Gamma_{N_{0}}\),
+pero \(\Delta_1\cup\Delta_2\vdash\beta\), \(\Delta_1\cup\Delta_2\vdash\neg\beta\), por monotonía \(\Gamma_{N_0}\vdash\beta\) y \(\Gamma_{N_0}\vdash\neg\beta\), una contradicción.
+
+Por lo tanto \(\Delta\) es consistente.
+
+\textsf{(C)} se cumple trivialmente, ya que si \(\alpha\in\overline{L}\), entonces existe \(n\in\mathbb{N}\) tal que \(\alpha=\varphi_n\) y así 
+\(\Gamma_{n+1}=\Gamma_{n}\cup\{\varphi_n\}\) o \(\Gamma_{n+1}=\Gamma_{n}\cup\{\neg\varphi_n\}\) y por lo tanto \(\varphi_n\in\Delta\) o \(\neg\varphi_n\in\Delta\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    Definimos \(v:L \to\{0, 1\}\) dada por \(v(P_n)=1\) si y sólo si \(P_n\in\Delta\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+ Para cada \(\varphi\in\overline{L}\), \(\varphi\in\Delta\) si y sólo si \(\overline{v}(\alpha)=1\).
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+\textsf{Paso base.} \(\overline{v}(P_k)=1\) si y sólo si \(\overline{v}(P_k)=1\) si y sólo si \(P_k\in\Delta\).
+
+\textsf{Paso inductivo.} Sean \(\alpha, \beta\in\overline{L}\) tal que \(\overline{v}(\alpha)=1\) si y sólo si \(\alpha\in\Delta\) y \(\overline{v}(\beta)=1\) si y sólo si \(\beta\in\Delta\).
+
+Así, \(\overline{v}((\neg\alpha))=1\) si y sólo si \(\overline{v}(\alpha)=0\) si y sólo si \(\alpha\notin\Delta\) si y sólo si \((\neg\alpha)\in\Delta\).
+
+Luego, \(\overline{v}((\alpha\to\beta))=0\) si y sólo si \(\overline{v}(\alpha)=1\) y \(\overline{v}(\beta)=0\) si y sólo si \(\alpha, (\neg\beta)\in\Delta\).
+
+Afirmamos que \((\alpha\to\beta)\in\Delta\).
+
+Supongamos que \((\alpha\to\beta)\in\Delta\), así \(\alpha, (\neg\beta), (\alpha\to\beta)\in\Delta\).
+
+Notemos que 1. \(\Delta\vdash\alpha\), 2. \(\Delta\vdash(\neg\beta)\) y 3. \(\Delta\vdash(\alpha\to\beta)\).
+De 3. y 1, \(\Delta\vdash\beta\). 
+
+% Por lo tanto \(\Delta\) es inconsistente.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.]
+Si \(\Gamma\) es consistente, entonces \(\Gamma\) es satisfacible.
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textit{Prueba}. 
+\tcblower
+Como \(\Gamma\) es consistente, existe \(\Delta\subseteq\overline{L}\) tal que 
+\begin{enumerate}\setlength\itemsep{0em}
+    \item[(A)] \(\Gamma\subseteq \Delta\),
+    \item[(B)] \(\Delta\) es consistente y
+    \item[(C)] para toda \(\varphi\in\overline{L}\), \(\varphi\in\Delta\) o \(\neg\varphi\in\Delta\).
+\end{enumerate}
+Se define \(v:L\to\{0, 1\}\) como antes, \(v(P_m)=0\) si y sólo si \(P_m\notin\Delta\).
+Así, por el lema anterior \(\overline{v}(\varphi)=1\) si y sólo si \(\varphi\in\Delta\).
+Como \(\Gamma\subseteq\Delta\), entonces \(\overline{v}(\gamma)=1\) para cada \(\gamma\in\Gamma\), es decir, \(\Gamma\) es satisfacible.
+\end{tcolorbox}
+
+
+
