@@ -1,10 +1,42 @@
 \begin{theindex}
 
-  \item compactamente generado, \hyperpage{1}
+  \item categoría de espacios topológicos, \hyperpage{2}
+  \item cono, \hyperpage{4}
+  \item cono reducido, \hyperpage{4}
   \item cubierta abierta, \hyperpage{1}
 
   \indexspace
 
-  \item espacio Hausdorff, \hyperpage{1}
+  \item esfera de dimensión \(n\), \hyperpage{3}
+  \item espacio compactamente generado, \hyperpage{1}
+  \item espacio compacto, \hyperpage{1}
+  \item espacio Hausdorff, \(T_2\), \hyperpage{1}
+  \item espacio proyectivo complejo, \hyperpage{3}
+  \item espacio proyectivo real, \hyperpage{3}
+
+  \indexspace
+
+  \item función continua, \hyperpage{2}
+
+  \indexspace
+
+  \item mapa, \hyperpage{2}
+  \item mapa cociente, de identificación, \hyperpage{2}
+  \item mapa diagonal, \hyperpage{3}
+  \item mapa doblado, \hyperpage{3}
+
+  \indexspace
+
+  \item producto cuña, cuña de espacios, \hyperpage{3}
+  \item producto smash, \hyperpage{4}
+
+  \indexspace
+
+  \item suspensión, \hyperpage{4}
+
+  \indexspace
+
+  \item topología cociente, de identificación, \hyperpage{2}
+  \item topología débil, \hyperpage{2}
 
 \end{theindex}

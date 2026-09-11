@@ -10,11 +10,27 @@
 \section*{Preliminares (de Topología)}
 
 \begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
-    Un espacio \(X\) es \textit{Hausdorff\index{espacio Hausdorff}} si \(\forall\).
+    Un espacio \(X\) es \textit{Hausdorff\index{espacio Hausdorff, \(T_2\)}} o \(T_2\) si 
+    para todo \(x_1, x_2\in X\) tales que \(x_1\neq x_2\), existen abiertos \(\mathcal{U}_1, \mathcal{U}_2\) 
+    tal que \(x_i\in\mathcal{U}_i\) y \(\mathcal{U}_1\cap\mathcal{U}_2 =\varnothing\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Convención}]
+    Todos nuestros espacios son Hausdorff.
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
-    Dado un espacio \(X\), una \textit{cubierta abierta (cerrada)\index{cubierta abierta}} es una familia de conjuntos abiertos (cerrados) \(\{U_\lambda\}_{\lambda\in\Lambda}\) tal que 
+    Dado un espacio \(X\), una \textit{cubierta abierta (cerrada)\index{cubierta abierta}} es una familia de conjuntos abiertos (cerrados) 
+    \(\{U_\lambda\}_{\lambda\in\Lambda}\) tal que \(X=\displaystyle\bigcup_{\lambda\in\Lambda}\mathcal{U}_\lambda\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+    Las siguientes afirmaciones son equivalentes:
+    \begin{enumerate}[noitemsep, topsep=0pt]
+        \item Un espacio es \textit{compacto}\index{espacio compacto} si para toda cubierta existe una subcubierta.
+        \item Toda familia de cerrados cuya intersección es vacía, contiene una subfamilia cuya intersección es vacía.
+        \item Toda familia de cerrados tal que toda subfamilia finita tiene intersección no vacía, tiene ella misma intersección no vacía. 
+    \end{enumerate}
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Teorema}.]
@@ -25,7 +41,236 @@
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
-    Un espacio \(X\) es \textit{compactamente generado\index{compactamente generado}} si se cumple la siguiente propiedad: 
+    Un espacio \(X\) es \textit{compactamente generado\index{espacio compactamente generado}} si se cumple la siguiente propiedad: 
     
+    % \begin{center}
     \(C\subseteq X\) es cerrado syss \(C\cap K\) es cerrado, para todo \(K\subseteq X\) compacto.
+    % \end{center}
+\end{tcolorbox}
+
+% \begin{tcolorbox}
+%     Si no se pide esta propiedad en \(\mathsf{Top}\), el producto puede que no nos quede \(\textsf{CW}\).
+% \end{tcolorbox}
+
+\begin{tcolorbox}
+    Queremos que todos nuestros espacios sean compactamente generados.
+    \tcblower
+    Dado \(X\) un espacio \(T_2\), 
+    \[\mathscr{C}=\{A\subseteq X \mid A\cap K \text{ es cerrado en } X, \text{ para todo } K\subseteq X \text{ compacto}\}\]
+    es un conjunto de cerrados tales que la topología generada es compactamente generada, y cualquier función continua \(f\colon X\to Y\) sigue siendo continua.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Convención}]
+    Desde ahora, todos nuestros espacios son compactamente generados.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Convención}]
+    Diremos \textit{función continua} o \textit{mapa}. \index{mapa}\index{función continua} 
+    \begin{itemize}[noitemsep, topsep=0pt]
+        \item[] \(\operatorname{Hom}(X, Y)= \operatorname{Map}(X, Y)=M(X, Y)= \{f\colon X\to Y \mid f \text{ función continua}\}\).
+
+        \item[] \(\operatorname{Hom_{\ast}}((X, x_0), (Y, y_0))= \operatorname{Map_{\ast}}((X, x_0), (Y, y_0))=M_{\ast}((X, x_0), (Y, y_0))\)
+    
+        % = \{f\colon (X, x_0) \to (Y, y_0) \mid f \text{ función continua}\}\).
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+    \begin{enumerate}[noitemsep, topsep=0pt]
+        \item[] \(\mathsf{Top}\) es la categoría de espacios topológicos. \index{categoría de espacios topológicos}
+        \item[] \(\mathsf{Top}_{\ast}\) es la categoría de espacios topológicos basados.
+    \end{enumerate}
+    \tcblower 
+    Los morfismos son los mapas o funciones continuas (basadas).
+    
+    Esto es, \((X, A) \rightarrow (Y, B)\) con \(f(A)\subseteq B\).
+    
+    En el caso basado, \((X, x_0)\rightarrow (Y, y_0)\) dado por \(f(x_0)=y_0\).
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+    Sea \(X\) un conjunto y \(\{W_{\alpha}\}_{\alpha\in A}\) una familia de espacios tales que \(W_{\alpha}\subseteq X\).
+
+    La \textit{topología débil}\index{topología débil} de \(X\), está dada por,
+    
+    \begin{center}
+        \(\mathcal{U}\subseteq X\) es un abierto si y sólo si \(\mathcal{U}\cap W_{\alpha}\) es abierto, para todo \(\alpha\in A\).
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    \[X_{+}=X\sqcup\{\text{puntos que no están en } X\}\]
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+    Sea \(X\) un espacio, \(Q\) un conjunto y \(q\colon X\to Q\).
+    
+    La \textit{topología cociente} (o de \textit{identificación}), \index{topología cociente, de identificación} está dada por,
+    
+    \begin{center}
+        \(\mathcal{U}\subseteq Q\) es abierto (cerrado) si y sólo si \(q^{-1}(\mathcal{U})\) es abierto (cerrado).
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+    Sean \(X, Y\) espacios, \(p\colon X\to Y\). El mapa es \textit{cociente} o \textit{de identificación}\index{mapa cociente, de identificación}
+    si la topología de \(Y\) coincide con la topología que genera como conjunto, denotada \(\mathcal{T}(p)\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!55!black,title=\textbf{Ejemplo}]
+    Si \(X\) es un espacio topológico.
+    \begin{itemize}[noitemsep, topsep=0pt]
+        \item \(\sim\) es una relación de equivalencia. \(q\colon X \to \quot{X}{\sim}\) dada por \(x\mapsto [x]=\langle x \rangle\).
+        \item Si \(A\subseteq X\), donde \(x\sim x'\) si \(x, x'\in A\), \(x\sim x\) si \(x\notin A\). \(\quot{X}{\sim}=\quot{X}{A}\).
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!55!black,title=\textbf{Ejemplo}]
+    Todo mapa suprayectivo abierto (cerrado) es un mapa cociente.
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Espacios}]
+%     \begin{itemize}
+%         \item[] \(\mathbb{S}^{n}=\{\vec{v}\in\mathbb{R}^{n+1} : \|\vec{v}\|\leq 1\}\)
+%     \end{itemize}
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Espacios}]
+    % \begin{center}
+        \begin{tabular}{lcr}
+            \index{esfera de dimensión \(n\)}\(\mathbb{S}^{n}=\{\vec{v}\in\mathbb{R}^{n+1} : \|\vec{v}\|=1\}\) & \(\mathbb{S}^{0}=\{-1, 1\}\) & \(\mathbb{S}^{-1}=\varnothing\)\\
+        \end{tabular}
+
+\vs
+        \begin{tabular}{lcr}
+            \index{espacio proyectivo real}\(\mathbb{RP}^{n}:=\quot{\mathbb{S}^{n}}{\sim}\) 
+            con \(n\geq 2\), donde \(\vec{v}\sim -\vec{v}\) & & \(q\colon\mathbb{S}^{n}\to\mathbb{RP}^{n}\) 
+            con \(q^{-1}([z])\cong\mathbb{S}^{0}\) \\
+        \end{tabular}
+
+\vs
+        \begin{tabular}{lcr}
+            \index{espacio proyectivo complejo}\(\mathbb{CP}^{n}=\quot{\mathbb{C}^{n+1}\setminus\{\vec{0}\}}{\sim}\) con \(\vec{v}\sim\lambda\vec{v}\), para toda \(\lambda\in\mathbb{C}^{*}:=\mathbb{C}\setminus\{\vec{0}\}\) & & \\
+        \end{tabular}
+
+        \begin{tabular}{lcr}
+            Esto es, \(\quot{\mathbb{S}^{2n+1}}{\approx}\) & \((x_1, y_1, \dots, x_n, y_n), \lambda\in\mathbb{S}^{1}\) & \\
+            & \(\lambda(x_1, y_1, \dots, x_1, y_n)\) & con \((\lambda(x_1, y_1), \dots, \lambda(x_n, y_n))\)\\
+        \end{tabular}
+
+    \tcblower 
+    En particular, \(\mathbb{RP}^{1}\cong\mathbb{S}^{1}\) 
+    
+    \(\mathbb{CP}^{1}\cong \mathbb{S}^{2}\), \(\mathcal{U}_{1}\subseteq \mathbb{CP}^{1}\) donde \(\mathcal{U}_{1}=\{[z_{0}, z_{1}] : z_{1}\neq 0\}\)
+    
+    Pensando a \(\mathbb{C}^{2}\cong\mathbb{R}^{4}\), \(\mathcal{U}_{1}\to \mathbb{C}\cong\mathbb{R}^{2}\) dado por \([z_0, z_1]\mapsto \quot{z_0}{z_1}\)
+    % \end{center}
+\end{tcolorbox}
+
+% \begin{tcolorbox}
+%     Todo mapa suprayectivo abierto (cerrado) es un mapa cociente.
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!55!black,title=\textbf{Ejemplo}]
+    Si \(f|_{q^{-1}(z)}\) es constante, para toda \(z\in Q\)
+    \begin{tikzcd} 
+    & \smash[b]{X} \arrow[r]{}{q} \arrow[swap]{d}{f} & Q\\
+    & Y \arrow[swap, dashed]{ru}{\exists \overset{\sim}{f}}
+    \end{tikzcd} 
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=lime!15!white,colframe=green!55!black,title=\textbf{Ejemplo}]
+%     \begin{multicols}{2} 
+%         \(\begin{tikzcd}[column sep=huge,row sep=large] 
+%          X \ar[r]{}{q} \ar[d]{}{f} & Q \\ Y \ar[ur,dashed]{}{\exists \overset{\sim}{f}}&%h' 
+%         \end{tikzcd}\)
+%     \columnbreak
+%         Si \(f|_{q^{-1}(z)}\) es constante, para toda \(z\in Q\)
+%     \end{multicols}
+% \end{tcolorbox}
+
+\begin{tcolorbox}
+    El intervalo \(I=[0, 1]\)
+    \tcblower
+    En ocasiones tomaremos \(I=[-1, 1]\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Producto cuña, cuña de espacios}\index{producto cuña, cuña de espacios}]
+    Si \(X, Y\) son espacios punteados, con \(x_0\) punto base de \(X\), \(y_0\) punto base de \(Y\).
+    % Se define la \textit{cuña de espacios},
+    \begin{center}
+        \(X\vee Y= X\times\{y_0\}\cup\{x_0\}\times Y\)
+    \end{center}
+    % \[X\vee Y= X\times\{y_0\}\cup\{x_0\}\times Y\]
+\tcblower
+    \begin{center}
+        \(X\vee Y \cong \quot{X\sqcup Y}{\sim}\) donde \(x_0 \sim y_0\).
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    Sean \(f\in\operatorname{Map_{\ast}}(X, B), g\in\operatorname{Map_{\ast}}(Y, B)\), donde \((X, x_0), (B, b_0), (Y, y_0)\) tales que 
+    
+    \(f(x_0)=b_0=g(y_0)\),
+    \begin{center}
+    \(\{f, g\}=f\vee g \colon X\vee Y\to B\)
+    \end{center}
+    \tcblower
+    Notemos que \((f\vee g)\circ i_1 =f, (f\vee g)\circ i_2 =g\)    
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Mapa doblado}\index{mapa doblado}]
+    \begin{center}
+        \(\nabla=\nabla_{X}\colon X\vee X \to X\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Mapa diagonal}\index{mapa diagonal}]
+    \begin{center}
+        \(\Delta = \Delta_{X}\colon X\to X\times X\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Producto smash}\index{producto smash}]
+    \((X, x_0), (Y, y_0)\)
+    \tcblower
+    \begin{center}
+        \(X\wedge Y=\quot{X\times Y}{X\vee Y}\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!55!black,title=\textbf{Ejemplo}]
+    \begin{center}
+        \(\{-1, 1\}=\mathbb{S}^0\wedge X = \quot{X\times\{1\}\cup X\times\{-1\}}{X\times\{-1\}\cup \{x_0\}\times\{-1, 1\}}\cong X\)
+    \end{center}\tcblower
+    Tarea: verificar que es \(\cong\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=green!55!black,title=\textbf{Ejercicio}]
+    % \begin{center}
+        Recordando que \(X_{+}=X\sqcup\{\ast\}\), ¿quién es \(X_{+}\wedge Y_{+}\)?
+    % \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Cono}\index{cono}]
+    \begin{itemize}[noitemsep, topsep=0pt]
+        \item[] Si \(X=\varnothing\), \(\mathcal{C}(\varnothing)=\ast\).
+        \item[] En otro caso, \(\mathcal{C}(X)=\quot{X\times I}{\sim}\) donde \((x, 1)\sim(x', 1)\)
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Cono reducido}\index{cono reducido}]
+    Si \((X, x_0)\), \(\quot{X\times I}{\sim}\), con \((x_0, t)\sim(x_0, s), (x, 1)\sim(x', 1)\) para toda \(t, s\in I\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
+    Si \(f\colon X\to Y\) es continua, entonces \(\mathcal{C}(f)\colon \mathcal{C}(X)\to\mathcal{C}(Y)\) es continua.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{La suspensión}\index{suspensión}]
+    \begin{itemize}[noitemsep, topsep=0pt]
+        \item[] Si \(X=\varnothing\), \(\Sigma\varnothing=\mathbb{S}^{0}\).
+        \item[] En otro caso, \(\Sigma X =\quot{X\times I}{\sim}\) donde \((x, 0)\sim(x', 0), (x, 1)\sim(x', 1)\)
+    \end{itemize}
 \end{tcolorbox}
