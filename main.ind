@@ -19,6 +19,8 @@
   \item espacio Hausdorff, \(T_2\), \hyperpage{1}
   \item espacio proyectivo complejo, \hyperpage{3}
   \item espacio proyectivo real, \hyperpage{3}
+  \item extensión, \hyperpage{9}
+  \item extensión homotópica, \hyperpage{9}
 
   \indexspace
 
@@ -31,10 +33,17 @@
 
   \indexspace
 
+  \item inversa homotópica derecha, \hyperpage{8}
+  \item inversa homotópica izquierda, \hyperpage{8}
+
+  \indexspace
+
   \item join, \hyperpage{5}
 
   \indexspace
 
+  \item levantamiento, \hyperpage{9}
+  \item levantamiento homotópico, \hyperpage{9}
   \item ley exponencial, \hyperpage{6}
   \item ley exponencial para el smash, \hyperpage{7}
 
@@ -59,12 +68,15 @@
   \indexspace
 
   \item retracción, \hyperpage{8}
+  \item retracción homotópica, \hyperpage{8}
   \item retracto, \hyperpage{8}
   \item retracto fuerte por deformación, \hyperpage{8}
   \item retracto por deformación, \hyperpage{8}
 
   \indexspace
 
+  \item sección, \hyperpage{8}
+  \item sección homotópica, \hyperpage{8}
   \item suspensión, \hyperpage{4}
   \item suspensión reducida, \hyperpage{4}
 

@@ -556,22 +556,117 @@
 \end{tcolorbox}
 
 
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
+    Si \(X\) es \(T_2\) y \(A\subseteq X\) es un retracto, entonces \(A\) es cerrado en \(X\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+    Sea \(A\subseteq X\) y \(r\colon X\to A\) un retracto. 
+    
+    Si \(X\) es conexo o compacto, entonces \(A\) es conexo o compacto.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=green!55!black,title=\textbf{Pregunta}]
+    \begin{center}
+        ¿\(\mathbb{S}^0\) es un retracto de \(I\)?
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{sección}]
+    Sea \(f\colon X\to Y\), una \textit{sección} de \(f\) es un mapa \(s\colon Y\to X\) tal que \(f\circ s\simeq 1_{Y}\).
+\tcblower
+    \begin{center}  
+    \(\begin{tikzcd}
+        X \arrow[r, right, swap]{}{f}
+        & Y \arrow[l, bend right, swap]{}{s}
+    \end{tikzcd}\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{retracción homotópica}\index{inversa homotópica izquierda}]
+    Una \textit{retracción homotópica}, o una \textit{inversa homotópica izquierda} de \(f\colon X\to Y\)
+    es un mapa \(g\colon Y\to X\) tal que \(g\circ f\simeq 1_{X}\). 
+    \tcblower
+    Decimos que \(X\) está \textit{dominado} por \(Y\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{sección homotópica}\index{inversa homotópica derecha}]
+    Una \textit{sección homotópica}, o una \textit{inversa homotópica derecha} de \(f\colon X\to Y\)   
+    es un mapa \(h\colon Y\to X\) tal que \(f\circ h\simeq 1_{Y}\). 
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=green!55!black,title=\textbf{Pregunta}]
+    % \begin{center}
+        Si una composición es homotópica a la identidad, ¿la otra lo es?
+    % \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{levantamiento}]
+    % Si \(f\colon X\to Y\), \(p\colon E\to Y\), \(\overset{\sim}{f}\colon X\to E\) tal que 
+    % \(p\circ\overset{\sim}{f}=f\), es decir, 
+% \begin{center}
+% \(\begin{tikzcd}
+%     & E \arrow[d]{}{p} \\
+%     X \arrow[ur, dashed]{}{\overset{\sim}{f}} 
+%     \arrow[r, swap]{}{f} & Y
+% \end{tikzcd}\)
+% \end{center}
+
+% \begin{center}
+Si \(f\colon X\to Y\), \(p\colon E\to Y\), \(\overset{\sim}{f}\colon X\to E\) tal que 
+\(p\circ \overset{\sim}{f}=f
+\qquad
+\begin{tikzcd}
+    & E \arrow[d]{}{p} \\
+    X \arrow[ur, dashed]{}{\overset{\sim}{f}}
+    \arrow[r, swap]{}{f}
+    \arrow[ur, draw=none, swap, xshift=1mm]{}{=}
+    & Y
+\end{tikzcd}\)
+
+% \end{center}
+
+% \[
+% \begin{tikzcd}
+%     & E \arrow[d]{}{p} \\
+%     X \arrow[ur, dashed]{}{\overset{\sim}{f}} 
+%     \arrow[r, swap]{}{f} & Y
+% \end{tikzcd}
+% \qquad
+% p\circ \overset{\sim}{f}=f.
+% \]
+
+entonces decimos que \(\overset{\sim}{f}\) es un \textit{levantamiento} de \(f\).
+
+\tcblower
+    Si \(p\circ\overset{\sim}{f}\simeq f\), decimos que \(\overset{\sim}{f}\) es un \textit{levantamiento homotópico}.
+    \index{levantamiento homotópico}
+\end{tcolorbox}
 
 
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{extensión}\index{extensión homotópica}]
+    Si \(C\subseteq X\), \(f\colon C\to Y\). 
+    
+    Si existe \(f'\colon X\to Y\) tal que \(f'\circ f=f 
+    \qquad
+    \begin{tikzcd}
+        C \arrow[r, hookrightarrow]{}{i}
+        \arrow[rr, bend right=30, swap]{}{f}
+        \arrow[rr, bend right=10, draw=none, swap]{}{=}
+        & X \arrow[r]{}{f'} & Y
+    \end{tikzcd}\)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    entonces \(f'\) es una \textit{extensión} de \(f\).
+\tcblower
+    Si \(f'\circ i\simeq f\), entonces \(f'\) es una \textit{extensión homotópica}.
+    \qquad
+    \(\begin{tikzcd}
+        C \arrow[r, hookrightarrow]{}{i}
+        \arrow[rr, bend right=30, swap]{}{f}
+        \arrow[rr, bend right=10, draw=none, swap]{}{\simeq}
+        & X \arrow[r]{}{f'} & Y
+    \end{tikzcd}\)
+\end{tcolorbox}
 
 
 

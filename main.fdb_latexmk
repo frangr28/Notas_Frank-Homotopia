@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1789139041.22484 -1
-  "main.bcf" 1789139040 107256 c8a347bbbffa23f6c5855e74f5368900 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1789143919.38105 -1
+  "main.bcf" 1789143917 107256 c8a347bbbffa23f6c5855e74f5368900 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 1789137186.51264 "main.idx" "main.ind" "main" 1789139041.22372 0
-  "main.idx" 1789139040 1887 8835f67c11bd49406b11c17a4e6a5df6 "pdflatex"
+["makeindex main.idx"] 1789143699.03107 "main.idx" "main.ind" "main" 1789143919.37675 0
+  "main.idx" 1789143917 2307 df8b668534a87cffd058469fa6f27537 "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1789139031.01851 "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" "main.pdf" "main" 1789139041.22674 0
+["pdflatex"] 1789143895.14484 "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" "main.pdf" "main" 1789143919.3832 0
   "C:/Users/frank/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787921073 104422 03329db04e475b89aaa7721eaf600ebf ""
   "C:/Users/frank/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1759043988 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/frank/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs7.tfm" 1759043991 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
@@ -313,13 +313,13 @@
   "Docs/biblio.tex" 1787331809 519 d613005a87d64a3ad399e5e09d14f25c ""
   "IMAGENES CIENCIAS/logociencias.png" 1759066104 234464 5683ef500805196536eed367745986f2 ""
   "IMAGENES CIENCIAS/logounam.png" 1759066104 331443 1e42aef750be8051afc6b7de0440c673 ""
-  "Notas.tex" 1789139028 25837 02f09916ca6423dacebb72bceaf51cc1 ""
+  "Notas.tex" 1789143888 30163 c8bce5f482dd6ef856b2bbd60c2b6a4e ""
   "c:/Users/frank/Documentos/GitHub/Notas_Frank-Homotopia/main.tex" 1789111674 7639 2bfd180ed1ce5a2ee297c32cab6fdada ""
-  "main.aux" 1789139040 811 e2b6174fd66056dd2a990bc8d1b6e8d3 "pdflatex"
+  "main.aux" 1789143916 812 0607d1c23af39da34feb4eeb274ea4b3 "pdflatex"
   "main.bbl" 1789130339 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.ind" 1789137186 1977 417479315fa51ff9379a45eb896a25b6 "makeindex main.idx"
-  "main.out" 1789139040 184 25cfddbdf44dc3bee27ffb544a7e6b6e "pdflatex"
-  "main.run.xml" 1789139040 2224 b58fdd43a2e991125a5439c21704f61b "pdflatex"
+  "main.ind" 1789143699 2386 8c3a3e2329c5002c611a3d41601c553a "makeindex main.idx"
+  "main.out" 1789143916 184 25cfddbdf44dc3bee27ffb544a7e6b6e "pdflatex"
+  "main.run.xml" 1789143917 2224 b58fdd43a2e991125a5439c21704f61b "pdflatex"
   "main.tex" 1789111674 7639 2bfd180ed1ce5a2ee297c32cab6fdada ""
   (generated)
   "main.aux"
