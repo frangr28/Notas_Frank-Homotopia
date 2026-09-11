@@ -1,15 +1,21 @@
 \begin{theindex}
 
   \item categoría de espacios topológicos, \hyperpage{2}
+  \item cilindro, \hyperpage{5}
+  \item cilindro reducido, \hyperpage{5}
+  \item clase de equivalencia, \hyperpage{6}
+  \item concatenación, \hyperpage{6}
   \item cono, \hyperpage{4}
   \item cono reducido, \hyperpage{4}
   \item cubierta abierta, \hyperpage{1}
 
   \indexspace
 
+  \item equivalencias homotópicas, \hyperpage{7}
   \item esfera de dimensión \(n\), \hyperpage{3}
   \item espacio compactamente generado, \hyperpage{1}
   \item espacio compacto, \hyperpage{1}
+  \item espacio contraíble, espacio contráctil, \hyperpage{7}
   \item espacio Hausdorff, \(T_2\), \hyperpage{1}
   \item espacio proyectivo complejo, \hyperpage{3}
   \item espacio proyectivo real, \hyperpage{3}
@@ -20,22 +26,51 @@
 
   \indexspace
 
+  \item half smash, \hyperpage{5}
+  \item homotópicamente equivalente, \hyperpage{7}
+
+  \indexspace
+
+  \item join, \hyperpage{5}
+
+  \indexspace
+
+  \item ley exponencial, \hyperpage{6}
+  \item ley exponencial para el smash, \hyperpage{7}
+
+  \indexspace
+
   \item mapa, \hyperpage{2}
   \item mapa cociente, de identificación, \hyperpage{2}
   \item mapa diagonal, \hyperpage{3}
   \item mapa doblado, \hyperpage{3}
+  \item mapas homotópicos, funciones homotópicas, \hyperpage{6}
 
   \indexspace
 
+  \item nulo homotopía, \hyperpage{7}
+
+  \indexspace
+
+  \item precomposición, \hyperpage{6}
   \item producto cuña, cuña de espacios, \hyperpage{3}
   \item producto smash, \hyperpage{4}
 
   \indexspace
 
-  \item suspensión, \hyperpage{4}
+  \item retracción, \hyperpage{8}
+  \item retracto, \hyperpage{8}
+  \item retracto fuerte por deformación, \hyperpage{8}
+  \item retracto por deformación, \hyperpage{8}
 
   \indexspace
 
+  \item suspensión, \hyperpage{4}
+  \item suspensión reducida, \hyperpage{4}
+
+  \indexspace
+
+  \item tipo de homotopía, \hyperpage{7}
   \item topología cociente, de identificación, \hyperpage{2}
   \item topología débil, \hyperpage{2}
 

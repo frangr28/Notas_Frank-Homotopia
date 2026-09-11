@@ -254,23 +254,347 @@
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Cono}\index{cono}]
-    \begin{itemize}[noitemsep, topsep=0pt]
-        \item[] Si \(X=\varnothing\), \(\mathcal{C}(\varnothing)=\ast\).
-        \item[] En otro caso, \(\mathcal{C}(X)=\quot{X\times I}{\sim}\) donde \((x, 1)\sim(x', 1)\)
-    \end{itemize}
+    % \begin{itemize}[noitemsep, topsep=0pt]
+        % \item[] 
+        Si \(X=\varnothing\), \(\mathcal{C}(\varnothing)=\ast\).
+        % \item[] 
+
+        En otro caso, \(\mathcal{C}(X)=\quot{X\times I}{\sim}\) donde \((x, 1)\sim(x', 1)\).
+    % \end{itemize}
 \end{tcolorbox}
 
+% \begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Cono reducido}\index{cono reducido}]
+%     Si \((X, x_0)\), \(\quot{X\times I}{\sim}\), con \((x_0, t)\sim(x_0, s), (x, 1)\sim(x', 1)\) para toda \(t, s\in I\).
+% \end{tcolorbox}
+
 \begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Cono reducido}\index{cono reducido}]
-    Si \((X, x_0)\), \(\quot{X\times I}{\sim}\), con \((x_0, t)\sim(x_0, s), (x, 1)\sim(x', 1)\) para toda \(t, s\in I\).
+    Si \((X, x_0)\), \(\quot{X\times I}{\sim}
+    % \text{ donde} 
+    \qquad 
+    \begin{aligned}
+        (x_0, t)&\sim(x_0, s)\\[-3pt]
+        (x, 1)&\sim(x', 1)\\
+    \end{aligned}\)
+    \,\, para toda \(t, s\in I\)
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
     Si \(f\colon X\to Y\) es continua, entonces \(\mathcal{C}(f)\colon \mathcal{C}(X)\to\mathcal{C}(Y)\) es continua.
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{La suspensión}\index{suspensión}]
+% \begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Suspensión}\index{suspensión}]
+%     \begin{itemize}[noitemsep, topsep=0pt]
+%         \item[] Si \(X=\varnothing\), \(\Sigma\varnothing=\mathbb{S}^{0}\).
+%         \item[] En otro caso, \(\Sigma X =\quot{X\times I}{\sim}\) donde \((x, 0)\sim(x', 0), (x, 1)\sim(x', 1)\)
+%     \end{itemize}
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Suspensión}\index{suspensión}]
+    Si \(X=\varnothing\), \(\Sigma\varnothing=\mathbb{S}^{0}\).
+    
+    En otro caso, \(\Sigma X =\quot{X\times I}{\sim}
+    \qquad 
+    \begin{aligned}
+        (x, 0)&\sim(x', 0)\\[-3pt]
+        (x, 1)&\sim(x', 1)\\
+    \end{aligned}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=lime!15!white,colframe=green!55!black,title=\textbf{Ejemplo}]
+    \begin{center}
+        \(\Sigma \mathbb{S}^{0}=\mathbb{S}^1\)
+    \end{center}
+\tcblower
+    \begin{center}
+        \(\mathcal{C}(\mathbb{S}^{1})=\mathbb{D}^{2}\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=green!55!black,title=\textbf{Ejercicio}]
+    \begin{center}
+        \(\Sigma \mathbb{S}^{n}\cong\mathbb{S}^{n+1}\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Suspensión reducida}\index{suspensión reducida}]
+    \begin{center}
+        \(\mathcal{S}(X)=\quot{X\times I}{X\times\{0\}\cup\{x_0\}\times I \cup X\times\{1\}}\) con \((X, x_0)\).
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.]
+    \begin{center}
+        \(\Sigma^{n+1}X = \Sigma \Sigma^{n}X\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
+    Si \(f\colon X\to Y\), entonces \(\Sigma f\colon \Sigma X \to \Sigma Y\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
+    \begin{center}
+        \(\Sigma(X\times Y)\simeq \Sigma X \vee \Sigma Y \vee \Sigma(X\wedge Y)\)
+    \end{center}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}]
+    Si los espacios no son compactamente generados, entonces \(X\wedge (Y\wedge Z)\ncong (X\wedge Y) \wedge Z\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Half smash}\index{half smash}]
+    Si \(Y\) es punteado, \(X\wedge Y_{+}= X \ltimes Y\).
+\end{tcolorbox}
+
+% \begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Join}\index{join}]
+%     \begin{itemize}[noitemsep, topsep=0pt]
+%         \item[] Si \(X=\varnothing\) y \(Y\), \(X\ast Y=Y\).
+%         \item[] Si \(X\neq\varnothing\neq Y\), \(X\ast Y=\quot{X\times Y}{\sim}\); \((x, y, 0)\sim(x, y', 0), (x, y, 1)\sim(x', y, 1)\).
+%     \end{itemize}
+% \tcblower
+% Si son basados, \(\quot{X\ast Y}{X\times\{x_0\}\cup \{x_0\}\times Y}\)
+% \end{tcolorbox}
+
+\begin{tcolorbox}[colback=white!15!white,colframe=red!75!black,title=\textbf{Join}\index{join}]
+    Si \(X=\varnothing\) y \(Y\), \(X\ast Y=Y\).
+    
+    Si \(X\neq\varnothing\neq Y\), \(X\ast Y=\quot{X\times Y}{\sim}
+    \qquad 
+    \begin{aligned}
+        (x, y, 0)&\sim(x, y', 0)\\[-3pt]
+        (x, y, 1)&\sim(x', y, 1)\\
+    \end{aligned}\)
+\tcblower
+    Si son basados, \(\quot{X\ast Y}{X\times\{y_0\}\cup \{x_0\}\times Y}\)
+\end{tcolorbox}
+
+
+\begin{tcolorbox}
     \begin{itemize}[noitemsep, topsep=0pt]
-        \item[] Si \(X=\varnothing\), \(\Sigma\varnothing=\mathbb{S}^{0}\).
-        \item[] En otro caso, \(\Sigma X =\quot{X\times I}{\sim}\) donde \((x, 0)\sim(x', 0), (x, 1)\sim(x', 1)\)
+        \item[] \(X\ast\{\ast\}=\mathcal{C}(X)\)
+        \item[] \(X\ast \mathbb{S}^{0}=\Sigma X\)
+        \item[] \(\mathbb{S}^{n}\ast\mathbb{S}^{n}=\mathbb{S}^{n+m+1}\), en particular \(\mathbb{S}^{0}\ast\mathbb{S}^{0}=\mathbb{S}^{0+0+1}=\mathbb{S}^{1}\)
     \end{itemize}
 \end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{cilindro}]
+    \begin{center}
+        El cilindro de \(X\), \(\operatorname{Cyl}(X)=X\times I\)
+    \end{center}
+\end{tcolorbox}  
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{cilindro reducido}]
+    \begin{center}
+        El cilindro reducido de \(X\), \(\quot{X\times I}{\{x_0\}\times I}\)
+    \end{center}
+\end{tcolorbox}  
+
+\newpage
+\section*{Homotopía}
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{mapas homotópicos, funciones homotópicas}]
+    Si \(f, g\colon X\to Y\) son mapas, decimos que son \textit{homotópicas}, en símbolos \(f\simeq g\), 
+    
+    si existe \(H\colon X\times I \to Y\) tal que 
+    \(\qquad 
+    \begin{aligned}
+        H(x, 0)&\sim f(x)\\[-3pt]
+        H(x, 1)&\sim g(x)\\
+    \end{aligned}\)
+\tcblower
+    Si los espacios son basados, para toda \(t\in I\) se tiene que \(H(\ast, t)=\ast_{Y}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Ley exponencial}.\index{ley exponencial}]
+    \(\operatorname{Map}(X\times I, Y)\cong\operatorname{Map}(I, \operatorname{Map}(X, Y))\)
+    \tcblower
+    \(Y^{X\times I}\cong(Y^X)^I\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
+    Homotopía es una relación de equivalencia.
+\tcblower
+    Además, si \(f\simeq g\colon X\to Y, k\colon A\to X, \ell\colon Y\to B\), entonces \(f\circ k\simeq g\circ k\) y \(\ell\circ f \simeq \ell \circ g\).
+\end{tcolorbox}
+
+\begin{tcolorbox}\index{concatenación}
+    Si \(F, G\colon X\times I \to Y\) homotopías tales que \(F(x, 1)=G(x, 0)\), se tiene la \textit{concatenación} \(H=F\ast G\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{clase de equivalencia}]
+    Para \(f\colon X\to Y\) continua, \([f]\) es la \textit{clase de equivalencia de \(f\)}, es decir, el conjunto de todas las funciones continuas de \(X\to Y\) que son homotópicas a \(f\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=Notación]    
+    \([X, Y], [X, Y]_{\ast}\), la colección de todas las clases de equivalencia que nos dan las homotopías para nuestros mapas de \(X\) a \(Y\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=antiquefuchsia!15!white,colframe=antiquefuchsia!75!black,title=\textbf{Observación}\index{precomposición}]
+    \begin{enumerate}[noitemsep, topsep=0pt]
+        \item Si \(\alpha=[f]\in[X, Y]_{\_}\) y \(\beta=[g]\in[Y, Z]\), entonces \(\beta\alpha=[g\circ f]\in [X, Z]\).
+        \item Si \(X, Y\) son basados, \(C_\ast\colon X\to Y\), entonces \(0=[C_\ast]\in[X, Y]_{\ast}\).
+        \item \(k\colon A\to X, \ell\colon Y\to B\), se tiene la \textit{precomposición}
+            \begin{itemize}[noitemsep, topsep=0pt]
+                \item[] \(k^{\ast}\colon \operatorname{Map_\_}(X, Y)\to \operatorname{Map}(A, Y)\) dada por \(f\mapsto f\circ k = k^{\ast}(f)\).
+                \item[] \(\ell_{\ast}\colon \operatorname{Map_\_}(X, Y)\to \operatorname{Map_\_}(Y, B)\) dada por \(f\mapsto \ell\circ f = \ell^{\ast}(f)\).
+            \end{itemize}
+            \begin{itemize}[noitemsep, topsep=0pt]
+                \item[] \(k^{\ast}\colon [X, Y]_\_\to [A, Y]_\_\)
+                \item[] \(\ell_{\ast}\colon [X, Y]_\_\to [X, B]_\_\)
+            \end{itemize}
+    \end{enumerate}
+    \tcblower
+    \(k^{\ast}(0)=0, \ell_{\ast}(0)=0\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Hecho}.]
+    Si \(k\simeq k', \ell\simeq\ell'\), entonces en las clases de equivalencia, \(k^{\ast}\simeq k'^{\ast}, \ell^{\ast}\simeq\ell'^{\ast}\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Ley exponencial para el smash}.\index{ley exponencial para el smash}]
+    \(\operatorname{Map_\ast}(X\wedge Y, Z\cong\operatorname{Map_\ast}(X, \operatorname{Map_\ast}(Y, Z))\)
+
+    \(\operatorname{Map_\ast}(X\wedge I_{+})\cong\operatorname{Map_\ast}(I_{+}, \operatorname{Map_\ast}(X, Y))\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Proposición}.]
+    Si \(f, g\colon X\to Y\) mapas. Entonces
+
+    \(f\simeq g\) si y sólo si existe \(G\colon X\to Y^I\) tal que     
+    \(\qquad 
+    \begin{aligned}
+        G(x)(0)&=f(x)\\[-3pt]
+        G(x)(1)&=g(x)\\[-3pt]
+        G(\ast)(1)&=\ast\\
+    \end{aligned}\)
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{tipo de homotopía}]
+    Decimos que \(X\) y \(Y\) \textit{tienen el mismo tipo de homotopía}, en símbolos \(X\simeq Y\),
+    
+    si existen \(f\colon X\to Y\), \(g\colon Y\to X\) tales que \(g\circ f\simeq 1_{X}\) y \(f\circ g\simeq 1_{Y}\).
+\tcblower
+    En este caso, a \(f\) y \(g\) se les llama \textit{equivalencias homotópicas},\index{equivalencias homotópicas}, también decimos que 
+    
+    \(X\) es \textit{homotópicamente equivalente} a \(Y\).\index{homotópicamente equivalente}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{nulo homotopía}]
+    \(f\colon X\to Y\) es \textit{nulo homotópica} si \(f\simeq\ast\colon X\to Y\).
+\tcblower
+\(\ast\) función constante
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{espacio contraíble, espacio contráctil}]
+    Un espacio \(X\) es \textit{contraíble} o \textit{contráctil} si \(X\simeq \ast\).
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Lema}.]
+    \begin{enumerate}[noitemsep, topsep=0pt]
+        \item Sean \(A, X, Y\), \(f_0, f_1\in[f_1]\in[A, X]\) y \(g_1\simeq g_0\colon A\to Y\), 
+        
+        entonces \((f_0, g_0)\simeq (f_1, g_1)\colon A\to X\times Y\).
+        \item Sean \(B, X, Y\) espacios, \(f_0\simeq f_1\colon X\to B\), \(g_1\simeq g_0\colon Y\to B\), 
+        
+        entonces \(f_0\vee g_0\simeq f_1\vee g_1\colon X\vee Y\to B\).
+    \end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!blue,title=\textbf{Corolario}.]
+    \begin{enumerate}[noitemsep, topsep=0pt]
+        \item \([A, X]_\_\times [A, Y]\to[A, X\times Y]_\_\) dada por \(([f], [g])\mapsto [(f, g)]\) es una biyección.
+        \item \([X, B]_\ast\times [Y, B]_\ast\to[X\vee Y, B]_\ast\) dada por \(([f], [g])\mapsto [f \vee g]\) es una biyección.
+    \end{enumerate}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue-violet!5!white,colframe=blue-violet!75!black,title=\textbf{Definición}.\index{retracción}]
+    Sea \(X\) un espacio y \(A\) un subespacio (si son basados, el punto base está en \(A\)).
+
+    Un mapa \(r\colon X\to A\) es una \textit{retracción} si \(r(a)=a\), para toda \(a\in A\).
+
+% \begin{center}
+%     \(\begin{tikzcd}
+%         A \arrow[r, hookrightarrow]{}{i} 
+%         \arrow[rr, bend right, swap]{}{1_A} & X 
+%         \arrow[r]{}{h} & C
+%     \end{tikzcd}\)
+% \end{center}
+
+
+\begin{multicols}{2}
+
+\begin{center}
+    \(\begin{tikzcd}
+        A \arrow[r, hookrightarrow]{}{i}
+        \arrow[rr, bend right=30, swap]{}{1_A}
+        \arrow[rr, bend right=10, draw=none, swap]{}{=}
+        & X \arrow[r]{}{h} & C
+    \end{tikzcd}\)
+\end{center}
+
+\columnbreak
+    % \begin{center}
+        \(A\) es un \textit{retracto}\index{retracto} de \(X\)
+    % \end{center}
+\end{multicols}
+
+% \begin{center}
+%     \(\begin{tikzcd}
+%         A \arrow[r, hookrightarrow]{}{i}
+%         \arrow[rr, bend right=30, swap]{}{1_A}
+%         \arrow[rr, bend right=10, draw=none, swap]{}{=}
+%         & X \arrow[r]{}{h} & C
+%     \end{tikzcd}\)
+% \end{center}
+
+%     Decimos que \(A\) es un \textit{retracto}\index{retracto} de \(X\).
+
+\tcblower
+    Si \(i\circ r\simeq 1_{X}\), \(A\) es un \textit{retracto por deformación}.\index{retracto por deformación}
+
+    Si \(i\circ r\simeq 1_{X}\) tal que \(H(a, t)=a\),  es un \textit{retracto fuerte por deformación}.\index{retracto fuerte por deformación}
+\end{tcolorbox}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
